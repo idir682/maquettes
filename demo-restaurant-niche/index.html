@@ -1,0 +1,472 @@
+<!doctype html>
+<html lang="fr" data-hubspot-id="demo" data-maquette-version="1">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="robots" content="noindex, nofollow">
+<title>Votre restaurant – Restaurant à Mulhouse (maquette)</title>
+<meta name="description" content="Votre restaurant, restaurant à Mulhouse : carte, horaires et réservation en ligne. Maquette de démonstration Agence Turbo.">
+<meta name="theme-color" content="#2b1a12">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500;600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "LocalBusiness", "name": "Votre restaurant", "areaServed": ["Mulhouse", "Riedisheim", "Illzach", "Kingersheim", "Rixheim"], "address": {"@type": "PostalAddress", "addressLocality": "Mulhouse", "addressCountry": "FR"}}</script>
+<style>
+:root{--p:#2b1a12;--p2:#4a2c1d;--a:#c8892b;--a2:#a86f1c;--soft:#faf4ea;--tint:#f1e3c8;--ink:#17202b;--muted:#5d6876;--line:#e4e8ee;--bg:#fff;--r:18px;--sh:0 1px 2px rgba(16,24,40,.06),0 12px 32px -12px rgba(16,24,40,.18)}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+body{font-family:Inter,system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;color:var(--ink);background:var(--bg);line-height:1.6;font-size:16px;overflow-x:hidden}
+h1,h2,h3,.brand{font-family:"Plus Jakarta Sans",Inter,system-ui,sans-serif;letter-spacing:-.02em}
+a{color:inherit;text-decoration:none}
+img,svg{display:block}
+.wrap{width:100%;max-width:1180px;margin:0 auto;padding:0 20px}
+.ic{width:24px;height:24px;fill:none;stroke:currentColor;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round;flex:none}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;height:52px;padding:0 24px;border-radius:14px;font-weight:700;font-size:15.5px;border:0;cursor:pointer;transition:transform .15s,box-shadow .2s,background .2s;font-family:inherit;white-space:nowrap}
+.btn:active{transform:scale(.98)}
+.btn-a{background:var(--a);color:#fff;box-shadow:0 10px 24px -10px var(--a)}
+.btn-a:hover{background:var(--a2);transform:translateY(-1px)}
+.btn-ghost{background:rgba(255,255,255,.1);color:#fff;border:1px solid rgba(255,255,255,.28);backdrop-filter:blur(6px)}
+.btn-ghost:hover{background:rgba(255,255,255,.18)}
+.btn-dark{background:var(--p);color:#fff}
+.btn .ic{width:20px;height:20px}
+
+/* bandeau démo */
+.demo{background:#111827;color:#e5e7eb;font-size:13px;padding:9px 16px;text-align:center}
+.demo b{color:#fff}
+
+/* header */
+header{position:sticky;top:0;z-index:50;background:rgba(255,255,255,.86);backdrop-filter:saturate(180%) blur(14px);-webkit-backdrop-filter:saturate(180%) blur(14px);border-bottom:1px solid rgba(0,0,0,.06)}
+.nav{display:flex;align-items:center;justify-content:space-between;height:72px;gap:20px}
+.brand{display:flex;align-items:center;gap:12px;font-weight:800;font-size:18px;color:var(--p);line-height:1.1}
+.brand small{display:block;font-family:Inter,sans-serif;font-weight:500;font-size:12px;color:var(--muted);letter-spacing:0}
+.mono{width:42px;height:42px;border-radius:12px;background:linear-gradient(135deg,var(--p2),var(--p));color:#fff;display:grid;place-items:center;font-size:15px;font-weight:800;box-shadow:inset 0 -2px 0 rgba(0,0,0,.2)}
+.menu{display:flex;gap:28px;font-size:15px;font-weight:500;color:var(--muted)}
+.menu a:hover{color:var(--p)}
+.nav-cta{display:flex;gap:10px}
+.nav-cta .btn{height:44px;padding:0 18px;font-size:14.5px}
+.call{background:var(--soft);color:var(--p)}
+
+/* hero */
+.hero{position:relative;background:var(--p);color:#fff;overflow:hidden;isolation:isolate}
+.hero::before{content:"";position:absolute;inset:0;background:radial-gradient(900px 480px at 85% 10%,color-mix(in srgb,var(--p2) 90%,#fff 10%) 0,transparent 60%),radial-gradient(700px 400px at -10% 110%,color-mix(in srgb,var(--a) 22%,transparent) 0,transparent 60%);z-index:-1}
+.hero::after{content:"";position:absolute;inset:0;background-image:linear-gradient(rgba(255,255,255,.05) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,.05) 1px,transparent 1px);background-size:44px 44px;mask-image:radial-gradient(ellipse at 70% 30%,#000 10%,transparent 70%);z-index:-1}
+.hero-in{display:grid;grid-template-columns:1.08fr .92fr;gap:56px;align-items:center;padding-top:88px;padding-bottom:104px}
+.eyebrow{display:inline-flex;align-items:center;gap:8px;padding:7px 14px 7px 8px;border-radius:999px;background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.16);font-size:13.5px;font-weight:600;margin-bottom:22px}
+.eyebrow i{width:22px;height:22px;border-radius:50%;background:var(--a);display:grid;place-items:center}
+.eyebrow i .ic{width:13px;height:13px;stroke-width:2.6}
+.hero h1{font-size:clamp(36px,5.2vw,60px);line-height:1.04;font-weight:800;margin-bottom:22px}
+.hero h1 em{font-style:normal;background:linear-gradient(90deg,var(--a),color-mix(in srgb,var(--a) 55%,#fff 45%));-webkit-background-clip:text;background-clip:text;color:transparent}
+.hero p.lead{font-size:18.5px;color:rgba(255,255,255,.78);max-width:560px;margin-bottom:32px}
+.hero-cta{display:flex;flex-wrap:wrap;gap:12px;margin-bottom:34px}
+.promise{display:flex;flex-wrap:wrap;gap:10px 22px;font-size:14.5px;color:rgba(255,255,255,.85)}
+.promise span{display:flex;align-items:center;gap:8px}
+.promise .ic{width:18px;height:18px;color:var(--a);stroke-width:2.6}
+
+/* visuel hero */
+.visual{position:relative;aspect-ratio:1/1.02;max-width:500px;justify-self:end;width:100%}
+.panel{position:absolute;inset:6% 4% 10% 10%;border-radius:28px;background:linear-gradient(160deg,rgba(255,255,255,.14),rgba(255,255,255,.04));border:1px solid rgba(255,255,255,.18);box-shadow:0 40px 80px -30px rgba(0,0,0,.6);overflow:hidden}
+.panel .orb{position:absolute;width:70%;aspect-ratio:1;border-radius:50%;left:15%;top:12%;background:radial-gradient(circle at 35% 30%,color-mix(in srgb,var(--a) 75%,#fff 25%),var(--a) 45%,color-mix(in srgb,var(--a) 60%,#000 40%) 100%);filter:saturate(1.1);box-shadow:0 30px 60px -20px var(--a)}
+.panel .glyph{position:absolute;left:50%;top:45%;transform:translate(-50%,-50%);width:34%;color:#fff;opacity:.95}
+.panel .glyph .ic{width:100%;height:auto;stroke-width:1.3}
+.panel .ring{position:absolute;border:1px solid rgba(255,255,255,.18);border-radius:50%}
+.panel .ring.r1{width:96%;aspect-ratio:1;left:2%;top:-4%}
+.panel .ring.r2{width:120%;aspect-ratio:1;left:-10%;top:-16%}
+.panel .base{position:absolute;left:0;right:0;bottom:0;padding:20px 22px;background:linear-gradient(0deg,rgba(0,0,0,.35),transparent);font-size:13px;color:rgba(255,255,255,.8)}
+.panel .base b{display:block;font-size:16px;color:#fff;font-family:"Plus Jakarta Sans",sans-serif}
+.float{position:absolute;background:#fff;color:var(--ink);border-radius:16px;box-shadow:0 24px 48px -16px rgba(0,0,0,.45);padding:14px 16px;display:flex;gap:12px;align-items:center;font-size:13.5px;line-height:1.35;animation:bob 6s ease-in-out infinite}
+.float .ico{width:40px;height:40px;border-radius:12px;display:grid;place-items:center;flex:none}
+.float b{display:block;font-size:14px}
+.float small{color:var(--muted)}
+.f1{left:-2%;bottom:27%}
+.f1 .ico{background:#e8f8ef;color:#15803d}
+.f2{right:-2%;top:10%;animation-delay:-3s}
+.f2 .ico{background:var(--soft);color:var(--p)}
+@keyframes bob{50%{transform:translateY(-8px)}}
+
+/* bande défilante */
+.marquee{background:var(--soft);border-bottom:1px solid var(--line);overflow:hidden;white-space:nowrap;padding:16px 0}
+.track{display:inline-flex;gap:46px;animation:scroll 38s linear infinite;font-weight:600;color:var(--p);font-size:15px}
+.track span{display:inline-flex;align-items:center;gap:10px}
+.track .ic{width:18px;height:18px;color:var(--a)}
+@keyframes scroll{to{transform:translateX(-50%)}}
+
+/* sections */
+section{padding:104px 0}
+.kick{display:inline-flex;align-items:center;gap:8px;color:var(--a2);font-weight:700;font-size:13px;letter-spacing:.12em;text-transform:uppercase;margin-bottom:14px}
+.kick::before{content:"";width:18px;height:2px;background:var(--a);border-radius:2px}
+h2{font-size:clamp(30px,3.6vw,44px);line-height:1.1;font-weight:800;color:var(--p);margin-bottom:16px}
+.lede{font-size:18px;color:var(--muted);max-width:640px}
+.head{display:flex;justify-content:space-between;align-items:flex-end;gap:30px;margin-bottom:52px;flex-wrap:wrap}
+
+/* services */
+.svc-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.svc{position:relative;background:#fff;border:1px solid var(--line);border-radius:var(--r);padding:30px 28px 26px;transition:transform .25s,box-shadow .25s,border-color .25s;overflow:hidden;display:flex;flex-direction:column}
+.svc::after{content:"";position:absolute;inset:auto -30% -60% auto;width:220px;height:220px;border-radius:50%;background:var(--soft);opacity:0;transition:opacity .3s;z-index:0}
+.svc:hover{transform:translateY(-4px);box-shadow:var(--sh);border-color:transparent}
+.svc:hover::after{opacity:1}
+.svc>*{position:relative;z-index:1}
+.svc .si{width:54px;height:54px;border-radius:15px;background:var(--soft);color:var(--p);display:grid;place-items:center;margin-bottom:22px;transition:background .25s,color .25s}
+.svc:hover .si{background:var(--p);color:#fff}
+.svc h3{font-size:20px;color:var(--p);margin-bottom:10px;font-weight:700}
+.svc p{color:var(--muted);font-size:15.5px;flex:1}
+.svc .more{margin-top:20px;display:inline-flex;align-items:center;gap:8px;color:var(--a2);font-weight:700;font-size:14.5px;background:none;border:0;cursor:pointer;font-family:inherit;padding:0;align-self:flex-start}
+.svc .more .ic{width:18px;height:18px;transition:transform .2s}
+.svc:hover .more .ic{transform:translateX(4px)}
+
+/* urgence */
+.urg{background:linear-gradient(100deg,var(--a),var(--a2));color:#fff;padding:34px 0}
+.urg .wrap{display:flex;align-items:center;justify-content:space-between;gap:20px;flex-wrap:wrap}
+.urg h3{font-size:clamp(22px,2.6vw,28px);font-weight:800}
+.urg p{opacity:.9}
+.urg .btn{background:#fff;color:var(--a2)}
+
+/* estimateur */
+.est-sec{background:linear-gradient(180deg,#f7f9fc,#fff)}
+.est{display:grid;grid-template-columns:.9fr 1.1fr;gap:56px;align-items:start}
+.est-side ul{list-style:none;margin-top:28px;display:grid;gap:16px}
+.est-side li{display:flex;gap:14px;align-items:flex-start;color:var(--muted)}
+.est-side li b{color:var(--ink);display:block}
+.est-side li .ic{color:var(--a);margin-top:2px}
+.card{background:#fff;border:1px solid var(--line);border-radius:24px;box-shadow:var(--sh);padding:32px}
+.prog{height:6px;background:var(--line);border-radius:6px;overflow:hidden;margin-bottom:26px}
+.prog i{display:block;height:100%;width:25%;background:linear-gradient(90deg,var(--a),var(--a2));border-radius:6px;transition:width .4s}
+.step{display:none;animation:fade .35s}
+.step.on{display:block}
+@keyframes fade{from{opacity:0;transform:translateY(6px)}}
+.step h3{font-size:22px;color:var(--p);margin-bottom:6px}
+.step .hint{color:var(--muted);font-size:14.5px;margin-bottom:20px}
+.opts{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.opt{border:1.5px solid var(--line);border-radius:14px;padding:16px;text-align:left;background:#fff;cursor:pointer;font:inherit;font-weight:600;color:var(--ink);transition:border-color .2s,background .2s,transform .1s;display:flex;align-items:center;gap:10px;min-height:58px}
+.opt:hover{border-color:var(--a)}
+.opt.sel{border-color:var(--a);background:color-mix(in srgb,var(--a) 8%,#fff)}
+.opt .dot{width:18px;height:18px;border-radius:50%;border:2px solid var(--line);flex:none;transition:.2s}
+.opt.sel .dot{border-color:var(--a);background:var(--a);box-shadow:inset 0 0 0 3px #fff}
+.field{margin-bottom:14px}
+.field label{display:block;font-weight:600;font-size:14px;margin-bottom:7px}
+.field input,.field textarea{width:100%;height:52px;border:1.5px solid var(--line);border-radius:12px;padding:0 14px;font:inherit;font-size:16px;background:#fbfcfd;transition:border-color .2s,box-shadow .2s}
+.field textarea{height:96px;padding:12px 14px;resize:vertical}
+.field input:focus,.field textarea:focus{outline:0;border-color:var(--a);box-shadow:0 0 0 4px color-mix(in srgb,var(--a) 15%,transparent)}
+.row{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.nav-step{display:flex;justify-content:space-between;align-items:center;margin-top:24px;gap:12px}
+.back{background:none;border:0;color:var(--muted);font:inherit;font-weight:600;cursor:pointer;padding:10px 0}
+.back[hidden]{visibility:hidden;display:block}
+.done{text-align:center;padding:18px 0}
+.done .ok{width:72px;height:72px;border-radius:50%;background:#e8f8ef;color:#15803d;display:grid;place-items:center;margin:0 auto 18px}
+.done .ok .ic{width:36px;height:36px;stroke-width:2.4}
+.done p{color:var(--muted);max-width:420px;margin:8px auto 0}
+.legal{font-size:12.5px;color:var(--muted);margin-top:14px}
+
+/* méthode */
+.steps{display:grid;grid-template-columns:repeat(4,1fr);gap:20px;counter-reset:n}
+.st{position:relative;padding:28px 24px;border-radius:var(--r);background:var(--soft)}
+.st::before{counter-increment:n;content:"0" counter(n);font-family:"Plus Jakarta Sans",sans-serif;font-weight:800;font-size:40px;color:color-mix(in srgb,var(--p) 18%,transparent);display:block;line-height:1;margin-bottom:18px}
+.st h3{font-size:18px;color:var(--p);margin-bottom:8px}
+.st p{color:var(--muted);font-size:15px}
+
+/* réalisations */
+.real{display:grid;grid-template-columns:1.3fr 1fr;gap:20px}
+.ba{position:relative;border-radius:22px;overflow:hidden;aspect-ratio:16/11;background:#ddd;user-select:none;touch-action:pan-y}
+.ba .side{position:absolute;inset:0;display:grid;place-items:center;text-align:center;font-weight:700;font-size:15px}
+.ba .before{background:repeating-linear-gradient(135deg,#cfd5dc 0 18px,#c5ccd4 18px 36px);color:#4b5563}
+.ba .after{background:linear-gradient(135deg,var(--tint),color-mix(in srgb,var(--tint) 60%,#fff));color:var(--p);clip-path:inset(0 0 0 50%)}
+.ba .before{justify-items:start;padding-left:7%}.ba .after{justify-items:end;padding-right:7%}
+.ba .side span{background:rgba(255,255,255,.85);padding:8px 14px;border-radius:10px;font-size:13.5px}
+.ba .tag{position:absolute;top:14px;padding:6px 12px;border-radius:8px;font-size:12px;font-weight:700;background:rgba(17,24,39,.75);color:#fff;z-index:2}
+.ba .tl{left:14px}.ba .tr{right:14px}
+.ba .handle{position:absolute;top:0;bottom:0;left:50%;width:3px;background:#fff;transform:translateX(-50%);z-index:3;box-shadow:0 0 0 1px rgba(0,0,0,.08)}
+.ba .handle::after{content:"⇆";position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);width:46px;height:46px;border-radius:50%;background:#fff;display:grid;place-items:center;font-size:20px;color:var(--p);box-shadow:var(--sh)}
+.ba input{position:absolute;inset:0;width:100%;height:100%;opacity:0;cursor:ew-resize;z-index:4}
+.tiles{display:grid;gap:20px;grid-template-rows:1fr 1fr}
+.tile{border-radius:22px;background:linear-gradient(150deg,var(--p2),var(--p));color:#fff;padding:24px;display:flex;flex-direction:column;justify-content:flex-end;min-height:170px;position:relative;overflow:hidden}
+.tile .ic{position:absolute;right:20px;top:20px;width:54px;height:54px;opacity:.25;stroke-width:1.2}
+.tile b{font-family:"Plus Jakarta Sans",sans-serif;font-size:19px}
+.tile small{opacity:.75}
+.note{font-size:13.5px;color:var(--muted);margin-top:16px;display:flex;gap:8px;align-items:center}
+.note .ic{width:18px;height:18px}
+
+/* zone */
+.zone{display:grid;grid-template-columns:1fr 1fr;gap:56px;align-items:center}
+.towns{display:flex;flex-wrap:wrap;gap:10px;margin-top:26px}
+.towns span{padding:9px 15px;border-radius:999px;background:#fff;border:1px solid var(--line);font-weight:600;font-size:14.5px;color:var(--p);display:inline-flex;gap:7px;align-items:center}
+.towns span .ic{width:15px;height:15px;color:var(--a)}
+.map{position:relative;aspect-ratio:1/1;border-radius:28px;background:radial-gradient(circle at 50% 50%,var(--tint) 0,var(--soft) 55%,#fff 100%);border:1px solid var(--line);overflow:hidden}
+.map svg{width:100%;height:100%}
+
+/* avis */
+.reviews{display:grid;grid-template-columns:1fr 1.4fr;gap:24px;align-items:stretch}
+.g-card{border-radius:24px;padding:32px;background:var(--p);color:#fff;display:flex;flex-direction:column;justify-content:space-between;gap:20px}
+.g-card .stars{display:flex;gap:4px;color:#fbbf24}
+.g-card .stars .ic{width:22px;height:22px;fill:currentColor;stroke:none}
+.g-card p{opacity:.8}
+.r-ph{border:2px dashed #cfd7e1;border-radius:24px;padding:32px;display:grid;place-items:center;text-align:center;color:var(--muted);background:#fafbfd}
+.r-ph b{display:block;color:var(--p);font-size:18px;margin-bottom:6px;font-family:"Plus Jakarta Sans",sans-serif}
+
+/* faq */
+.faq{max-width:860px}
+details{border-bottom:1px solid var(--line)}
+summary{list-style:none;cursor:pointer;padding:24px 0;display:flex;justify-content:space-between;gap:20px;font-family:"Plus Jakarta Sans",sans-serif;font-weight:700;font-size:18px;color:var(--p)}
+summary::-webkit-details-marker{display:none}
+summary .pm{width:30px;height:30px;border-radius:50%;background:var(--soft);display:grid;place-items:center;flex:none;transition:transform .25s,background .25s;color:var(--p)}
+details[open] summary .pm{transform:rotate(45deg);background:var(--a);color:#fff}
+details p{color:var(--muted);padding:0 50px 24px 0;font-size:16px}
+
+/* final */
+.final{background:var(--p);color:#fff;text-align:center;position:relative;overflow:hidden}
+.final::before{content:"";position:absolute;width:700px;height:700px;border-radius:50%;background:radial-gradient(circle,color-mix(in srgb,var(--a) 30%,transparent),transparent 65%);left:50%;top:-300px;transform:translateX(-50%)}
+.final .wrap{position:relative}
+.final h2{color:#fff;margin:0 auto 16px;max-width:760px}
+.final p{color:rgba(255,255,255,.75);max-width:560px;margin:0 auto 34px;font-size:18px}
+.final .hero-cta{justify-content:center;margin:0}
+
+footer{background:#0a0f16;color:#9aa4b2;font-size:14px;padding:56px 0 110px}
+.foot{display:grid;grid-template-columns:1.4fr 1fr 1fr;gap:40px}
+footer h4{color:#fff;font-family:"Plus Jakarta Sans",sans-serif;font-size:15px;margin-bottom:14px}
+footer li{list-style:none;margin-bottom:8px}
+.copy{border-top:1px solid #1f2733;margin-top:40px;padding-top:22px;display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap}
+.copy a{color:#fff}
+
+/* barre mobile + pastille agence */
+.mbar{display:none}
+.turbo{opacity:0;transform:translateY(16px);pointer-events:none;transition:opacity .4s,transform .4s;position:fixed;right:20px;bottom:20px;z-index:60;background:#111827;color:#fff;border-radius:16px;padding:12px 14px 12px 12px;display:flex;align-items:center;gap:12px;box-shadow:0 20px 40px -12px rgba(0,0,0,.5);font-size:13px;max-width:330px;line-height:1.35}
+.turbo .tb{width:36px;height:36px;border-radius:10px;background:linear-gradient(135deg,#ff7a1a,#ff3d6e);display:grid;place-items:center;font-weight:800;flex:none}
+.turbo.on{opacity:1;transform:none;pointer-events:auto}
+.turbo b{display:block;font-size:13.5px}
+.turbo a{color:#fdba74;font-weight:700}
+.turbo button{background:none;border:0;color:#9ca3af;font-size:18px;cursor:pointer;padding:0 0 0 4px;line-height:1}
+
+.rv{opacity:0;transform:translateY(18px);transition:opacity .7s cubic-bezier(.2,.7,.2,1),transform .7s cubic-bezier(.2,.7,.2,1)}
+.rv.in{opacity:1;transform:none}
+@media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}.rv{opacity:1;transform:none}}
+
+@media (max-width:1020px){
+ .hero-in,.est,.zone,.real,.reviews{grid-template-columns:1fr}
+ .visual{justify-self:center;max-width:420px}
+ .svc-grid{grid-template-columns:1fr 1fr}
+ .steps{grid-template-columns:1fr 1fr}
+ .menu{display:none}
+}
+@media (max-width:640px){
+ body{font-size:15.5px}
+ .wrap{padding:0 16px}
+ .nav{height:64px}
+ .nav-cta .call{display:none}
+ .nav-cta .btn{height:40px;padding:0 14px;font-size:14px}
+ .brand{font-size:16px}.brand small{display:none}
+ .mono{width:38px;height:38px}
+ .hero-in{padding-top:44px;padding-bottom:60px;gap:36px}
+ .hero p.lead{font-size:17px}
+ .hero-cta .btn{flex:1 1 100%}
+ .visual{max-width:340px}
+ .f1{left:-4%;bottom:33%}.f2{right:-4%}
+ section{padding:72px 0}
+ .head{margin-bottom:34px}
+ .svc-grid,.steps{grid-template-columns:1fr}
+ .opts,.row{grid-template-columns:1fr}
+ .card{padding:22px;border-radius:20px}
+ .foot{grid-template-columns:1fr}
+ details p{padding-right:0}
+ .mbar{display:grid;grid-template-columns:1fr 1fr;gap:10px;position:fixed;left:0;right:0;bottom:0;z-index:55;padding:10px 12px calc(10px + env(safe-area-inset-bottom));background:rgba(255,255,255,.95);backdrop-filter:blur(10px);border-top:1px solid var(--line)}
+ .mbar .btn{height:48px}
+ .turbo{left:12px;right:12px;bottom:calc(78px + env(safe-area-inset-bottom));max-width:none}
+}
+</style>
+</head>
+<body>
+
+<div class="demo"><b>Maquette de démonstration</b> préparée par Agence Turbo pour Votre restaurant. Ce site n'est pas encore en ligne officiellement : textes et coordonnées indicatifs.</div>
+
+<header>
+ <div class="wrap nav">
+  <a class="brand" href="#top"><span class="mono">VR</span><span>Votre restaurant<small>Restaurant · Mulhouse</small></span></a>
+  <nav class="menu"><a href="#services">Services</a><a href="#devis">Réserver</a><a href="#realisations">En images</a><a href="#zone">Accès</a><a href="#faq">Questions</a></nav>
+  <div class="nav-cta"><a class="btn call" href="#contact"><svg class="ic" viewBox="0 0 24 24"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 1.9.7 2.8a2 2 0 0 1-.5 2.1L8 9.9a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.8.7a2 2 0 0 1 1.7 2z"/></svg>Être rappelé</a><a class="btn btn-a" href="#devis">Réserver une table</a></div>
+ </div>
+</header>
+
+<main id="top">
+<section class="hero" style="padding:0">
+ <div class="wrap hero-in">
+  <div>
+   <span class="eyebrow rv"><i><svg class="ic" viewBox="0 0 24 24"><path d="M20 6 9 17l-5-5"/></svg></i>Restaurant à Mulhouse et alentours</span>
+   <h1 class="rv">Une table à Mulhouse,<br><em>réservée en deux clics.</em></h1>
+   <p class="lead rv">La carte, les horaires, les photos et la réservation au même endroit : avec ce site, Votre restaurant remplit ses tables sans dépendre des plateformes.</p>
+   <div class="hero-cta rv">
+    <a class="btn btn-a" href="#devis">Réserver une table <svg class="ic" viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+    <a class="btn btn-ghost" href="#contact"><svg class="ic" viewBox="0 0 24 24"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 1.9.7 2.8a2 2 0 0 1-.5 2.1L8 9.9a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.8.7a2 2 0 0 1 1.7 2z"/></svg>Être rappelé</a>
+   </div>
+   <div class="promise rv"><span><svg class="ic" viewBox="0 0 24 24"><path d="M20 6 9 17l-5-5"/></svg>Réservation en ligne</span><span><svg class="ic" viewBox="0 0 24 24"><path d="M20 6 9 17l-5-5"/></svg>Carte toujours à jour</span><span><svg class="ic" viewBox="0 0 24 24"><path d="M20 6 9 17l-5-5"/></svg>Lisible sur téléphone</span></div>
+  </div>
+  <div class="visual rv" aria-hidden="true">
+   <div class="panel">
+    <div class="ring r2"></div><div class="ring r1"></div>
+    <div class="orb"></div>
+    <div class="glyph"><svg class="ic" viewBox="0 0 24 24"><circle cx="12" cy="12" r="6"/><path d="M3 3v7a2 2 0 0 0 2 2V21M5 3v4M21 3c-2 0-3 2-3 5s1 4 3 4v9"/></svg></div>
+    <div class="base"><b>Votre restaurant</b>Restaurant · Mulhouse</div>
+   </div>
+   <div class="float f1"><span class="ico"><svg class="ic" viewBox="0 0 24 24"><path d="M6 8a6 6 0 0 1 12 0c0 7 3 9 3 9H3s3-2 3-9M10.3 21a1.9 1.9 0 0 0 3.4 0"/></svg></span><span><b>Nouvelle réservation</b><small>reçue directement sur votre téléphone</small></span></div>
+   <div class="float f2"><span class="ico"><svg class="ic" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg></span><span><b>Réponse rapide</b><small>le client sait quand vous rappelez</small></span></div>
+  </div>
+ </div>
+</section>
+
+<div class="marquee" aria-hidden="true"><div class="track"><span><svg class="ic" viewBox="0 0 24 24"><circle cx="12" cy="12" r="6"/><path d="M3 3v7a2 2 0 0 0 2 2V21M5 3v4M21 3c-2 0-3 2-3 5s1 4 3 4v9"/></svg>La carte</span><span><svg class="ic" viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M3 10h18M8 3v4M16 3v4"/></svg>Réservation en ligne</span><span><svg class="ic" viewBox="0 0 24 24"><path d="M7 3h10l-1 7a4 4 0 0 1-8 0zM12 14v7M8 21h8"/></svg>Groupes et événements</span><span><svg class="ic" viewBox="0 0 24 24"><path d="M5 7h14l-1 14H6zM9 7a3 3 0 0 1 6 0"/></svg>À emporter</span><span><svg class="ic" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>Horaires et accès</span><span><svg class="ic" viewBox="0 0 24 24"><rect x="3" y="8" width="18" height="13" rx="1"/><path d="M12 8v13M3 12h18M12 8c-2-4-6-4-6-1s6 1 6 1 6 2 6-1-4-3-6 1"/></svg>Bons cadeaux</span><span><svg class="ic" viewBox="0 0 24 24"><path d="M20 6 9 17l-5-5"/></svg>Réservation en ligne</span><span><svg class="ic" viewBox="0 0 24 24"><path d="M20 6 9 17l-5-5"/></svg>Carte toujours à jour</span><span><svg class="ic" viewBox="0 0 24 24"><path d="M20 6 9 17l-5-5"/></svg>Lisible sur téléphone</span><span><svg class="ic" viewBox="0 0 24 24"><circle cx="12" cy="12" r="6"/><path d="M3 3v7a2 2 0 0 0 2 2V21M5 3v4M21 3c-2 0-3 2-3 5s1 4 3 4v9"/></svg>La carte</span><span><svg class="ic" viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M3 10h18M8 3v4M16 3v4"/></svg>Réservation en ligne</span><span><svg class="ic" viewBox="0 0 24 24"><path d="M7 3h10l-1 7a4 4 0 0 1-8 0zM12 14v7M8 21h8"/></svg>Groupes et événements</span><span><svg class="ic" viewBox="0 0 24 24"><path d="M5 7h14l-1 14H6zM9 7a3 3 0 0 1 6 0"/></svg>À emporter</span><span><svg class="ic" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>Horaires et accès</span><span><svg class="ic" viewBox="0 0 24 24"><rect x="3" y="8" width="18" height="13" rx="1"/><path d="M12 8v13M3 12h18M12 8c-2-4-6-4-6-1s6 1 6 1 6 2 6-1-4-3-6 1"/></svg>Bons cadeaux</span><span><svg class="ic" viewBox="0 0 24 24"><path d="M20 6 9 17l-5-5"/></svg>Réservation en ligne</span><span><svg class="ic" viewBox="0 0 24 24"><path d="M20 6 9 17l-5-5"/></svg>Carte toujours à jour</span><span><svg class="ic" viewBox="0 0 24 24"><path d="M20 6 9 17l-5-5"/></svg>Lisible sur téléphone</span></div></div>
+
+<section id="services">
+ <div class="wrap">
+  <div class="head">
+   <div><span class="kick">Nos services</span><h2 class="rv">Tout ce dont vous avez besoin,<br>au même endroit.</h2></div>
+   <p class="lede rv">Des prestations présentées clairement pour que chaque visiteur trouve tout de suite la bonne réponse et vous contacte.</p>
+  </div>
+  <div class="svc-grid"><div class="svc rv"><div class="si"><svg class="ic" viewBox="0 0 24 24"><circle cx="12" cy="12" r="6"/><path d="M3 3v7a2 2 0 0 0 2 2V21M5 3v4M21 3c-2 0-3 2-3 5s1 4 3 4v9"/></svg></div><h3>La carte</h3><p>Entrées, plats, desserts et suggestions du moment, avec les prix, faciles à mettre à jour.</p><button type="button" class="more" data-pick="Déjeuner">Réserver <svg class="ic" viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></button></div><div class="svc rv"><div class="si"><svg class="ic" viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M3 10h18M8 3v4M16 3v4"/></svg></div><h3>Réservation en ligne</h3><p>Le client choisit le jour, l&#x27;heure et le nombre de couverts, vous recevez la demande.</p><button type="button" class="more" data-pick="Dîner">Réserver <svg class="ic" viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></button></div><div class="svc rv"><div class="si"><svg class="ic" viewBox="0 0 24 24"><path d="M7 3h10l-1 7a4 4 0 0 1-8 0zM12 14v7M8 21h8"/></svg></div><h3>Groupes et événements</h3><p>Anniversaires, repas d&#x27;entreprise, privatisation : une demande dédiée.</p><button type="button" class="more" data-pick="Groupe / événement">Réserver <svg class="ic" viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></button></div><div class="svc rv"><div class="si"><svg class="ic" viewBox="0 0 24 24"><path d="M5 7h14l-1 14H6zM9 7a3 3 0 0 1 6 0"/></svg></div><h3>À emporter</h3><p>Commande à emporter et créneau de retrait indiqués clairement.</p><button type="button" class="more" data-pick="À emporter">Réserver <svg class="ic" viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></button></div><div class="svc rv"><div class="si"><svg class="ic" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg></div><h3>Horaires et accès</h3><p>Jours d&#x27;ouverture, horaires et itinéraire en un coup d&#x27;œil.</p><button type="button" class="more" data-pick="Privatisation">Réserver <svg class="ic" viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></button></div><div class="svc rv"><div class="si"><svg class="ic" viewBox="0 0 24 24"><rect x="3" y="8" width="18" height="13" rx="1"/><path d="M12 8v13M3 12h18M12 8c-2-4-6-4-6-1s6 1 6 1 6 2 6-1-4-3-6 1"/></svg></div><h3>Bons cadeaux</h3><p>Un bon cadeau à offrir, présenté directement sur le site.</p><button type="button" class="more" data-pick="Privatisation">Réserver <svg class="ic" viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></button></div></div>
+ </div>
+</section>
+
+<div class="urg">
+ <div class="wrap">
+  <div><h3>Une table pour ce soir ?</h3><p>Réservez en 1 minute, Votre restaurant confirme rapidement.</p></div>
+  <a class="btn" href="#devis">Réserver <svg class="ic" viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+ </div>
+</div>
+
+<section class="est-sec" id="devis">
+ <div class="wrap est">
+  <div class="est-side">
+   <span class="kick">Réservation</span>
+   <h2 class="rv">Votre table réservée en moins d&#x27;une minute.</h2>
+   <p class="lede rv">Un parcours simple, pensé pour le téléphone : le client choisit, précise, envoie. Vous recevez une demande déjà qualifiée.</p>
+   <ul>
+    <li><svg class="ic" viewBox="0 0 24 24"><path d="M20 6 9 17l-5-5"/></svg><span><b>Réservations complètes</b>Jour, heure et nombre de couverts connus à l&#x27;avance.</span></li>
+    <li><svg class="ic" viewBox="0 0 24 24"><path d="M6 8a6 6 0 0 1 12 0c0 7 3 9 3 9H3s3-2 3-9M10.3 21a1.9 1.9 0 0 0 3.4 0"/></svg><span><b>Alerte immédiate</b>Chaque demande arrive par e-mail et SMS.</span></li>
+    <li><svg class="ic" viewBox="0 0 24 24"><path d="M12 3l8 3v6c0 5-3.5 8-8 9-4.5-1-8-4-8-9V6l8-3z"/><path d="M9 12l2 2 4-4"/></svg><span><b>Conforme RGPD</b>Consentement et mentions légales intégrés.</span></li>
+   </ul>
+  </div>
+  <div class="card rv" id="est">
+   <div class="prog"><i id="bar"></i></div>
+   <div class="step on" data-s="1">
+    <h3>Quelle occasion ?</h3><p class="hint">Choisissez le type de réservation.</p>
+    <div class="opts" data-k="type"><button type="button" class="opt"><span class="dot"></span>Déjeuner</button><button type="button" class="opt"><span class="dot"></span>Dîner</button><button type="button" class="opt"><span class="dot"></span>Groupe / événement</button><button type="button" class="opt"><span class="dot"></span>À emporter</button><button type="button" class="opt"><span class="dot"></span>Privatisation</button><button type="button" class="opt"><span class="dot"></span>Autre demande</button></div>
+   </div>
+   <div class="step" data-s="2">
+    <h3>Quand venez-vous ?</h3><p class="hint">Nous vérifions la disponibilité.</p>
+    <div class="opts" data-k="delai"><button type="button" class="opt"><span class="dot"></span>Ce midi</button><button type="button" class="opt"><span class="dot"></span>Ce soir</button><button type="button" class="opt"><span class="dot"></span>Cette semaine</button><button type="button" class="opt"><span class="dot"></span>Une autre date</button></div>
+   </div>
+   <div class="step" data-s="3">
+    <h3>Combien serez-vous ?</h3><p class="hint">Nombre de couverts et précisions éventuelles.</p>
+    <div class="field"><label for="ville">Nombre de personnes</label><input id="ville" list="communes" placeholder="ex. Mulhouse" autocomplete="address-level2"><datalist id="communes"><option value="Mulhouse"><option value="Riedisheim"><option value="Illzach"><option value="Kingersheim"><option value="Rixheim"></datalist></div>
+    <div class="field"><label for="msg">Une précision ?</label><textarea id="msg" placeholder="Allergies, chaise bébé, occasion spéciale…"></textarea></div>
+   </div>
+   <div class="step" data-s="4">
+    <h3>Où vous recontacter ?</h3><p class="hint">Vos coordonnées restent confidentielles.</p>
+    <div class="row"><div class="field"><label for="nm">Nom</label><input id="nm" autocomplete="name"></div><div class="field"><label for="tel">Téléphone</label><input id="tel" type="tel" inputmode="tel" autocomplete="tel" placeholder="06 …"></div></div>
+    <p class="legal">En envoyant, vous acceptez d'être recontacté au sujet de votre demande.</p>
+   </div>
+   <div class="step" data-s="5">
+    <div class="done"><div class="ok"><svg class="ic" viewBox="0 0 24 24"><path d="M20 6 9 17l-5-5"/></svg></div><h3>Réservation prête à être envoyée</h3><p>Démonstration : sur le vrai site, cette demande arriverait immédiatement chez Votre restaurant par e-mail et SMS.</p></div>
+   </div>
+   <div class="nav-step"><button type="button" class="back" id="back" hidden>← Retour</button><button type="button" class="btn btn-a" id="next">Continuer <svg class="ic" viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></button></div>
+  </div>
+ </div>
+</section>
+
+<section id="methode">
+ <div class="wrap">
+  <div class="head"><div><span class="kick">Comment ça se passe</span><h2 class="rv">Réserver chez nous,<br>c'est simple.</h2></div></div>
+  <div class="steps">
+   <div class="st rv"><h3>Vous choisissez</h3><p>Le jour, l&#x27;heure et le nombre de couverts.</p></div>
+   <div class="st rv"><h3>Nous confirmons</h3><p>Par message ou par téléphone.</p></div>
+   <div class="st rv"><h3>Vous venez</h3><p>Votre table vous attend.</p></div>
+   <div class="st rv"><h3>Vous revenez</h3><p>Et vous laissez un avis si vous avez aimé.</p></div>
+  </div>
+ </div>
+</section>
+
+<section id="realisations" style="padding-top:0">
+ <div class="wrap">
+  <div class="head"><div><span class="kick">En images</span><h2 class="rv">La cuisine et la salle en images.</h2></div><p class="lede rv">Sur le site final : vos vraies photos de plats, de la salle et de la terrasse.</p></div>
+  <div class="real">
+   <div class="ba rv" id="ba">
+    <div class="side before"><span>Votre photo de salle</span></div>
+    <div class="side after" id="after"><span>Votre photo de terrasse</span></div>
+    <span class="tag tl">Salle</span><span class="tag tr">Terrasse</span>
+    <div class="handle" id="handle"></div>
+    <input type="range" min="0" max="100" value="50" id="baR" aria-label="Salle / Terrasse">
+   </div>
+   <div class="tiles"><div class="tile"><svg class="ic" viewBox="0 0 24 24"><circle cx="12" cy="12" r="6"/><path d="M3 3v7a2 2 0 0 0 2 2V21M5 3v4M21 3c-2 0-3 2-3 5s1 4 3 4v9"/></svg><b>Plat signature</b><small>Votre photo ici</small></div><div class="tile"><svg class="ic" viewBox="0 0 24 24"><circle cx="12" cy="12" r="6"/><path d="M3 3v7a2 2 0 0 0 2 2V21M5 3v4M21 3c-2 0-3 2-3 5s1 4 3 4v9"/></svg><b>La salle</b><small>Votre photo ici</small></div></div>
+  </div>
+  <p class="note"><svg class="ic" viewBox="0 0 24 24"><path d="M12 3v4M12 17v4M3 12h4M17 12h4M6 6l2.5 2.5M15.5 15.5 18 18M6 18l2.5-2.5M15.5 8.5 18 6"/></svg>Emplacements réservés à vos propres photos.</p>
+ </div>
+</section>
+
+<section id="zone" style="background:var(--soft)">
+ <div class="wrap zone">
+  <div>
+   <span class="kick">Nous trouver</span>
+   <h2 class="rv">Au cœur de Mulhouse.</h2>
+   <p class="lede rv">Le site est construit pour Google : les recherches «&nbsp;restaurant + Mulhouse&nbsp;» mènent directement à votre carte et à la réservation.</p>
+   <div class="towns"><span><svg class="ic" viewBox="0 0 24 24"><path d="M12 22s7-6.2 7-12a7 7 0 0 0-14 0c0 5.8 7 12 7 12z"/><circle cx="12" cy="10" r="2.5"/></svg>Mulhouse</span><span><svg class="ic" viewBox="0 0 24 24"><path d="M12 22s7-6.2 7-12a7 7 0 0 0-14 0c0 5.8 7 12 7 12z"/><circle cx="12" cy="10" r="2.5"/></svg>Riedisheim</span><span><svg class="ic" viewBox="0 0 24 24"><path d="M12 22s7-6.2 7-12a7 7 0 0 0-14 0c0 5.8 7 12 7 12z"/><circle cx="12" cy="10" r="2.5"/></svg>Illzach</span><span><svg class="ic" viewBox="0 0 24 24"><path d="M12 22s7-6.2 7-12a7 7 0 0 0-14 0c0 5.8 7 12 7 12z"/><circle cx="12" cy="10" r="2.5"/></svg>Kingersheim</span><span><svg class="ic" viewBox="0 0 24 24"><path d="M12 22s7-6.2 7-12a7 7 0 0 0-14 0c0 5.8 7 12 7 12z"/><circle cx="12" cy="10" r="2.5"/></svg>Rixheim</span></div>
+  </div>
+  <div class="map rv" aria-hidden="true"><svg viewBox="0 0 400 400" xmlns="http://www.w3.org/2000/svg"><g fill="none" stroke="var(--p)" stroke-opacity=".12"><circle cx="200" cy="200" r="60"/><circle cx="200" cy="200" r="110"/><circle cx="200" cy="200" r="160"/></g><line x1="200" y1="200" x2="200" y2="90" stroke="var(--p)" stroke-opacity=".15" stroke-dasharray="3 5"/><circle cx="200" cy="90" r="5" fill="var(--a)"/><text x="200" y="110" text-anchor="middle" font-family="Inter,sans-serif" font-size="12" font-weight="600" fill="var(--p)">Riedisheim</text><line x1="200" y1="200" x2="355" y2="200" stroke="var(--p)" stroke-opacity=".15" stroke-dasharray="3 5"/><circle cx="355" cy="200" r="5" fill="var(--a)"/><text x="355" y="220" text-anchor="middle" font-family="Inter,sans-serif" font-size="12" font-weight="600" fill="var(--p)">Illzach</text><line x1="200" y1="200" x2="200" y2="310" stroke="var(--p)" stroke-opacity=".15" stroke-dasharray="3 5"/><circle cx="200" cy="310" r="5" fill="var(--a)"/><text x="200" y="330" text-anchor="middle" font-family="Inter,sans-serif" font-size="12" font-weight="600" fill="var(--p)">Kingersheim</text><line x1="200" y1="200" x2="45" y2="200" stroke="var(--p)" stroke-opacity=".15" stroke-dasharray="3 5"/><circle cx="45" cy="200" r="5" fill="var(--a)"/><text x="45" y="220" text-anchor="middle" font-family="Inter,sans-serif" font-size="12" font-weight="600" fill="var(--p)">Rixheim</text><circle cx="200" cy="200" r="34" fill="var(--a)" fill-opacity=".18"/><circle cx="200" cy="200" r="12" fill="var(--a)"/><text x="200" y="250" text-anchor="middle" font-family="Plus Jakarta Sans,sans-serif" font-size="16" font-weight="800" fill="var(--p)">Mulhouse</text></svg></div>
+ </div>
+</section>
+
+<section id="avis">
+ <div class="wrap">
+  <div class="head"><div><span class="kick">Avis clients</span><h2 class="rv">La confiance, en un coup d'œil.</h2></div></div>
+  <div class="reviews">
+   <div class="g-card rv"><div class="stars"><svg class="ic" viewBox="0 0 24 24"><path d="m12 3 2.8 5.7 6.2.9-4.5 4.4 1 6.2L12 17.3 6.5 20.2l1-6.2L3 9.6l6.2-.9z"/></svg><svg class="ic" viewBox="0 0 24 24"><path d="m12 3 2.8 5.7 6.2.9-4.5 4.4 1 6.2L12 17.3 6.5 20.2l1-6.2L3 9.6l6.2-.9z"/></svg><svg class="ic" viewBox="0 0 24 24"><path d="m12 3 2.8 5.7 6.2.9-4.5 4.4 1 6.2L12 17.3 6.5 20.2l1-6.2L3 9.6l6.2-.9z"/></svg><svg class="ic" viewBox="0 0 24 24"><path d="m12 3 2.8 5.7 6.2.9-4.5 4.4 1 6.2L12 17.3 6.5 20.2l1-6.2L3 9.6l6.2-.9z"/></svg><svg class="ic" viewBox="0 0 24 24"><path d="m12 3 2.8 5.7 6.2.9-4.5 4.4 1 6.2L12 17.3 6.5 20.2l1-6.2L3 9.6l6.2-.9z"/></svg></div><div><b style="font-family:'Plus Jakarta Sans';font-size:22px">Vos avis Google, en direct</b><p>La note et les derniers avis de votre fiche Google s'affichent ici automatiquement, avec un bouton pour en laisser un.</p></div></div>
+   <div class="r-ph rv"><div><b>Emplacement réservé à vos vrais avis</b>Aucun avis n'est inventé : seuls les avis réels de vos clients sont affichés.</div></div>
+  </div>
+ </div>
+</section>
+
+<section id="faq" style="padding-top:0">
+ <div class="wrap">
+  <div class="head"><div><span class="kick">Questions fréquentes</span><h2 class="rv">Les réponses que vos clients cherchent.</h2></div></div>
+  <div class="faq"><details><summary>Peut-on réserver en ligne ?<span class="pm">+</span></summary><p>Oui. Sur le site final, la réservation se fait en ligne et arrive directement au restaurant.</p></details><details><summary>Proposez-vous des plats végétariens ?<span class="pm">+</span></summary><p>Les options du restaurant seront indiquées ici sur le site final.</p></details><details><summary>Accueillez-vous les groupes ?<span class="pm">+</span></summary><p>Oui, une demande spécifique permet d&#x27;organiser repas de groupe et événements.</p></details><details><summary>Où se garer ?<span class="pm">+</span></summary><p>L&#x27;accès et le stationnement seront précisés ici sur le site final.</p></details></div>
+ </div>
+</section>
+
+<section class="final" id="contact">
+ <div class="wrap">
+  <h2 class="rv">Une envie, une occasion, une question ?</h2>
+  <p class="rv">Sur le site final : numéro cliquable, adresse, horaires et carte réelle de l'entreprise.</p>
+  <div class="hero-cta rv"><a class="btn btn-a" href="#devis">Réserver une table</a><a class="btn btn-ghost" href="#contact"><svg class="ic" viewBox="0 0 24 24"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 1.9.7 2.8a2 2 0 0 1-.5 2.1L8 9.9a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.8.7a2 2 0 0 1 1.7 2z"/></svg>Être rappelé</a></div>
+ </div>
+</section>
+</main>
+
+<footer>
+ <div class="wrap">
+  <div class="foot">
+   <div><div class="brand" style="color:#fff;margin-bottom:14px"><span class="mono">VR</span>Votre restaurant</div><p>Restaurant à Mulhouse et dans l'agglomération.</p></div>
+   <div><h4>Services</h4><ul><li><a href="#services">La carte</a></li><li><a href="#services">Réservation en ligne</a></li><li><a href="#services">Groupes et événements</a></li><li><a href="#services">À emporter</a></li><li><a href="#services">Horaires et accès</a></li></ul></div>
+   <div><h4>Contact</h4><ul><li>Téléphone : à compléter</li><li><a href="#devis">Réservation en ligne</a></li></ul></div>
+  </div>
+  <div class="copy"><span>© Votre restaurant · Maquette de démonstration non officielle.</span><span>Maquette réalisée par <a href="https://agenceturbo.fr">Agence Turbo</a></span></div>
+ </div>
+</footer>
+
+<div class="turbo" id="turbo"><span class="tb">T</span><span><b>Ce site peut être le vôtre</b>Maquette Agence Turbo. Répondez à l'e-mail ou écrivez à <a href="mailto:contact@agenceturbo.fr?subject=Maquette%20Votre%20restaurant">contact@agenceturbo.fr</a></span><button aria-label="Fermer" onclick="this.parentNode.remove()">×</button></div>
+
+<div class="mbar"><a class="btn call" href="#contact"><svg class="ic" viewBox="0 0 24 24"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 1.9.7 2.8a2 2 0 0 1-.5 2.1L8 9.9a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.8.7a2 2 0 0 1 1.7 2z"/></svg>Être rappelé</a><a class="btn btn-a" href="#devis">Réserver une table</a></div>
+
+<script>
+(function(){
+ var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}})},{threshold:.12});
+ document.querySelectorAll('.rv').forEach(function(el,i){el.style.transitionDelay=(i%4)*70+'ms';io.observe(el)});
+ // estimateur
+ var s=1,max=5,bar=document.getElementById('bar'),next=document.getElementById('next'),back=document.getElementById('back');
+ function show(){document.querySelectorAll('.step').forEach(function(x){x.classList.toggle('on',+x.dataset.s===s)});bar.style.width=(s/max*100)+'%';back.hidden=(s===1||s===max);next.style.display=s===max?'none':'';next.firstChild.textContent=s===max-1?'Envoyer ma demande ':'Continuer '}
+ document.querySelectorAll('.opts').forEach(function(g){g.addEventListener('click',function(e){var b=e.target.closest('.opt');if(!b)return;g.querySelectorAll('.opt').forEach(function(o){o.classList.remove('sel')});b.classList.add('sel');setTimeout(function(){if(s<3){s++;show()}},220)})});
+ next.addEventListener('click',function(){if(s<max){s++;show()}});
+ back.addEventListener('click',function(){if(s>1){s--;show()}});
+ document.querySelectorAll('[data-pick]').forEach(function(a){a.addEventListener('click',function(){var v=a.dataset.pick;document.querySelectorAll('[data-k=type] .opt').forEach(function(o){o.classList.toggle('sel',o.textContent.trim()===v)});s=2;show();document.getElementById('devis').scrollIntoView({behavior:'smooth'})})});
+ show();
+ // avant/après
+ var r=document.getElementById('baR'),af=document.getElementById('after'),h=document.getElementById('handle');
+ function ba(){af.style.clipPath='inset(0 0 0 '+r.value+'%)';h.style.left=r.value+'%'}r.addEventListener('input',ba);ba();
+})();
+</script>
+<script>(function(){var t=document.getElementById("turbo");if(!t)return;function f(){if(window.scrollY>window.innerHeight*0.8)t.classList.add("on")}window.addEventListener("scroll",f,{passive:true});f()})();</script>
+</body>
+</html>
