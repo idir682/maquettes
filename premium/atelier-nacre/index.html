@@ -1,0 +1,508 @@
+<!doctype html>
+<html lang="fr" data-hubspot-id="demo-nacre">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Atelier Nacre · Institut de beauté à Mulhouse</title>
+<meta name="description" content="Maquette de démonstration Agence Turbo : Atelier Nacre, institut de soins du visage et du corps à Mulhouse (entreprise fictive).">
+<meta name="robots" content="noindex">
+<meta name="theme-color" content="#f3efec">
+<link rel="stylesheet" href="fonts/cormorant.css">
+<link rel="stylesheet" href="fonts/dmsans.css">
+<style>
+:root{
+  --porc:#f3efec;--porc2:#ebe5e1;--nuit:#241e29;--prune:#3b2f42;--mut:#776d7b;--rose:#b7826a;--rose2:#d9b4a0;--line:rgba(36,30,41,.14);
+  --s:'Cormorant Garamond',Georgia,serif;--t:'DM Sans',system-ui,sans-serif;
+  --gut:clamp(18px,4vw,64px);--ease:cubic-bezier(.22,1,.36,1)
+}
+*,*:before,*:after{box-sizing:border-box;margin:0;padding:0}
+html{-webkit-text-size-adjust:100%}
+html.lenis,html.lenis body{height:auto}
+body{background:var(--porc);color:var(--nuit);font:400 16px/1.65 var(--t);-webkit-font-smoothing:antialiased;overflow-x:hidden}
+img{display:block;max-width:100%}
+a{color:inherit;text-decoration:none}
+button{font:inherit;color:inherit;background:none;border:0;cursor:pointer}
+.w{max-width:1320px;margin:0 auto;padding-inline:var(--gut)}
+.k{font-size:12px;letter-spacing:.24em;text-transform:uppercase;color:var(--mut)}
+em{font-style:italic}
+:focus-visible{outline:2px solid var(--rose);outline-offset:3px}
+
+/* en-tête */
+.hd{position:fixed;inset:0 0 auto;z-index:60}
+.demo{background:var(--nuit);color:#e9e1e5;font-size:12px;text-align:center;padding:6px 14px;line-height:1.35}
+.bar{display:flex;align-items:center;justify-content:space-between;gap:20px;height:70px;padding-inline:var(--gut);transition:background .5s,backdrop-filter .5s,box-shadow .5s}
+.hd.solid .bar{background:rgba(243,239,236,.72);-webkit-backdrop-filter:blur(14px) saturate(1.3);backdrop-filter:blur(14px) saturate(1.3);box-shadow:0 1px 0 var(--line)}
+.logo{display:flex;align-items:center;gap:12px;font-family:var(--s);font-size:27px;letter-spacing:.01em}
+.logo i{width:22px;height:22px;border-radius:50%;background:conic-gradient(from 200deg,#f6e9f1,#e2ecf3,#f4efe0,#ecdff0,#f6e9f1);box-shadow:inset -3px -4px 8px rgba(80,60,90,.25),0 0 0 1px rgba(36,30,41,.12)}
+.bar nav{display:flex;gap:34px;font-size:14px}
+.bar nav a{position:relative}
+.bar nav a:after{content:'';position:absolute;left:0;right:0;bottom:-4px;height:1px;background:currentColor;transform:scaleX(0);transform-origin:right;transition:transform .6s var(--ease)}
+.bar nav a:hover:after{transform:scaleX(1);transform-origin:left}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;height:48px;padding:0 26px;border-radius:999px;background:var(--nuit);color:var(--porc);font-size:14px;font-weight:500;letter-spacing:.02em;white-space:nowrap;transition:background .4s,color .4s}
+.btn:hover{background:var(--prune)}
+.btn.ghost{background:rgba(255,255,255,.35);color:var(--nuit);box-shadow:inset 0 0 0 1px rgba(36,30,41,.25);-webkit-backdrop-filter:blur(8px);backdrop-filter:blur(8px)}
+.btn.ghost:hover{background:rgba(255,255,255,.7)}
+
+/* héros : nacre en WebGL */
+.hero{position:relative;height:100svh;min-height:620px;overflow:hidden;display:grid;align-items:end}
+#gl,.hero .fallback{position:absolute;inset:0;width:100%;height:100%}
+.hero .fallback{background:radial-gradient(60% 50% at 30% 30%,#f7e7ef,transparent 70%),radial-gradient(50% 60% at 75% 60%,#e1ebf4,transparent 70%),radial-gradient(40% 40% at 55% 85%,#f3eddc,transparent 70%),#efe9ec}
+.hero .veil{position:absolute;inset:0;background:linear-gradient(to top,rgba(243,239,236,.85),rgba(243,239,236,0) 45%)}
+.hero .in{position:relative;z-index:2;width:100%;padding:0 var(--gut) clamp(40px,8vh,90px);display:grid;grid-template-columns:1.4fr 1fr;gap:40px;align-items:end}
+.hero h1{font-family:var(--s);font-weight:300;font-size:clamp(58px,10.5vw,176px);line-height:.86;letter-spacing:-.025em}
+.hero h1 .ln{display:block;overflow:hidden;padding-bottom:.08em}
+.hero h1 .ln>span{display:inline-block}
+.hero h1 em{font-weight:400;color:var(--prune)}
+.hero .side{max-width:380px;justify-self:end}
+.hero .side p{font-size:17px;margin:16px 0 26px;color:#3e3544}
+.hero .cta{display:flex;gap:10px;flex-wrap:wrap}
+.scrollhint{position:absolute;z-index:2;left:50%;top:calc(50% + 10px);transform:translate(-50%,-50%);width:1px;height:0}
+
+/* trois gestes : image masquée collante */
+.gestes{padding:clamp(90px,14vw,190px) 0 clamp(60px,10vw,140px)}
+.gestes .intro{display:grid;grid-template-columns:1fr 1.3fr;gap:40px;margin-bottom:clamp(50px,8vw,110px)}
+.gestes h2,.rituels h2,.verre h2,.rdv h2,.cadeau h2{font-family:var(--s);font-weight:300;font-size:clamp(44px,6.4vw,100px);line-height:.95;letter-spacing:-.02em}
+.gestes .intro p{font-size:19px;max-width:520px;align-self:end;color:#3e3544}
+.gst{display:grid;grid-template-columns:1fr 1fr;gap:clamp(30px,6vw,110px)}
+.frame{position:sticky;top:110px;height:min(78vh,720px);perspective:1200px}
+.frame .tilt{position:relative;width:100%;height:100%;transform-style:preserve-3d;transition:transform .9s var(--ease)}
+.ph{position:absolute;inset:0;border-radius:360px 360px 18px 18px;overflow:hidden;clip-path:inset(100% 0 0 0 round 360px 360px 18px 18px)}
+.ph:first-child{clip-path:inset(0 0 0 0 round 360px 360px 18px 18px)}
+.ph img{width:100%;height:100%;object-fit:cover;transform:scale(1.15)}
+.frame .lbl{position:absolute;z-index:3;left:22px;bottom:20px;color:#fff;font-family:var(--s);font-size:22px;font-style:italic;text-shadow:0 2px 16px rgba(0,0,0,.4)}
+.steps{display:flex;flex-direction:column}
+.step{min-height:78vh;display:flex;flex-direction:column;justify-content:center;max-width:470px}
+.step .n{font-family:var(--s);font-style:italic;font-size:22px;color:var(--rose)}
+.step h3{font-family:var(--s);font-weight:400;font-size:clamp(34px,3.6vw,54px);line-height:1;margin:10px 0 18px}
+.step p{font-size:17px;color:#3e3544}
+.step .mob{display:none}
+
+/* rituels : accordéon */
+.rituels{background:var(--nuit);color:#efe8ec;padding:clamp(90px,12vw,170px) 0;border-radius:36px 36px 0 0;position:relative;z-index:2}
+.rituels .top{display:flex;justify-content:space-between;align-items:end;gap:30px;flex-wrap:wrap;margin-bottom:50px}
+.rituels .top p{max-width:360px;color:#b9adbb}
+.rituels .k{color:#a194a5}
+.acc{border-top:1px solid rgba(255,255,255,.14)}
+.it{border-bottom:1px solid rgba(255,255,255,.14)}
+.it>button{width:100%;display:grid;grid-template-columns:70px 1fr auto auto 40px;align-items:center;gap:20px;padding:28px 0;text-align:left}
+.it .no{font-family:var(--s);font-style:italic;font-size:22px;color:var(--rose2)}
+.it .nm{font-family:var(--s);font-size:clamp(28px,3.4vw,48px);line-height:1.05;transition:transform .7s var(--ease),letter-spacing .7s var(--ease)}
+.it>button:hover .nm{transform:translateX(14px)}
+.it .du,.it .pr{font-size:14px;color:#b9adbb;white-space:nowrap}
+.it .pr{font-size:16px;color:#efe8ec}
+.it .pl{position:relative;width:22px;height:22px;justify-self:end}
+.it .pl:before,.it .pl:after{content:'';position:absolute;left:0;right:0;top:50%;height:1px;background:currentColor;transition:transform .6s var(--ease)}
+.it .pl:after{transform:rotate(90deg)}
+.it.open .pl:after{transform:rotate(0)}
+.it .body{display:grid;grid-template-rows:0fr;transition:grid-template-rows .8s var(--ease)}
+.it.open .body{grid-template-rows:1fr}
+.it .body>div{overflow:hidden}
+.it .cnt{display:grid;grid-template-columns:70px 1.2fr 1fr;gap:20px;padding:0 0 34px}
+.it .cnt p{color:#cfc4d1;max-width:520px}
+.it .cnt ul{list-style:none;font-size:14px;color:#b9adbb}
+.it .cnt li{padding:6px 0;border-bottom:1px dashed rgba(255,255,255,.12)}
+.it .cnt .go{grid-column:2;justify-self:start;margin-top:8px;background:var(--porc);color:var(--nuit)}
+.rituels .note{margin-top:26px;font-size:13px;color:#8f8393}
+
+/* panneaux de verre */
+.verre{position:relative;padding:clamp(100px,14vw,200px) 0;overflow:hidden;background:var(--porc2)}
+.blob{position:absolute;border-radius:50%;filter:blur(60px);opacity:.85}
+.b1{width:46vw;height:46vw;left:-8vw;top:8%;background:radial-gradient(circle at 30% 30%,#f2d5e3,#e6c9b9 60%,transparent 70%)}
+.b2{width:40vw;height:40vw;right:-6vw;bottom:-6%;background:radial-gradient(circle at 60% 40%,#cfe0ee,#dcd3ec 60%,transparent 70%)}
+.verre .w{position:relative}
+.verre h2{max-width:900px;margin-bottom:60px}
+.panes{display:grid;grid-template-columns:repeat(3,1fr);gap:22px;perspective:1000px}
+.pane{position:relative;padding:34px 30px 36px;border-radius:24px;background:rgba(255,255,255,.38);-webkit-backdrop-filter:blur(22px) saturate(1.4);backdrop-filter:blur(22px) saturate(1.4);box-shadow:inset 0 0 0 1px rgba(255,255,255,.7),0 30px 60px -30px rgba(59,47,66,.35);transform-style:preserve-3d;transition:transform .8s var(--ease);overflow:hidden}
+.pane:before{content:'';position:absolute;inset:0;background:radial-gradient(240px circle at var(--mx,50%) var(--my,0%),rgba(255,255,255,.75),transparent 60%);opacity:.0;transition:opacity .5s;pointer-events:none}
+.pane:hover:before{opacity:1}
+.pane svg{width:44px;height:44px;margin-bottom:46px;stroke:var(--prune);fill:none;stroke-width:1.2}
+.pane h3{font-family:var(--s);font-weight:500;font-size:30px;line-height:1.05;margin-bottom:12px}
+.pane p{color:#4a4050;font-size:15.5px}
+
+/* rendez-vous */
+.rdv{padding:clamp(90px,12vw,170px) 0}
+.rdv .head{display:grid;grid-template-columns:1fr 1fr;gap:40px;align-items:end;margin-bottom:50px}
+.rdv .head p{max-width:420px;color:#3e3544}
+.lab{font-size:12px;letter-spacing:.2em;text-transform:uppercase;color:var(--mut);margin:34px 0 14px}
+.chips{display:flex;flex-wrap:wrap;gap:10px}
+.chip{height:44px;padding:0 20px;border-radius:999px;box-shadow:inset 0 0 0 1px var(--line);font-size:14.5px;transition:background .4s,color .4s,box-shadow .4s}
+.chip:hover{box-shadow:inset 0 0 0 1px var(--nuit)}
+.chip[aria-pressed="true"]{background:var(--nuit);color:var(--porc)}
+.days{display:flex;gap:12px;overflow-x:auto;scroll-snap-type:x mandatory;padding:6px 2px 18px;scrollbar-width:none;cursor:grab}
+.days::-webkit-scrollbar{display:none}
+.day{flex:0 0 132px;scroll-snap-align:start;height:168px;border-radius:90px 90px 16px 16px;background:#fff;box-shadow:inset 0 0 0 1px var(--line);display:flex;flex-direction:column;align-items:center;justify-content:center;gap:2px;transition:transform .6s var(--ease),background .4s,color .4s}
+.day:hover:not(:disabled){transform:translateY(-6px)}
+.day .dw{font-size:12px;letter-spacing:.18em;text-transform:uppercase;color:var(--mut)}
+.day .dn{font-family:var(--s);font-size:54px;line-height:1}
+.day .dm{font-size:13px;color:var(--mut)}
+.day:disabled{opacity:.38;cursor:not-allowed;background:transparent}
+.day[aria-pressed="true"]{background:var(--nuit);color:var(--porc)}
+.day[aria-pressed="true"] .dw,.day[aria-pressed="true"] .dm{color:#bfb3c3}
+.slots .chip{min-width:92px}
+.sheet{position:sticky;bottom:18px;margin-top:40px;z-index:5;display:flex;align-items:center;justify-content:space-between;gap:20px;padding:14px 14px 14px 26px;border-radius:999px;background:rgba(36,30,41,.92);color:#efe8ec;-webkit-backdrop-filter:blur(10px);backdrop-filter:blur(10px);transform:translateY(30px);opacity:0;pointer-events:none;transition:transform .8s var(--ease),opacity .6s}
+.sheet.on{transform:none;opacity:1;pointer-events:auto}
+.sheet .sum{font-family:var(--s);font-size:22px;line-height:1.2}
+.sheet .btn{background:var(--porc);color:var(--nuit)}
+.done{display:none;margin-top:40px;padding:40px;border-radius:28px;background:#fff;box-shadow:inset 0 0 0 1px var(--line);text-align:center;position:relative;overflow:hidden}
+.done.on{display:block}
+.done h3{font-family:var(--s);font-weight:400;font-size:clamp(34px,4vw,52px);line-height:1.05;margin-bottom:8px}
+.done p{color:var(--mut)}
+.pearl{position:absolute;width:14px;height:14px;border-radius:50%;background:conic-gradient(from 200deg,#f6e9f1,#e2ecf3,#f4efe0,#ecdff0,#f6e9f1);box-shadow:inset -2px -3px 5px rgba(80,60,90,.25);pointer-events:none}
+
+/* carte cadeau */
+.cadeau{padding:0 0 clamp(100px,12vw,170px)}
+.cadeau .grid{display:grid;grid-template-columns:1fr 1fr;gap:clamp(30px,6vw,100px);align-items:center}
+.cadeau p{max-width:440px;margin:22px 0 28px;color:#3e3544;font-size:17px}
+.stagec{perspective:1400px;display:grid;place-items:center;padding:40px 0}
+.card{position:relative;width:min(440px,84vw);aspect-ratio:1.586;border-radius:22px;transform-style:preserve-3d;transform:rotateY(-24deg) rotateX(10deg)}
+.card .f,.card .b{position:absolute;inset:0;border-radius:inherit;backface-visibility:hidden;-webkit-backface-visibility:hidden;overflow:hidden;padding:26px 28px;display:flex;flex-direction:column;justify-content:space-between}
+.card .f{background:linear-gradient(125deg,#f7eef3 0%,#e3ecf3 30%,#f5efe1 55%,#ead9ef 80%,#f7eef3 100%);background-size:240% 240%;box-shadow:0 40px 80px -30px rgba(59,47,66,.5),inset 0 0 0 1px rgba(255,255,255,.8)}
+.card .f:after{content:'';position:absolute;inset:0;background:linear-gradient(105deg,transparent 35%,rgba(255,255,255,.75) 50%,transparent 65%);background-size:250% 100%;background-position:var(--sh,120%) 0;mix-blend-mode:soft-light}
+.card .b{transform:rotateY(180deg);background:var(--nuit);color:#efe8ec}
+.card .t1{font-family:var(--s);font-size:30px}
+.card .t2{display:flex;justify-content:space-between;align-items:end;font-size:12px;letter-spacing:.18em;text-transform:uppercase;color:#5b5060}
+.card .b .t2{color:#a194a5}
+.card .v{font-family:var(--s);font-size:50px;letter-spacing:0;text-transform:none;color:var(--nuit);line-height:1}
+
+/* pied */
+.ft{background:var(--nuit);color:#d9cfdb;padding:clamp(70px,9vw,120px) 0 40px;border-radius:36px 36px 0 0}
+.ft .big{font-family:var(--s);font-weight:300;font-size:clamp(46px,8vw,128px);line-height:.95;color:#f3eef1;margin-bottom:60px}
+.ft .big em{color:var(--rose2)}
+.ft .cols{display:grid;grid-template-columns:repeat(4,1fr);gap:30px;font-size:15px;padding-top:34px;border-top:1px solid rgba(255,255,255,.14)}
+.ft h4{font-size:12px;letter-spacing:.2em;text-transform:uppercase;color:#8f8393;font-weight:500;margin-bottom:10px}
+.ft .cp{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap;margin-top:60px;font-size:12.5px;color:#8f8393}
+
+/* curseur anneau, encart Agence Turbo, barre mobile */
+.ring{position:fixed;left:0;top:0;z-index:90;width:34px;height:34px;margin:-17px 0 0 -17px;border-radius:50%;box-shadow:inset 0 0 0 1px rgba(36,30,41,.55);pointer-events:none;transition:width .45s var(--ease),height .45s var(--ease),margin .45s var(--ease),background .45s,box-shadow .45s;mix-blend-mode:multiply;opacity:0}
+.ring.on{opacity:1}
+.ring.big{width:70px;height:70px;margin:-35px 0 0 -35px;background:rgba(217,180,160,.25);box-shadow:inset 0 0 0 1px rgba(183,130,106,.6)}
+.turbo{position:fixed;right:20px;bottom:20px;z-index:55;display:flex;gap:12px;align-items:center;max-width:330px;background:rgba(255,255,255,.8);-webkit-backdrop-filter:blur(12px);backdrop-filter:blur(12px);color:var(--nuit);border-radius:16px;padding:12px 14px;font-size:13px;line-height:1.4;box-shadow:inset 0 0 0 1px rgba(255,255,255,.9),0 20px 50px -20px rgba(36,30,41,.35);transform:translateY(160%);transition:transform .8s var(--ease)}
+.turbo.on{transform:none}
+.turbo b{display:block}.turbo a{text-decoration:underline}
+.turbo button{font-size:20px;margin-left:auto;align-self:start;line-height:1}
+.dock{display:none}
+
+@media (max-width:960px){
+  .bar nav{display:none}
+  .bar{height:60px}
+  .logo{font-size:23px;white-space:nowrap}
+  .bar>.btn{display:none}
+  .hero .in{grid-template-columns:1fr;gap:10px}
+  .hero .side{justify-self:start}
+  .gestes .intro,.rdv .head,.cadeau .grid{grid-template-columns:1fr}
+  .gst{grid-template-columns:1fr}
+  .frame{display:none}
+  .step{min-height:0;padding:0 0 60px;max-width:none}
+  .step .mob{display:block;border-radius:220px 220px 14px 14px;overflow:hidden;aspect-ratio:4/4.4;margin-bottom:26px;clip-path:inset(0 0 0 0 round 220px 220px 14px 14px)}
+  .step .mob img{width:100%;height:100%;object-fit:cover}
+  .it>button{grid-template-columns:40px 1fr 26px;gap:12px;padding:22px 0}
+  .it .du,.it .pr{display:none}
+  .it .meta{display:block!important;grid-column:2;font-size:13px;color:#b9adbb;margin-top:-6px}
+  .it .cnt{grid-template-columns:1fr;padding-left:52px}
+  .it .cnt .go{grid-column:1}
+  .panes{grid-template-columns:1fr}
+  .pane svg{margin-bottom:24px}
+  .ft .cols{grid-template-columns:1fr 1fr}
+  .sheet{border-radius:22px;flex-direction:column;align-items:stretch;padding:16px;bottom:86px}
+  .sheet .btn{width:100%}
+  .dock{display:flex;position:fixed;left:12px;right:12px;bottom:calc(12px + env(safe-area-inset-bottom));z-index:56;gap:8px}
+  .dock a{flex:1}
+  .dock .ghost{background:rgba(255,255,255,.85)}
+  body{padding-bottom:80px}
+  .turbo{left:12px;right:12px;bottom:84px;max-width:none}
+  .ring{display:none}
+}
+.it .meta{display:none}
+@media (prefers-reduced-motion:reduce){
+  *{animation:none!important;transition:none!important;scroll-behavior:auto!important}
+  .ph{clip-path:inset(0 0 0 0 round 360px 360px 18px 18px)!important}
+  .ph:not(:first-child){display:none}
+  .ph img{transform:none}
+  .card{transform:rotateY(-14deg) rotateX(6deg)}
+}
+</style>
+</head>
+<body>
+<header class="hd" id="hd">
+  <div class="demo">Maquette de démonstration Agence Turbo · Atelier Nacre est un institut fictif : soins, prix et coordonnées sont des exemples.</div>
+  <div class="bar">
+    <a class="logo" href="#"><i></i>Atelier Nacre</a>
+    <nav aria-label="Navigation principale"><a href="#gestes">L'approche</a><a href="#rituels">Les rituels</a><a href="#cadeau">Offrir</a></nav>
+    <a class="btn" href="#rdv" data-hov>Prendre rendez-vous</a>
+  </div>
+</header>
+
+<main>
+<section class="hero" aria-label="Accueil">
+  <div class="fallback" aria-hidden="true"></div>
+  <canvas id="gl" aria-hidden="true"></canvas>
+  <div class="veil" aria-hidden="true"></div>
+  <div class="in">
+    <h1 aria-label="La peau, au calme."><span class="ln"><span>La peau,</span></span><span class="ln"><span><em>au calme.</em></span></span></h1>
+    <div class="side">
+      <p class="k">Institut de soins · Mulhouse</p>
+      <p>Soins du visage et du corps sur rendez-vous, dans deux cabines au calme. On prend le temps de comprendre votre peau avant de la toucher.</p>
+      <div class="cta"><a class="btn" href="#rdv" data-hov>Réserver un soin</a><a class="btn ghost" href="#rituels" data-hov>Voir les rituels</a></div>
+    </div>
+  </div>
+</section>
+
+<section class="gestes w" id="gestes" aria-label="Notre approche">
+  <div class="intro">
+    <h2>Trois gestes, <em>dans cet ordre.</em></h2>
+    <p>Chaque soin suit la même méthode, quel que soit le rituel choisi. C'est ce qui permet d'obtenir un résultat régulier, d'une visite à l'autre.</p>
+  </div>
+  <div class="gst">
+    <div class="frame" id="frame" aria-hidden="true">
+      <div class="tilt" id="tilt">
+        <div class="ph"><img src="img/cabine.webp" alt="" width="900" height="1200"></div>
+        <div class="ph"><img src="img/masque.webp" alt="" width="800" height="1000"></div>
+        <div class="ph"><img src="img/soin.webp" alt="" width="800" height="1000"></div>
+        <span class="lbl" id="lbl">La cabine</span>
+      </div>
+    </div>
+    <div class="steps">
+      <article class="step" data-i="0" data-l="La cabine">
+        <div class="mob"><img src="img/cabine.webp" alt="Cabine de soin avec deux tables et une lumière douce" width="900" height="1200" loading="lazy"></div>
+        <span class="n">i. Écouter</span>
+        <h3>Un premier temps, sans les mains.</h3>
+        <p>Dix minutes pour parler de votre peau, de vos habitudes et de ce qui vous gêne. On observe à la lumière du jour avant de choisir les produits.</p>
+      </article>
+      <article class="step" data-i="1" data-l="Le masque">
+        <div class="mob"><img src="img/masque.webp" alt="Application d'un masque sur le visage d'une cliente" width="800" height="1000" loading="lazy"></div>
+        <span class="n">ii. Préparer</span>
+        <h3>Nettoyer, puis laisser agir.</h3>
+        <p>Double nettoyage, exfoliation douce et masque adapté. Le temps de pose n'est jamais raccourci pour tenir un planning.</p>
+      </article>
+      <article class="step" data-i="2" data-l="Le soin">
+        <div class="mob"><img src="img/soin.webp" alt="Soin du visage appliqué au pinceau" width="800" height="1000" loading="lazy"></div>
+        <span class="n">iii. Soigner</span>
+        <h3>Le geste, puis un conseil écrit.</h3>
+        <p>Modelage, soin ciblé et protection. Vous repartez avec une fiche simple : quoi faire chez vous, et quand revenir.</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section class="rituels" id="rituels" aria-label="Les rituels">
+  <div class="w">
+    <div class="top"><div><p class="k">Carte des soins</p><h2>Les <em>rituels</em></h2></div><p>Tous les prix sont affichés. Ouvrez un rituel pour voir ce qu'il comprend, puis réservez-le directement.</p></div>
+    <div class="acc" id="acc">
+      <div class="it open"><button aria-expanded="true"><span class="no">01</span><span><span class="nm">Éclat express</span><span class="meta">45 min · 55 €</span></span><span class="du">45 min</span><span class="pr">55 €</span><span class="pl" aria-hidden="true"></span></button>
+        <div class="body"><div><div class="cnt"><span></span><p>Le soin de la pause déjeuner. Nettoyage, exfoliation enzymatique et masque hydratant pour un teint reposé, sans rougeurs en sortant.</p><ul><li>Diagnostic de peau</li><li>Exfoliation douce</li><li>Masque et modelage du visage</li></ul><button class="btn go" data-r="Éclat express" data-hov>Réserver ce rituel</button></div></div></div></div>
+      <div class="it"><button aria-expanded="false"><span class="no">02</span><span><span class="nm">Rituel nacre</span><span class="meta">75 min · 89 €</span></span><span class="du">75 min</span><span class="pr">89 €</span><span class="pl" aria-hidden="true"></span></button>
+        <div class="body"><div><div class="cnt"><span></span><p>Le soin signature de la maison : un protocole complet du visage, avec un long modelage du visage, de la nuque et des épaules.</p><ul><li>Double nettoyage</li><li>Masque adapté à votre peau</li><li>Modelage de 25 minutes</li></ul><button class="btn go" data-r="Rituel nacre" data-hov>Réserver ce rituel</button></div></div></div></div>
+      <div class="it"><button aria-expanded="false"><span class="no">03</span><span><span class="nm">Peau sensible</span><span class="meta">60 min · 72 €</span></span><span class="du">60 min</span><span class="pr">72 €</span><span class="pl" aria-hidden="true"></span></button>
+        <div class="body"><div><div class="cnt"><span></span><p>Pour les peaux qui réagissent vite. Produits courts en ingrédients, gestes lents et aucune exfoliation mécanique.</p><ul><li>Questionnaire de tolérance</li><li>Masque apaisant</li><li>Conseils pour la routine</li></ul><button class="btn go" data-r="Peau sensible" data-hov>Réserver ce rituel</button></div></div></div></div>
+      <div class="it"><button aria-expanded="false"><span class="no">04</span><span><span class="nm">Dos et épaules</span><span class="meta">50 min · 64 €</span></span><span class="du">50 min</span><span class="pr">64 €</span><span class="pl" aria-hidden="true"></span></button>
+        <div class="body"><div><div class="cnt"><span></span><p>Gommage, enveloppement et modelage du dos. Pensé pour ceux qui passent la journée assis.</p><ul><li>Gommage du dos</li><li>Enveloppement chaud</li><li>Modelage décontractant</li></ul><button class="btn go" data-r="Dos et épaules" data-hov>Réserver ce rituel</button></div></div></div></div>
+    </div>
+    <p class="note">Prix d'exemple pour la démonstration.</p>
+  </div>
+</section>
+
+<section class="verre" aria-label="Ce qui change ici">
+  <div class="blob b1" aria-hidden="true"></div><div class="blob b2" aria-hidden="true"></div>
+  <div class="w">
+    <p class="k">Ce qui change ici</p>
+    <h2>Moins de soins à la chaîne, <em>plus de temps par personne.</em></h2>
+    <div class="panes">
+      <div class="pane" data-tilt><svg viewBox="0 0 44 44" aria-hidden="true"><circle cx="22" cy="22" r="19"/><path d="M22 10v12l8 5"/></svg><h3>Une seule cliente à la fois</h3><p>Pas de soins qui se chevauchent : la cabine est prête à votre arrivée et le soin commence à l'heure.</p></div>
+      <div class="pane" data-tilt><svg viewBox="0 0 44 44" aria-hidden="true"><rect x="9" y="6" width="26" height="32" rx="3"/><path d="M15 15h14M15 21h14M15 27h8"/></svg><h3>Une fiche après chaque soin</h3><p>Ce qui a été fait, ce qu'il faut faire chez vous et quand revenir. Rien à retenir de tête.</p></div>
+      <div class="pane" data-tilt><svg viewBox="0 0 44 44" aria-hidden="true"><path d="M22 38s-14-8.5-14-19a8 8 0 0 1 14-5 8 8 0 0 1 14 5c0 10.5-14 19-14 19z"/></svg><h3>Des produits expliqués</h3><p>On vous dit ce qu'on applique et pourquoi. Aucun achat n'est proposé pendant le soin.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="rdv w" id="rdv" aria-label="Prendre rendez-vous">
+  <div class="head"><h2>Votre <em>rendez-vous</em>, en trois choix.</h2><p>Choisissez un rituel, un jour et une heure. La confirmation arrive par SMS. Annulation gratuite jusqu'à la veille.</p></div>
+  <p class="lab">1 · Le rituel</p>
+  <div class="chips" id="rit"></div>
+  <p class="lab">2 · Le jour</p>
+  <div class="days" id="days" aria-label="Choisir un jour"></div>
+  <p class="lab">3 · L'heure</p>
+  <div class="chips slots" id="slots"></div>
+  <div class="sheet" id="sheet" aria-live="polite"><span class="sum" id="sum"></span><button class="btn" id="ok" data-hov>Confirmer le rendez-vous</button></div>
+  <div class="done" id="done" aria-live="polite"><h3>C'est noté, <em>à bientôt.</em></h3><p id="doneTxt"></p><p style="margin-top:10px;font-size:13px">Démonstration : aucun rendez-vous n'est réellement enregistré.</p></div>
+</section>
+
+<section class="cadeau w" id="cadeau" aria-label="Carte cadeau">
+  <div class="grid">
+    <div class="stagec"><div class="card" id="card">
+      <div class="f"><div class="t1">Atelier Nacre</div><div class="t2"><span>Carte cadeau</span><span class="v">89 €</span></div></div>
+      <div class="b"><div class="t1">Pour vous</div><div class="t2"><span>Valable 12 mois</span><span>Mulhouse</span></div></div>
+    </div></div>
+    <div>
+      <p class="k">Offrir</p>
+      <h2>Un soin, <em>plutôt qu'un objet.</em></h2>
+      <p>La carte cadeau s'achète en ligne et s'imprime ou s'envoie par e-mail en quelques minutes. Montant libre ou rituel au choix.</p>
+      <a class="btn" href="#rdv" data-hov>Offrir un rituel</a>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer class="ft">
+  <div class="w">
+    <p class="big">Prenez soin de vous, <em>on s'occupe du reste.</em></p>
+    <div class="cols">
+      <div><h4>Venir</h4>Adresse d'exemple<br>68100 Mulhouse</div>
+      <div><h4>Horaires</h4>Mar – ven, 10 h – 19 h<br>Samedi, 9 h – 16 h</div>
+      <div><h4>Contact</h4><a href="tel:+33389000000">03 89 00 00 00</a><br>Rendez-vous en ligne</div>
+      <div><h4>Suivre</h4>Les conseils de saison sur Instagram</div>
+    </div>
+    <div class="cp"><span>© Atelier Nacre · maquette de démonstration non officielle</span><span>Conçu par <a href="https://agenceturbo.fr" style="text-decoration:underline">Agence Turbo</a></span></div>
+  </div>
+</footer>
+
+<div class="dock"><a class="btn ghost" href="tel:+33389000000">Appeler</a><a class="btn" href="#rdv">Rendez-vous</a></div>
+<div class="turbo" id="turbo"><div><b>Ce site peut être le vôtre</b>Maquette Agence Turbo. <a href="mailto:contact@agenceturbo.fr">contact@agenceturbo.fr</a></div><button aria-label="Fermer" onclick="this.parentNode.remove()">×</button></div>
+<div class="ring" id="ring" aria-hidden="true"></div>
+
+<script src="../../lib/gsap.min.js"></script>
+<script src="../../lib/ScrollTrigger.min.js"></script>
+<script src="../../lib/lenis.min.js"></script>
+<script>
+(function(){
+  var d=document,$=function(s,c){return (c||d).querySelector(s)},$$=function(s,c){return [].slice.call((c||d).querySelectorAll(s))};
+  var reduce=matchMedia('(prefers-reduced-motion: reduce)').matches,fine=matchMedia('(pointer: fine)').matches,wide=matchMedia('(min-width: 961px)');
+
+  /* en-tête : fond de verre après le héros */
+  var hd=$('#hd');function hs(){hd.classList.toggle('solid',scrollY>40)}addEventListener('scroll',hs,{passive:true});hs();
+  var tb=$('#turbo');addEventListener('scroll',function(){if(scrollY>innerHeight*1.2&&tb)tb.classList.add('on');},{passive:true});
+
+  /* accordéon des rituels */
+  $$('#acc .it>button').forEach(function(b){b.addEventListener('click',function(){var it=b.parentNode,o=!it.classList.contains('open');$$('#acc .it').forEach(function(x){x.classList.remove('open');$('button',x).setAttribute('aria-expanded','false')});if(o){it.classList.add('open');b.setAttribute('aria-expanded','true')}setTimeout(function(){window.ScrollTrigger&&ScrollTrigger.refresh()},850);});});
+
+  /* prise de rendez-vous */
+  var R=['Éclat express','Rituel nacre','Peau sensible','Dos et épaules'],S=['9 h 30','10 h 30','11 h 45','14 h 00','15 h 15','16 h 30','17 h 45'];
+  var st={r:R[1],d:null,h:null},rit=$('#rit'),days=$('#days'),slots=$('#slots');
+  function chip(txt,box,key){var b=d.createElement('button');b.className='chip';b.type='button';b.textContent=txt;b.setAttribute('aria-pressed','false');b.setAttribute('data-hov','');b.onclick=function(){$$('.chip',box).forEach(function(x){x.setAttribute('aria-pressed','false')});b.setAttribute('aria-pressed','true');st[key]=txt;upd();};box.appendChild(b);return b;}
+  R.forEach(function(r){var b=chip(r,rit,'r');if(r===st.r)b.setAttribute('aria-pressed','true');});
+  S.forEach(function(s){chip(s,slots,'h');});
+  var J=['dim.','lun.','mar.','mer.','jeu.','ven.','sam.'],M=['janv.','févr.','mars','avr.','mai','juin','juil.','août','sept.','oct.','nov.','déc.'],now=new Date();
+  for(var i=0;i<14;i++){(function(i){var dt=new Date(now);dt.setDate(now.getDate()+i);var w=dt.getDay(),b=d.createElement('button');b.className='day';b.type='button';b.setAttribute('data-hov','');b.innerHTML='<span class="dw">'+(i===0?'auj.':J[w])+'</span><span class="dn">'+dt.getDate()+'</span><span class="dm">'+M[dt.getMonth()]+'</span>';b.setAttribute('aria-pressed','false');b.setAttribute('aria-label',J[w]+' '+dt.getDate()+' '+M[dt.getMonth()]);if(w===0||w===1){b.disabled=true;b.title='Fermé';}b.onclick=function(){$$('.day',days).forEach(function(x){x.setAttribute('aria-pressed','false')});b.setAttribute('aria-pressed','true');st.d=J[w]+' '+dt.getDate()+' '+M[dt.getMonth()];upd();};days.appendChild(b);})(i);}
+  /* glisser la bande des jours à la souris */
+  (function(){var down=false,x0=0,s0=0,moved=false;days.addEventListener('pointerdown',function(e){if(e.pointerType!=='mouse')return;down=true;moved=false;x0=e.clientX;s0=days.scrollLeft;days.style.scrollSnapType='none';});addEventListener('pointerup',function(){if(down){down=false;days.style.scrollSnapType='';}});addEventListener('pointermove',function(e){if(!down)return;var dx=e.clientX-x0;if(Math.abs(dx)>4)moved=true;days.scrollLeft=s0-dx;});days.addEventListener('click',function(e){if(moved){e.stopPropagation();e.preventDefault();moved=false;}},true);})();
+  var sheet=$('#sheet'),sum=$('#sum'),done=$('#done');
+  function upd(){done.classList.remove('on');var ok=st.r&&st.d&&st.h;sum.textContent=(st.r||'')+(st.d?' · '+st.d:'')+(st.h?' · '+st.h:'');sheet.classList.toggle('on',!!ok);}
+  $('#ok').onclick=function(){sheet.classList.remove('on');$('#doneTxt').textContent=st.r+', '+st.d+' à '+st.h+'. Un SMS de confirmation serait envoyé.';done.classList.add('on');if(!reduce&&window.gsap){for(var k=0;k<18;k++){var p=d.createElement('i');p.className='pearl';p.style.left='50%';p.style.top='40%';done.appendChild(p);var a=Math.random()*Math.PI*2,r=120+Math.random()*220;gsap.fromTo(p,{x:0,y:0,scale:.4,opacity:1},{x:Math.cos(a)*r,y:Math.sin(a)*r*.5,scale:1+Math.random(),opacity:0,duration:1.6+Math.random(),ease:'expo.out',onComplete:(function(p){return function(){p.remove()}})(p)});}gsap.from('#done h3',{y:30,opacity:0,duration:1,ease:'expo.out'});}};
+  $$('.go').forEach(function(b){b.addEventListener('click',function(){var r=b.getAttribute('data-r');$$('.chip',rit).forEach(function(c){c.setAttribute('aria-pressed',c.textContent===r?'true':'false')});st.r=r;upd();var t=$('#rdv');if(window.__lenis)window.__lenis.scrollTo(t,{offset:-90,duration:1.6});else t.scrollIntoView();});});
+
+  /* curseur anneau */
+  if(fine&&!reduce){var ring=$('#ring'),mx=-100,my=-100,rx=-100,ry=-100;addEventListener('pointermove',function(e){mx=e.clientX;my=e.clientY;ring.classList.add('on');},{passive:true});(function loop(){rx+=(mx-rx)*.18;ry+=(my-ry)*.18;ring.style.transform='translate('+rx+'px,'+ry+'px)';requestAnimationFrame(loop)})();d.addEventListener('mouseover',function(e){ring.classList.toggle('big',!!e.target.closest('[data-hov],a,button'));});}
+
+  /* panneaux de verre : inclinaison et reflet */
+  if(fine&&!reduce)$$('[data-tilt]').forEach(function(p){p.addEventListener('pointermove',function(e){var r=p.getBoundingClientRect(),x=(e.clientX-r.left)/r.width,y=(e.clientY-r.top)/r.height;p.style.setProperty('--mx',x*100+'%');p.style.setProperty('--my',y*100+'%');p.style.transform='rotateX('+((.5-y)*10)+'deg) rotateY('+((x-.5)*12)+'deg) translateZ(10px)';});p.addEventListener('pointerleave',function(){p.style.transform='';});});
+
+  if(reduce||!window.gsap)return;
+  gsap.registerPlugin(ScrollTrigger);
+  var lenis=new Lenis({lerp:.085});window.__lenis=lenis;lenis.on('scroll',ScrollTrigger.update);gsap.ticker.add(function(t){lenis.raf(t*1000)});gsap.ticker.lagSmoothing(0);
+  $$('a[href^="#"]').forEach(function(a){a.addEventListener('click',function(e){var h=a.getAttribute('href');if(h.length>1&&$(h)){e.preventDefault();lenis.scrollTo(h,{offset:-90,duration:1.6});}});});
+
+  /* héros : le titre monte, le texte suit */
+  gsap.from('.hero h1 .ln>span',{yPercent:110,duration:1.6,ease:'expo.out',stagger:.12,delay:.2});
+  gsap.from('.hero .side>*',{y:24,opacity:0,duration:1.2,ease:'expo.out',stagger:.08,delay:.7});
+  gsap.from('.bar>*',{y:-20,opacity:0,duration:1,ease:'expo.out',stagger:.06,delay:.1});
+  gsap.to('.hero .in',{yPercent:-18,opacity:.2,ease:'none',scrollTrigger:{trigger:'.hero',start:'top top',end:'bottom top',scrub:true}});
+
+  /* titres de section */
+  $$('.gestes h2,.rituels h2,.verre h2,.rdv h2,.cadeau h2,.ft .big').forEach(function(h){gsap.from(h,{y:60,opacity:0,duration:1.4,ease:'expo.out',scrollTrigger:{trigger:h,start:'top 88%'}});});
+
+  /* trois gestes : l'image suivante se dévoile en arche */
+  var mm=gsap.matchMedia();
+  mm.add('(min-width: 961px)',function(){
+    var P=$$('#frame .ph'),lbl=$('#lbl');
+    $$('.step').forEach(function(s,i){
+      ScrollTrigger.create({trigger:s,start:'top 60%',end:'bottom 60%',onToggle:function(self){if(self.isActive){lbl.textContent=s.getAttribute('data-l');gsap.fromTo(lbl,{y:12,opacity:0},{y:0,opacity:1,duration:.8,ease:'expo.out'});}}});
+      gsap.from(s.children,{y:40,opacity:0,duration:1.2,ease:'expo.out',stagger:.08,scrollTrigger:{trigger:s,start:'top 70%'}});
+      if(i>0){gsap.fromTo(P[i],{clipPath:'inset(100% 0% 0% 0% round 360px 360px 18px 18px)'},{clipPath:'inset(0% 0% 0% 0% round 360px 360px 18px 18px)',ease:'none',scrollTrigger:{trigger:s,start:'top 95%',end:'top 45%',scrub:.5}});
+        gsap.fromTo($('img',P[i]),{scale:1.4},{scale:1.1,ease:'none',scrollTrigger:{trigger:s,start:'top 95%',end:'top 20%',scrub:.5}});}
+    });
+    var tilt=$('#tilt'),fr=$('#frame');
+    function mv(e){var r=fr.getBoundingClientRect(),x=(e.clientX-r.left)/r.width-.5,y=(e.clientY-r.top)/r.height-.5;tilt.style.transform='rotateY('+(x*10)+'deg) rotateX('+(-y*8)+'deg)';}
+    function lv(){tilt.style.transform='';}
+    fr.style.pointerEvents='auto';fr.addEventListener('pointermove',mv);fr.addEventListener('pointerleave',lv);
+    return function(){fr.removeEventListener('pointermove',mv);fr.removeEventListener('pointerleave',lv);};
+  });
+  mm.add('(max-width: 960px)',function(){
+    $$('.step').forEach(function(s){gsap.fromTo($('.mob',s),{clipPath:'inset(40% 20% 0% 20% round 220px 220px 14px 14px)'},{clipPath:'inset(0% 0% 0% 0% round 220px 220px 14px 14px)',duration:1.6,ease:'expo.inOut',scrollTrigger:{trigger:s,start:'top 85%'}});gsap.from($$('.n,h3,p',s),{y:30,opacity:0,duration:1.1,ease:'expo.out',stagger:.08,scrollTrigger:{trigger:s,start:'top 75%'}});});
+  });
+
+  /* rituels : la section monte en carte, les lignes arrivent */
+  gsap.from('#acc .it',{y:40,opacity:0,duration:1.1,ease:'expo.out',stagger:.08,scrollTrigger:{trigger:'#acc',start:'top 82%'}});
+
+  /* verre : les bulles dérivent, les panneaux se posent */
+  gsap.to('.b1',{xPercent:25,yPercent:20,ease:'none',scrollTrigger:{trigger:'.verre',start:'top bottom',end:'bottom top',scrub:true}});
+  gsap.to('.b2',{xPercent:-25,yPercent:-25,ease:'none',scrollTrigger:{trigger:'.verre',start:'top bottom',end:'bottom top',scrub:true}});
+  gsap.from('.pane',{y:80,rotateX:-18,opacity:0,duration:1.4,ease:'expo.out',stagger:.12,scrollTrigger:{trigger:'.panes',start:'top 85%'}});
+
+  /* rendez-vous : les jours arrivent en vague */
+  gsap.from('#days .day',{y:50,opacity:0,duration:1,ease:'expo.out',stagger:.04,scrollTrigger:{trigger:'#days',start:'top 88%'}});
+
+  /* carte cadeau : elle se retourne au défilement, le reflet glisse */
+  var card=$('#card');
+  gsap.fromTo(card,{rotateY:-28,rotateX:12},{rotateY:200,rotateX:-4,ease:'none',scrollTrigger:{trigger:'.cadeau',start:'top 85%',end:'bottom 30%',scrub:.8}});
+  gsap.fromTo('.card .f',{'--sh':'140%'},{'--sh':'-40%',ease:'none',scrollTrigger:{trigger:'.cadeau',start:'top 85%',end:'center 40%',scrub:true}});
+  gsap.fromTo('.card .f',{backgroundPosition:'0% 50%'},{backgroundPosition:'100% 50%',ease:'none',scrollTrigger:{trigger:'.cadeau',start:'top bottom',end:'bottom top',scrub:true}});
+
+  /* boutons aimantés */
+  if(fine)$$('.btn').forEach(function(b){b.addEventListener('pointermove',function(e){var r=b.getBoundingClientRect();gsap.to(b,{x:(e.clientX-r.left-r.width/2)*.22,y:(e.clientY-r.top-r.height/2)*.3,duration:.5,ease:'power3.out'});});b.addEventListener('pointerleave',function(){gsap.to(b,{x:0,y:0,duration:.8,ease:'elastic.out(1,.4)'});});});
+})();
+</script>
+
+<!-- héros : nacre irisée calculée en temps réel (three.js, shader sur mesure) -->
+<script type="module">
+const reduce=matchMedia('(prefers-reduced-motion: reduce)').matches;
+const cv=document.getElementById('gl');
+let THREE;
+try{THREE=await import('../../lib/three.module.min.js');}catch(e){cv.remove();}
+if(THREE){
+  let renderer;
+  try{renderer=new THREE.WebGLRenderer({canvas:cv,antialias:false,alpha:false,powerPreference:'low-power'});}catch(e){renderer=null;cv.remove();}
+  if(renderer){
+    const dpr=Math.min(devicePixelRatio||1,innerWidth<700?1.25:1.5);
+    renderer.setPixelRatio(dpr);
+    const scene=new THREE.Scene(),cam=new THREE.OrthographicCamera(-1,1,1,-1,0,1);
+    const U={t:{value:7.0},res:{value:new THREE.Vector2(1,1)},m:{value:new THREE.Vector2(.5,.5)},mv:{value:0}};
+    const mat=new THREE.ShaderMaterial({uniforms:U,vertexShader:`varying vec2 vUv;void main(){vUv=uv;gl_Position=vec4(position.xy,0.,1.);}`,
+    fragmentShader:`precision highp float;varying vec2 vUv;uniform float t;uniform vec2 res;uniform vec2 m;uniform float mv;
+    vec2 h2(vec2 p){p=vec2(dot(p,vec2(127.1,311.7)),dot(p,vec2(269.5,183.3)));return -1.+2.*fract(sin(p)*43758.5453);}
+    float n(vec2 p){vec2 i=floor(p),f=fract(p),u=f*f*(3.-2.*f);return mix(mix(dot(h2(i),f),dot(h2(i+vec2(1,0)),f-vec2(1,0)),u.x),mix(dot(h2(i+vec2(0,1)),f-vec2(0,1)),dot(h2(i+vec2(1,1)),f-vec2(1,1)),u.x),u.y);}
+    float fbm(vec2 p){float s=0.,a=.5;mat2 r=mat2(.8,-.6,.6,.8);for(int i=0;i<5;i++){s+=a*n(p);p=r*p*2.02;a*=.5;}return s;}
+    void main(){
+      vec2 asp=vec2(res.x/res.y,1.);vec2 p=(vUv-.5)*asp*1.6;
+      vec2 mp=(m-.5)*asp*1.6;float dm=length(p-mp);
+      p+=normalize(p-mp+1e-4)*exp(-dm*dm*6.)*.18*mv;
+      float tt=t*.045;
+      vec2 q=vec2(fbm(p+tt),fbm(p+vec2(5.2,1.3)-tt));
+      vec2 r=vec2(fbm(p+2.4*q+vec2(1.7,9.2)+tt*1.3),fbm(p+2.4*q+vec2(8.3,2.8)-tt));
+      float f=fbm(p+2.2*r);
+      float film=f*2.6+length(q)*1.4+dm*.25;
+      vec3 iri=.5+.5*cos(6.2831*(film+vec3(0.,.33,.67)));iri=mix(vec3(dot(iri,vec3(.33))),iri,.75);
+      vec3 pearl=vec3(.955,.937,.93);
+      vec3 col=mix(pearl,iri,.13+.1*smoothstep(.2,.9,length(r)));
+      float spec=pow(smoothstep(.35,.95,f*.5+.5+length(q)*.4),6.)*.35;
+      col+=spec;
+      col=mix(col,vec3(.93,.9,.91),smoothstep(.5,1.2,length((vUv-.5)*vec2(1.,1.2)))*.5);
+      col+=(fract(sin(dot(gl_FragCoord.xy,vec2(12.9898,78.233)))*43758.5453)-.5)/255.;
+      gl_FragColor=vec4(col,1.);
+    }`});
+    scene.add(new THREE.Mesh(new THREE.PlaneGeometry(2,2),mat));
+    function size(){const w=cv.clientWidth,h=cv.clientHeight;renderer.setSize(w,h,false);U.res.value.set(w,h);}
+    size();addEventListener('resize',size);
+    const target=new THREE.Vector2(.5,.5);let tgtMv=0;
+    addEventListener('pointermove',e=>{const r=cv.getBoundingClientRect();target.set((e.clientX-r.left)/r.width,1.-(e.clientY-r.top)/r.height);tgtMv=1;},{passive:true});
+    if(reduce){renderer.render(scene,cam);}
+    else{
+      let vis=true,last=performance.now();
+      new IntersectionObserver(es=>{vis=es[0].isIntersecting;if(vis){last=performance.now();loop();}}).observe(cv);
+      function loop(){if(!vis||document.hidden)return;const now=performance.now();U.t.value+=Math.min(.05,(now-last)/1000);last=now;U.m.value.lerp(target,.05);U.mv.value+=(tgtMv-U.mv.value)*.03;renderer.render(scene,cam);requestAnimationFrame(loop);}
+      document.addEventListener('visibilitychange',()=>{if(!document.hidden&&vis){last=performance.now();loop();}});
+      loop();
+    }
+  }
+}
+</script>
+</body>
+</html>
