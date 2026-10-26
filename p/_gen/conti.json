@@ -1,0 +1,142 @@
+{
+ "id": "457124141244",
+ "slug": "conti-david",
+ "name": "Conti David",
+ "short": "Conti David",
+ "mono": "C",
+ "tagline": "Chauffage · Sanitaire · Mulhouse",
+ "title": "Conti David : chauffagiste et plombier à Mulhouse",
+ "tel": "03 89 64 44 96",
+ "pal": {
+  "acc": "#c2571f",
+  "acc2": "#e08a3c",
+  "ink": "#1d1a17",
+  "bg": "#faf7f2",
+  "card": "#ffffff",
+  "mut": "#5d6470",
+  "line": "rgba(0,0,0,.09)",
+  "onacc": "#fff",
+  "navbg": "rgba(255,255,255,.86)",
+  "navfg": "#1d1a17",
+  "secbg": "#1d1a17",
+  "secfg": "#f5efe6",
+  "secline": "rgba(255,255,255,.12)",
+  "livebg": "rgba(255,255,255,.92)",
+  "livefg": "#1d1a17",
+  "chipbg": "#f6ebe0",
+  "icbg": "#f6ebe0",
+  "extrabg": "#1d1a17",
+  "extrafg": "#f5efe6",
+  "mapbg": "#f6ebe0",
+  "mapline": "rgba(0,0,0,.08)",
+  "mapfg": "#1d1a17",
+  "mapring": "#c2571f",
+  "ctbg": "#1d1a17",
+  "ctfg": "#f5efe6",
+  "formbg": "#fff",
+  "formline": "rgba(0,0,0,.1)",
+  "inputbg": "#f6f6f4"
+ },
+ "hero": "full",
+ "hero_img": "ac2",
+ "hero_alt": "Plombier serrant un raccord",
+ "live": "Devis gratuit · Mulhouse et alentours",
+ "h1": "Chauffage et plomberie <span class=\"ac\">bien faits</span>, dans les délais.",
+ "sub": "Depuis 14 ans, Conti David installe votre chauffage, refait vos sanitaires et rénove votre logement à Mulhouse. Un travail propre, sérieux et de qualité.",
+ "cta1": "Demander un devis gratuit",
+ "chips": [
+  "14 ans d'expérience",
+  "Devis gratuit",
+  "Basé avenue de Riedisheim"
+ ],
+ "services": [
+  {
+   "i": "chauffe",
+   "t": "Chauffage",
+   "d": "Vente et installation de votre système de chauffage, adapté à votre logement."
+  },
+  {
+   "i": "bain",
+   "t": "Sanitaires",
+   "d": "Salle de bain, WC, lavabos, robinetterie : pose soignée et finitions propres."
+  },
+  {
+   "i": "tuyau",
+   "t": "Plomberie",
+   "d": "Alimentation, évacuation, fuites : on intervient pour que tout fonctionne."
+  },
+  {
+   "i": "reno",
+   "t": "Rénovation",
+   "d": "Rénovation de votre logement, en coordonnant plomberie et chauffage."
+  }
+ ],
+ "svc_h2": "Quatre métiers, <span class=\"it\">un seul interlocuteur</span>.",
+ "svc_p": "Chauffage, sanitaire, plomberie et rénovation : vous gardez le même artisan du devis à la fin du chantier.",
+ "gallery": [
+  [
+   "ac1",
+   "Raccord en cuivre serré dans un étau"
+  ],
+  [
+   "bm1",
+   "Salle de bain rénovée"
+  ],
+  [
+   "ac3",
+   "Vasque et ballon d'eau chaude"
+  ]
+ ],
+ "steps": [
+  [
+   "Jour 1",
+   "Vous appelez",
+   "Vous expliquez votre besoin au téléphone ou via le formulaire."
+  ],
+  [
+   "Sous quelques jours",
+   "Visite et devis",
+   "On passe voir le chantier et on vous remet un devis gratuit et clair."
+  ],
+  [
+   "Date fixée",
+   "Travaux",
+   "Intervention propre, dans le respect des délais annoncés."
+  ],
+  [
+   "Après",
+   "Suivi",
+   "Une question après le chantier ? Vous avez toujours le même numéro."
+  ]
+ ],
+ "zone": [
+  "Mulhouse",
+  "Riedisheim",
+  "Rixheim",
+  "Illzach",
+  "Kingersheim",
+  "Brunstatt-Didenheim",
+  "Pfastatt",
+  "Wittenheim"
+ ],
+ "zone_h2": "À Mulhouse et dans l'agglomération",
+ "zone_p": "L'entreprise est installée au 34 avenue de Riedisheim. Zone exacte à confirmer avec vous.",
+ "faq": [
+  [
+   "Le devis est-il gratuit ?",
+   "Oui, le devis est gratuit et sans engagement."
+  ],
+  [
+   "Intervenez-vous pour une rénovation complète ?",
+   "Oui : chauffage, sanitaires et plomberie peuvent être regroupés dans un seul chantier."
+  ],
+  [
+   "Comment vous joindre le plus vite ?",
+   "Par téléphone au 03 89 64 44 96, ou via le formulaire : on vous rappelle."
+  ]
+ ],
+ "ct_h2": "Un projet ? <span class=\"it\">Parlons-en.</span>",
+ "ct_p": "Décrivez votre besoin en deux lignes, on vous rappelle pour fixer une visite.",
+ "footer": "Conti David · 34 avenue de Riedisheim, 68100 Mulhouse",
+ "mbar": "Devis gratuit"
+}

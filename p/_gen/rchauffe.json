@@ -1,0 +1,139 @@
+{
+ "id": "455808504027",
+ "slug": "r-chauffe",
+ "name": "R'Chauffe",
+ "short": "R'Chauffe",
+ "mono": "R",
+ "tagline": "Pompes à chaleur · Mulhouse",
+ "title": "R'Chauffe : pompe à chaleur à Mulhouse, certifié RGE QualiPAC",
+ "tel": "06 89 55 55 02",
+ "pal": {
+  "acc": "#e8571e",
+  "acc2": "#ffb547",
+  "ink": "#14161c",
+  "bg": "#f7f5f1",
+  "card": "#ffffff",
+  "mut": "#5d6470",
+  "line": "rgba(0,0,0,.09)",
+  "onacc": "#fff",
+  "navbg": "rgba(255,255,255,.86)",
+  "navfg": "#14161c",
+  "secbg": "#14161c",
+  "secfg": "#f4f1ec",
+  "secline": "rgba(255,255,255,.12)",
+  "livebg": "rgba(255,255,255,.92)",
+  "livefg": "#14161c",
+  "chipbg": "#fbe9df",
+  "icbg": "#fbe9df",
+  "extrabg": "#14161c",
+  "extrafg": "#f4f1ec",
+  "mapbg": "#fbe9df",
+  "mapline": "rgba(0,0,0,.08)",
+  "mapfg": "#14161c",
+  "mapring": "#e8571e",
+  "ctbg": "#14161c",
+  "ctfg": "#f4f1ec",
+  "formbg": "#fff",
+  "formline": "rgba(0,0,0,.1)",
+  "inputbg": "#f6f6f4"
+ },
+ "hero": "split",
+ "hero_img": "pac",
+ "hero_alt": "Unité extérieure de pompe à chaleur",
+ "tip": [
+  "RGE QualiPAC",
+  "Certification valable jusqu'au 10/04/2027"
+ ],
+ "live": "Certifié RGE QualiPAC",
+ "h1": "Passez à la pompe à chaleur avec un <span class=\"ac\">installateur certifié</span>.",
+ "sub": "R'Chauffe installe pompes à chaleur et chauffe-eau thermodynamiques à Mulhouse. Certification RGE QualiPAC en cours de validité.",
+ "cta1": "Être rappelé",
+ "chips": [
+  "RGE QualiPAC",
+  "Pompe à chaleur",
+  "Chauffe-eau thermodynamique"
+ ],
+ "services": [
+  {
+   "i": "pac",
+   "t": "Pompe à chaleur",
+   "d": "Étude et installation d'une PAC pour chauffer votre logement."
+  },
+  {
+   "i": "ballon",
+   "t": "Chauffe-eau thermodynamique",
+   "d": "Eau chaude produite avec l'énergie de l'air, installée par un pro certifié."
+  },
+  {
+   "i": "outil",
+   "t": "Conseil",
+   "d": "On vous aide à savoir si votre logement est adapté avant de vous engager."
+  }
+ ],
+ "svc_h2": "La PAC, <span class=\"it\">c'est notre métier</span>.",
+ "svc_p": "Une pompe à chaleur capte la chaleur de l'air extérieur pour chauffer votre maison et votre eau.",
+ "gallery": [
+  [
+   "ac2",
+   "Raccordement d'une installation"
+  ],
+  [
+   "ac3",
+   "Ballon d'eau chaude"
+  ],
+  [
+   "bm2",
+   "Salle de bain"
+  ]
+ ],
+ "steps": [
+  [
+   "Appel",
+   "Vous nous parlez de votre logement",
+   "Chauffage actuel, surface, radiateurs ou plancher."
+  ],
+  [
+   "Visite",
+   "On vérifie sur place",
+   "Isolation, emplacement de l'unité, besoins en eau chaude."
+  ],
+  [
+   "Devis",
+   "Une proposition claire",
+   "Le matériel conseillé et le prix, par écrit."
+  ],
+  [
+   "Pose",
+   "Installation certifiée",
+   "Mise en service par une entreprise RGE QualiPAC."
+  ]
+ ],
+ "zone": [
+  "Mulhouse",
+  "Riedisheim",
+  "Illzach",
+  "Kingersheim",
+  "Wittenheim",
+  "Rixheim"
+ ],
+ "zone_h2": "À Mulhouse et dans l'agglomération",
+ "zone_p": "L'entreprise est installée 27 rue Furstenberger à Mulhouse. Zone exacte à confirmer avec vous.",
+ "faq": [
+  [
+   "Que veut dire RGE QualiPAC ?",
+   "C'est une qualification pour installer des pompes à chaleur. Elle est souvent demandée pour bénéficier d'aides à la rénovation."
+  ],
+  [
+   "Ma maison est-elle adaptée à une PAC ?",
+   "Ça dépend de l'isolation et des radiateurs. On le vérifie lors de la visite."
+  ],
+  [
+   "Installez-vous aussi des chauffe-eau thermodynamiques ?",
+   "Oui, la certification couvre aussi le chauffe-eau thermodynamique."
+  ]
+ ],
+ "ct_h2": "Votre projet de <span class=\"it\">pompe à chaleur</span>",
+ "ct_p": "Laissez votre numéro, on vous rappelle pour en parler.",
+ "footer": "R'Chauffe · 27 rue Furstenberger, 68200 Mulhouse",
+ "mbar": "Être rappelé"
+}
