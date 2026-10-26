@@ -18,7 +18,7 @@ def build(c):
     css = (css.replace('--tuile:#c4532f', f'--tuile:{a}').replace('--tuile-hi:#d9643c', f'--tuile-hi:{ahi}')
               .replace('196,83,47', rgb).replace('url(img/toit.webp)', f"url(img/{c['hero_img']}.webp)"))
     for old, new in c.get('base', {}).items(): css = css.replace(old, new)
-    css += '.cut .l4{stroke-linecap:butt}' + c.get('css', '')
+    css += '.cut .l4{stroke-linecap:butt}.hero{height:auto;min-height:100svh}.hero .w{height:auto;min-height:100svh;padding-top:150px}@media (max-width:980px){.hero .w{padding-top:140px}.ft .cols>div:first-child{grid-column:1/-1}}' + c.get('css', '')
     js = open(H + '/base.js').read()
     tel = c['tel']; telh = 'tel:+33' + tel.replace(' ', '')[1:]
     logo_svg = c['logo_svg'].replace('ACC', a)

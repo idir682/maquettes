@@ -21,7 +21,7 @@
 
   /* ---- en-tête et encart Agence Turbo ---- */
   var hd=$('#hd'),tb=$('#turbo');
-  function onS(){hd.classList.toggle('solid',scrollY>60);if(scrollY>innerHeight*.9&&tb)tb.classList.add('on');}
+  function onS(){hd.classList.toggle('solid',scrollY>60);if(scrollY>innerHeight*2&&tb&&!tb._s){tb._s=1;tb.classList.add('on');if(innerWidth<981)setTimeout(function(){tb.classList.remove('on')},6000);}}
   addEventListener('scroll',onS,{passive:true});onS();
 
   if(reduce||!window.gsap){$$('.step').forEach(function(s){s.classList.add('on')});$$('#towns span').forEach(function(s){s.classList.add('on')});staticRain();return;}
