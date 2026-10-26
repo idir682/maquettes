@@ -1,0 +1,376 @@
+<!doctype html>
+<html lang="fr" data-hubspot-id="455808504027">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>R'Chauffe · Pompes à chaleur à Mulhouse, installateur RGE QualiPAC</title>
+<meta name="description" content="Maquette proposée par Agence Turbo à R'Chauffe, installateur de pompes à chaleur à Mulhouse. Ce n'est pas le site officiel.">
+<meta name="robots" content="noindex">
+<meta name="theme-color" content="#0d0f14">
+<link rel="stylesheet" href="fonts/sora.css">
+<link rel="stylesheet" href="fonts/jbmono.css">
+<style>
+:root{--nuit:#0d0f14;--nuit2:#161a22;--froid:#3a6bff;--braise:#ff5a1f;--ambre:#ffb547;--papier:#f4f1ec;--ink:#14161b;--mut:#6b6f78;--line:rgba(20,22,27,.12);
+--s:'Sora',system-ui,sans-serif;--m:'JetBrains Mono',ui-monospace,monospace;--gut:clamp(18px,4vw,60px);--ease:cubic-bezier(.22,1,.36,1)}
+*,*:before,*:after{box-sizing:border-box;margin:0;padding:0}
+html{-webkit-text-size-adjust:100%}html.lenis,html.lenis body{height:auto}
+body{background:var(--papier);color:var(--ink);font:400 16px/1.65 var(--s);-webkit-font-smoothing:antialiased;overflow-x:hidden}
+main,footer{overflow-x:clip}
+a{color:inherit;text-decoration:none}button{font:inherit;color:inherit;background:none;border:0;cursor:pointer}
+.w{max-width:1320px;margin:0 auto;padding-inline:var(--gut)}
+.in>*{min-width:0}
+.mono{font-family:var(--m);font-size:12px;letter-spacing:.08em;text-transform:uppercase}
+:focus-visible{outline:2px solid var(--ambre);outline-offset:3px}
+.hot{background:linear-gradient(90deg,var(--braise),var(--ambre));-webkit-background-clip:text;background-clip:text;color:transparent}
+
+.hd{position:fixed;inset:0 0 auto;z-index:60;color:#fff}
+.demo{background:var(--braise);color:#fff;font-size:12px;text-align:center;padding:5px 12px;line-height:1.35}
+.bar{display:flex;align-items:center;justify-content:space-between;gap:16px;height:68px;padding-inline:var(--gut);transition:background .4s}
+.hd.solid .bar{background:rgba(13,15,20,.9);-webkit-backdrop-filter:blur(10px);backdrop-filter:blur(10px)}
+.logo{font-weight:700;font-size:22px;letter-spacing:-.03em;display:flex;align-items:center;gap:10px}
+.logo i{width:26px;height:26px;border-radius:50%;background:conic-gradient(from 180deg,var(--froid),#8a3cff,var(--braise),var(--ambre),var(--froid));filter:blur(.3px)}
+.bar nav{display:flex;gap:28px;font-size:14px}
+.bar nav a{opacity:.8}.bar nav a:hover{opacity:1}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;height:48px;padding:0 24px;border-radius:10px;background:var(--braise);color:#fff;font-weight:600;font-size:14.5px;white-space:nowrap;transition:background .3s,color .3s}
+.btn:hover{background:#ff7340}
+.btn.ghost{background:rgba(255,255,255,.08);color:#fff;box-shadow:inset 0 0 0 1px rgba(255,255,255,.25)}
+.btn.ghost:hover{background:#fff;color:var(--nuit)}
+.btn.dark{background:var(--nuit);color:#fff}.btn.dark:hover{background:#2a2f3a}
+
+/* héros thermique */
+.hero{position:relative;height:100svh;min-height:640px;background:var(--nuit);color:#fff;overflow:hidden}
+#heat{position:absolute;inset:0;width:100%;height:100%;image-rendering:auto;filter:blur(6px) saturate(1.15);transform:scale(1.04)}
+.hero .scan{position:absolute;inset:0;background:repeating-linear-gradient(0deg,rgba(0,0,0,.18) 0 1px,transparent 1px 4px);pointer-events:none;mix-blend-mode:multiply}
+.hero .house{position:absolute;left:50%;top:42%;width:min(46vw,520px);transform:translate(-50%,-50%);opacity:.55;pointer-events:none}
+.hero .house path{fill:none;stroke:#fff;stroke-width:1.2;stroke-dasharray:4 6}
+.hud{position:absolute;z-index:2;top:110px;left:var(--gut);right:var(--gut);display:flex;justify-content:space-between;font-family:var(--m);font-size:12px;color:rgba(255,255,255,.75);pointer-events:none}
+.hud b{color:#fff;font-weight:500}
+.scale{position:absolute;z-index:2;right:var(--gut);top:50%;transform:translateY(-50%);display:flex;flex-direction:column;align-items:center;gap:8px;font-family:var(--m);font-size:11px;color:rgba(255,255,255,.75);pointer-events:none}
+.scale i{width:10px;height:180px;border-radius:6px;background:linear-gradient(0deg,#0b1030,var(--froid),#8a3cff,var(--braise),var(--ambre),#fff6d8)}
+.hero .in{position:absolute;z-index:2;left:0;right:0;bottom:0;padding:0 var(--gut) clamp(34px,7vh,80px);pointer-events:none}
+.hero .in a{pointer-events:auto}
+.hero h1{font-weight:700;font-size:clamp(46px,8vw,128px);line-height:.92;letter-spacing:-.055em;max-width:1000px}
+.hero h1 .l{display:block;overflow:hidden;padding-bottom:.06em}.hero h1 .l>span{display:inline-block}
+.hero .row{display:flex;justify-content:space-between;align-items:end;gap:26px;flex-wrap:wrap;margin-top:26px}
+.hero .row p{max-width:480px;color:#d4d7de;font-size:17px}
+.hero .cta{display:flex;gap:10px;flex-wrap:wrap}
+
+/* comment ça marche */
+.how{background:var(--nuit);color:#fff;position:relative}
+.how .pin{min-height:100vh;display:grid;grid-template-columns:1fr 1.15fr;gap:clamp(30px,6vw,90px);align-items:center;padding:110px var(--gut) 60px;max-width:1320px;margin:0 auto}
+.how h2,.h2{font-weight:700;font-size:clamp(36px,5vw,76px);line-height:.98;letter-spacing:-.05em}
+.steps{position:relative;margin-top:36px;min-height:220px}
+.st{position:absolute;inset:0;opacity:0;transform:translateY(20px);transition:opacity .6s,transform .8s var(--ease)}
+.st.on{opacity:1;transform:none}
+.st .n{font-family:var(--m);font-size:13px;color:var(--ambre)}
+.st h3{font-size:clamp(24px,2.4vw,34px);letter-spacing:-.03em;line-height:1.1;margin:10px 0 12px}
+.st p{color:#b7bcc7;max-width:440px}
+.dots{display:flex;gap:8px;margin-top:20px}
+.dots i{width:34px;height:4px;border-radius:2px;background:rgba(255,255,255,.16);overflow:hidden;position:relative}
+.dots i b{position:absolute;inset:0;background:var(--braise);transform:scaleX(0);transform-origin:left;transition:transform .6s var(--ease)}
+.dots i.on b{transform:none}
+.dia svg{width:100%;height:auto;overflow:visible}
+.dia .ln{fill:none;stroke:rgba(255,255,255,.55);stroke-width:1.4}
+.dia .fl{fill:none;stroke-width:6;stroke-linecap:round}
+.dia text{font-family:var(--m);font-size:12px;fill:#c9ccd4}
+.dia .fan{transform-box:fill-box;transform-origin:center}
+.dia .temp{font-family:var(--s);font-weight:700;font-size:34px;fill:#fff}
+.dia .glow{opacity:0}
+
+/* certification */
+.cert{padding:clamp(90px,12vw,160px) 0}
+.cert .in{display:grid;grid-template-columns:1fr 1fr;gap:clamp(30px,6vw,90px);align-items:center}
+.card{position:relative;background:var(--nuit);color:#fff;border-radius:22px;padding:32px;overflow:hidden;transform-style:preserve-3d}
+.card:before{content:'';position:absolute;width:420px;height:420px;right:-160px;top:-180px;border-radius:50%;background:radial-gradient(circle,var(--braise),rgba(255,90,31,0) 65%);opacity:.55}
+.card .top{display:flex;justify-content:space-between;align-items:start;position:relative}
+.card .badge{font-weight:700;font-size:40px;letter-spacing:-.04em;line-height:1}
+.card .badge small{display:block;font-family:var(--m);font-weight:400;font-size:12px;letter-spacing:.08em;color:#b7bcc7;margin-top:8px}
+.card ul{list-style:none;margin:34px 0 30px;position:relative}
+.card li{display:flex;justify-content:space-between;gap:20px;padding:12px 0;border-bottom:1px solid rgba(255,255,255,.12);font-size:14.5px}
+.card li span:first-child{color:#9aa0ab}
+.tl{position:relative;height:6px;border-radius:3px;background:rgba(255,255,255,.12);margin-top:8px}
+.tl i{position:absolute;inset:0;border-radius:3px;background:linear-gradient(90deg,var(--froid),var(--braise),var(--ambre));transform-origin:left;transform:scaleX(0)}
+.tl+.mono{display:flex;justify-content:space-between;margin-top:10px;color:#9aa0ab;font-size:11px}
+.cert p.lead{color:#4b4f58;font-size:17px;margin-top:18px;max-width:480px}
+.cert .note{font-size:13px;color:var(--mut);margin-top:14px}
+
+/* projet */
+.proj{background:#fff;padding:clamp(90px,12vw,160px) 0;border-top:1px solid var(--line)}
+.proj .in{display:grid;grid-template-columns:.9fr 1.1fr;gap:clamp(30px,6vw,90px)}
+.q{margin-bottom:30px}
+.q .mono{color:var(--mut);display:block;margin-bottom:12px}
+.ch{display:flex;flex-wrap:wrap;gap:8px}
+.c{height:46px;padding:0 18px;border-radius:10px;box-shadow:inset 0 0 0 1px var(--line);font-size:14.5px;transition:background .3s,color .3s,box-shadow .3s}
+.c:hover{box-shadow:inset 0 0 0 1px var(--ink)}
+.c[aria-pressed="true"]{background:var(--nuit);color:#fff;box-shadow:none}
+.range{display:flex;align-items:center;gap:18px}
+.range input{flex:1;accent-color:var(--braise)}
+.range output{font-family:var(--m);font-size:22px;min-width:90px;text-align:right}
+.out{border-radius:18px;background:var(--nuit);color:#fff;padding:26px;margin-top:10px;position:relative;overflow:hidden}
+.out .mono{color:#9aa0ab}
+.out h3{font-size:28px;letter-spacing:-.03em;line-height:1.1;margin:10px 0}
+.out p{color:#b7bcc7;font-size:14.5px}
+.out .row{display:flex;gap:10px;margin-top:18px;flex-wrap:wrap}
+.out input{flex:1;min-width:180px;height:48px;border-radius:10px;border:0;padding:0 14px;font:inherit;font-size:15px}
+.thanks{display:none;margin-top:12px;font-size:13.5px;color:var(--ambre)}.thanks.on{display:block}
+
+/* ballon */
+.ecs{padding:clamp(90px,12vw,160px) 0}
+.ecs .in{display:grid;grid-template-columns:1.1fr .9fr;gap:clamp(30px,6vw,90px);align-items:center}
+.tank{position:relative;width:min(260px,60vw);aspect-ratio:1/2.1;margin:0 auto;border-radius:130px/60px;background:#e5e1da;overflow:hidden;box-shadow:inset 0 0 0 2px var(--ink)}
+.tank i{position:absolute;left:0;right:0;bottom:0;height:100%;background:linear-gradient(0deg,var(--froid) 0%,#8a3cff 35%,var(--braise) 70%,var(--ambre) 100%);transform-origin:bottom;transform:scaleY(.15)}
+.tank b{position:absolute;inset:0;display:grid;place-items:center;font-family:var(--m);font-weight:500;font-size:28px;color:#fff;mix-blend-mode:difference}
+.ecs p{color:#4b4f58;font-size:17px;margin-top:18px;max-width:520px}
+.ecs ul{list-style:none;margin-top:24px}
+.ecs li{padding:12px 0;border-top:1px solid var(--line);display:flex;gap:14px}
+.ecs li span{font-family:var(--m);color:var(--braise)}
+
+.ft{background:var(--nuit);color:#b7bcc7;padding:80px 0 120px}
+.ft .big{font-weight:700;font-size:clamp(44px,9vw,140px);line-height:.9;letter-spacing:-.06em;color:#fff;margin-bottom:46px}
+.ft .cols{display:grid;grid-template-columns:repeat(4,1fr);gap:24px;font-size:14.5px;border-top:1px solid rgba(255,255,255,.12);padding-top:28px}
+.ft h4{font-family:var(--m);font-weight:400;font-size:11.5px;letter-spacing:.1em;text-transform:uppercase;color:var(--ambre);margin-bottom:8px}
+.ft .cp{margin-top:40px;font-size:12px;color:#7d828d;display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}
+.ft .cp a{text-decoration:underline}
+
+.turbo{position:fixed;right:18px;bottom:18px;z-index:55;display:flex;gap:12px;align-items:center;max-width:340px;background:#fff;color:var(--ink);border-radius:14px;padding:12px 14px;font-size:13px;line-height:1.45;box-shadow:0 20px 50px -20px rgba(0,0,0,.5);transform:translateY(170%);transition:transform .8s var(--ease)}
+.turbo.on{transform:none}.turbo b{display:block}.turbo a{text-decoration:underline}
+.turbo button{font-size:20px;margin-left:auto;align-self:start;line-height:1}
+.dock{display:none}
+
+@media (max-width:960px){
+  .bar nav{display:none}.bar .btn{display:none}
+  .scale{display:none}
+  .hud{top:100px;font-size:11px}
+  .hero .house{width:78vw;top:40%}
+  .how .pin{grid-template-columns:1fr;min-height:0;padding:90px var(--gut)}
+  .steps{min-height:0}
+  .st{position:relative;opacity:1;transform:none;padding:22px 0;border-top:1px solid rgba(255,255,255,.12)}
+  .dots{display:none}
+  .cert .in,.proj .in,.ecs .in{grid-template-columns:1fr}
+  .ft .cols{grid-template-columns:1fr 1fr}
+  .dock{display:flex;position:fixed;left:10px;right:10px;bottom:calc(10px + env(safe-area-inset-bottom));z-index:56;gap:8px}
+  .dock a{flex:1;height:52px}
+  body{padding-bottom:76px}
+  .turbo{left:10px;right:10px;bottom:76px;max-width:none}
+}
+@media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}.st{position:relative;opacity:1;transform:none;margin-bottom:20px}.steps{min-height:0}.tl i{transform:none}.tank i{transform:scaleY(.85)}}
+</style>
+</head>
+<body>
+<header class="hd" id="hd">
+  <div class="demo">Maquette proposée par Agence Turbo à R'Chauffe. Ce n'est pas le site officiel de l'entreprise.</div>
+  <div class="bar">
+    <a class="logo" href="#"><i aria-hidden="true"></i>R'Chauffe</a>
+    <nav aria-label="Navigation"><a href="#fonctionnement">La pompe à chaleur</a><a href="#rge">Certification</a><a href="#projet">Votre projet</a><a href="#ecs">Eau chaude</a></nav>
+    <a class="btn" href="tel:+33689555502">06 89 55 55 02</a>
+  </div>
+</header>
+
+<main>
+<section class="hero" aria-label="Accueil">
+  <canvas id="heat" aria-hidden="true"></canvas>
+  <div class="scan" aria-hidden="true"></div>
+  <svg class="house" viewBox="0 0 400 300" aria-hidden="true"><path d="M40 290V130L200 20l160 110v160z"/><path d="M160 290v-90h80v90"/><path d="M80 150h50v40H80zM270 150h50v40h-50z"/></svg>
+  <div class="hud" aria-hidden="true"><span>R'CHAUFFE · VUE THERMIQUE</span><span>INT. <b id="tin">12.0</b>°C · EXT. <b>3.0</b>°C</span></div>
+  <div class="scale" aria-hidden="true"><span>+</span><i></i><span>−</span></div>
+  <div class="in">
+    <p class="mono" style="color:var(--ambre);margin-bottom:14px">Pompes à chaleur · Mulhouse · RGE QualiPAC</p>
+    <h1 aria-label="La chaleur, puisée dehors."><span class="l"><span>La chaleur,</span></span><span class="l"><span class="hot">puisée dehors.</span></span></h1>
+    <div class="row">
+      <p>R'Chauffe installe des pompes à chaleur et des chauffe-eau thermodynamiques à Mulhouse et autour. Entreprise certifiée RGE QualiPAC.</p>
+      <div class="cta"><a class="btn" href="#projet">Étudier mon projet</a><a class="btn ghost" href="tel:+33689555502">06 89 55 55 02</a></div>
+    </div>
+  </div>
+</section>
+
+<section class="how" id="fonctionnement" aria-label="Comment fonctionne une pompe à chaleur">
+  <div class="pin" id="pin">
+    <div>
+      <p class="mono" style="color:var(--ambre)">La pompe à chaleur, simplement</p>
+      <h2 style="margin-top:14px">Du froid dehors,<br><span class="hot">du chaud dedans.</span></h2>
+      <div class="steps" id="steps">
+        <div class="st on"><span class="n">01 / 04</span><h3>L'air extérieur contient de la chaleur</h3><p>Même en hiver, l'air dehors contient de l'énergie. L'unité extérieure la capte grâce à un fluide très froid.</p></div>
+        <div class="st"><span class="n">02 / 04</span><h3>Le compresseur fait monter la température</h3><p>Le fluide est compressé : sa température monte, comme l'air dans une pompe à vélo.</p></div>
+        <div class="st"><span class="n">03 / 04</span><h3>La chaleur passe dans votre maison</h3><p>Elle est transmise à l'eau de vos radiateurs ou de votre plancher chauffant, ou directement à l'air de la pièce.</p></div>
+        <div class="st"><span class="n">04 / 04</span><h3>Et l'eau chaude sanitaire</h3><p>Le même principe chauffe l'eau de la douche avec un chauffe-eau thermodynamique.</p></div>
+      </div>
+      <div class="dots" id="dots"><i class="on"><b></b></i><i><b></b></i><i><b></b></i><i><b></b></i></div>
+    </div>
+    <div class="dia" aria-hidden="true">
+      <svg viewBox="0 0 600 420">
+        <defs><linearGradient id="gf" x1="0" x2="1"><stop id="s1" offset="0" stop-color="#3a6bff"/><stop id="s2" offset="1" stop-color="#3a6bff"/></linearGradient>
+        <radialGradient id="gl"><stop offset="0" stop-color="#ff5a1f" stop-opacity=".55"/><stop offset="1" stop-color="#ff5a1f" stop-opacity="0"/></radialGradient></defs>
+        <text x="20" y="40">EXTÉRIEUR</text><text x="360" y="40">INTÉRIEUR</text>
+        <line class="ln" x1="300" y1="20" x2="300" y2="400" stroke-dasharray="3 6"/>
+        <rect class="ln" x="30" y="190" width="170" height="130" rx="8"/>
+        <circle class="ln" cx="115" cy="255" r="46"/>
+        <g class="fan" id="fan"><path class="ln" d="M115 255 L115 215 M115 255 L150 275 M115 255 L80 275"/></g>
+        <text x="40" y="345">Unité extérieure</text>
+        <ellipse class="glow" id="glow" cx="460" cy="250" rx="160" ry="140" fill="url(#gl)"/>
+        <path class="ln" d="M340 380V200l120-90 120 90v180z"/>
+        <rect class="ln" x="380" y="300" width="90" height="46" rx="4"/>
+        <path class="ln" d="M392 300v46M404 300v46M416 300v46M428 300v46M440 300v46M452 300v46"/>
+        <text x="380" y="370">Radiateurs</text>
+        <rect class="ln" x="500" y="250" width="44" height="96" rx="20"/>
+        <text x="492" y="370">Ballon</text>
+        <path class="fl" id="flow" stroke="url(#gf)" d="M200 250 H300 Q330 250 330 280 V323 H380"/>
+        <path class="fl" id="flow2" stroke="url(#gf)" d="M470 323 H490 V300 H500" opacity="0"/>
+        <text class="temp" x="380" y="250" id="tv">3°</text>
+        <text x="380" y="270" id="tl">air extérieur</text>
+      </svg>
+    </div>
+  </div>
+</section>
+
+<section class="cert w" id="rge" aria-label="Certification">
+  <div class="in">
+    <div class="card" id="card">
+      <div class="top"><div class="badge">RGE<br>QualiPAC<small>Reconnu garant de l'environnement</small></div><span class="mono" style="color:var(--ambre)">Vérifiable</span></div>
+      <ul>
+        <li><span>Entreprise</span><span>R'Chauffe</span></li>
+        <li><span>Domaines</span><span>Pompe à chaleur chauffage<br>Chauffe-eau thermodynamique</span></li>
+        <li><span>Validité</span><span>10/04/2026 → 10/04/2027</span></li>
+      </ul>
+      <div class="tl"><i id="tli"></i></div>
+      <div class="mono"><span>Avril 2026</span><span>Avril 2027</span></div>
+    </div>
+    <div>
+      <p class="mono" style="color:var(--mut)">Certification</p>
+      <h2 class="h2" style="margin-top:14px">Un installateur<br><span class="hot">certifié RGE.</span></h2>
+      <p class="lead">R'Chauffe détient la qualification RGE QualiPAC pour les pompes à chaleur et les chauffe-eau thermodynamiques. Passer par un professionnel RGE est une condition pour prétendre à la plupart des aides publiques à la rénovation énergétique.</p>
+      <p class="note">Les aides dépendent de votre situation : on vérifie ensemble ce à quoi vous pouvez prétendre.</p>
+    </div>
+  </div>
+</section>
+
+<section class="proj" id="projet" aria-label="Votre projet">
+  <div class="w in">
+    <div>
+      <p class="mono" style="color:var(--mut)">Votre projet</p>
+      <h2 class="h2" style="margin-top:14px">Trois questions,<br><span class="hot">une première piste.</span></h2>
+      <p style="color:#4b4f58;margin-top:18px;max-width:420px">Répondez en trente secondes. R'Chauffe vous rappelle ensuite pour une visite et un devis précis, chez vous.</p>
+    </div>
+    <div>
+      <div class="q"><span class="mono">1 · Votre chauffage actuel</span><div class="ch" data-k="ch"><button type="button" class="c">Fioul</button><button type="button" class="c">Gaz</button><button type="button" class="c">Électrique</button><button type="button" class="c">Bois</button></div></div>
+      <div class="q"><span class="mono">2 · Vos émetteurs</span><div class="ch" data-k="em"><button type="button" class="c">Radiateurs à eau</button><button type="button" class="c">Plancher chauffant</button><button type="button" class="c">Convecteurs électriques</button></div></div>
+      <div class="q"><span class="mono">3 · Surface chauffée</span><div class="range"><input type="range" min="40" max="250" step="5" value="110" id="sf" aria-label="Surface en mètres carrés"><output id="so">110 m²</output></div></div>
+      <div class="out" id="out" aria-live="polite">
+        <span class="mono">Piste à étudier</span>
+        <h3 id="oh">Répondez aux questions</h3>
+        <p id="op">La piste s'affiche ici. Elle sera confirmée lors de la visite.</p>
+        <div class="row"><input type="tel" placeholder="Votre téléphone" aria-label="Téléphone"><button type="button" class="btn" id="call">Être rappelé</button></div>
+        <p class="thanks" id="thx">Merci ! Démonstration : rien n'est envoyé depuis cette maquette.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="ecs w" id="ecs" aria-label="Chauffe-eau thermodynamique">
+  <div class="in">
+    <div>
+      <p class="mono" style="color:var(--mut)">Eau chaude</p>
+      <h2 class="h2" style="margin-top:14px">Le chauffe-eau<br><span class="hot">thermodynamique.</span></h2>
+      <p>Un ballon d'eau chaude équipé de sa propre petite pompe à chaleur. Il chauffe l'eau en puisant l'énergie dans l'air, plutôt qu'avec une simple résistance électrique.</p>
+      <ul><li><span>01</span>Remplace un ballon électrique classique</li><li><span>02</span>Installation par un professionnel certifié QualiPAC</li><li><span>03</span>Conseil sur l'emplacement le plus adapté chez vous</li></ul>
+    </div>
+    <div class="tank" aria-hidden="true"><i id="tank"></i><b id="tt">15°</b></div>
+  </div>
+</section>
+</main>
+
+<footer class="ft">
+  <div class="w">
+    <p class="big">Un projet de<br><span class="hot">pompe à chaleur ?</span></p>
+    <div class="cols">
+      <div><h4>Téléphone</h4><a href="tel:+33689555502">06 89 55 55 02</a></div>
+      <div><h4>Adresse</h4>27 rue Furstenberger<br>68200 Mulhouse</div>
+      <div><h4>Métiers</h4>Pompes à chaleur<br>Chauffe-eau thermodynamiques</div>
+      <div><h4>Certification</h4>RGE QualiPAC<br>jusqu'au 10/04/2027</div>
+    </div>
+    <div class="cp"><span>Maquette de démonstration, non officielle, construite à partir des informations publiques de l'entreprise.</span><span>Conçue par <a href="https://agenceturbo.fr">Agence Turbo</a></span></div>
+  </div>
+</footer>
+
+<div class="dock"><a class="btn ghost" style="background:#fff;color:var(--nuit)" href="tel:+33689555502">Appeler</a><a class="btn" href="#projet">Mon projet</a></div>
+<div class="turbo" id="turbo"><div><b>Ce site peut être le vôtre</b>Maquette préparée par Agence Turbo. <a href="mailto:contact@agenceturbo.fr">contact@agenceturbo.fr</a></div><button aria-label="Fermer" onclick="this.parentNode.remove()">×</button></div>
+
+<script src="../../lib/gsap.min.js"></script>
+<script src="../../lib/ScrollTrigger.min.js"></script>
+<script src="../../lib/lenis.min.js"></script>
+<script>
+(function(){
+  var d=document,$=function(s,c){return (c||d).querySelector(s)},$$=function(s,c){return [].slice.call((c||d).querySelectorAll(s))};
+  var reduce=matchMedia('(prefers-reduced-motion: reduce)').matches,fine=matchMedia('(pointer: fine)').matches,wide=matchMedia('(min-width: 961px)').matches;
+  var hd=$('#hd');function hs(){hd.classList.toggle('solid',scrollY>30)}addEventListener('scroll',hs,{passive:true});hs();
+  var tb=$('#turbo');addEventListener('scroll',function(){if(scrollY>innerHeight*1.2&&tb)tb.classList.add('on')},{passive:true});
+
+  /* image thermique : diffusion de chaleur, la maison se réchauffe */
+  (function(){
+    var cv=$('#heat'),ctx=cv.getContext('2d'),W,H,S=8,T,N,img,vis=true,t0=performance.now();
+    var stops=[[0,[8,10,40]],[.25,[40,70,220]],[.45,[130,50,220]],[.65,[255,70,30]],[.82,[255,170,60]],[1,[255,246,210]]],lut=[];
+    for(var i=0;i<256;i++){var v=i/255,k=0;while(k<stops.length-2&&v>stops[k+1][0])k++;var a=stops[k],b=stops[k+1],f=(v-a[0])/(b[0]-a[0]);lut.push([a[1][0]+(b[1][0]-a[1][0])*f,a[1][1]+(b[1][1]-a[1][1])*f,a[1][2]+(b[1][2]-a[1][2])*f]);}
+    function size(){W=Math.ceil(cv.clientWidth/S);H=Math.ceil(cv.clientHeight/S);cv.width=W;cv.height=H;T=new Float32Array(W*H);N=new Float32Array(W*H);img=ctx.createImageData(W,H);for(var j=0;j<W*H;j++)T[j]=.05+Math.random()*.04;mask();}
+    size();addEventListener('resize',size);
+    var M;function mask(){M=new Uint8Array(W*H);var hs=$('.house'),r=hs.getBoundingClientRect(),c=cv.getBoundingClientRect();for(var y=0;y<H;y++)for(var x=0;x<W;x++){var sx=((x*S+c.left)-r.left)/r.width*400,sy=((y*S+c.top)-r.top)/r.height*300;var ins=sx>44&&sx<356&&sy<286&&(sy>134||(sy>20&&Math.abs(sx-200)<(sy-20)/110*156));M[y*W+x]=ins?1:0;}}
+    function inHouse(x,y){return M[y*W+x]===1;}
+    function heat(x,y,r,s){x|=0;y|=0;for(var j=-r;j<=r;j++)for(var i=-r;i<=r;i++){var xx=x+i,yy=y+j;if(xx>=0&&yy>=0&&xx<W&&yy<H){var q=1-(i*i+j*j)/(r*r+1);if(q>0)T[yy*W+xx]=Math.min(1,T[yy*W+xx]+s*q);}}}
+    function step(warm){for(var y=1;y<H-1;y++)for(var x=1;x<W-1;x++){var k=y*W+x,avg=(T[k-1]+T[k+1]+T[k-W]+T[k+W])*.25,v=T[k]+(avg-T[k])*.5;v+=(.06-v)*.01;if(inHouse(x,y))v+=(warm-v)*.02;N[k]=v;}var s=T;T=N;N=s;}
+    function draw(){var p=img.data;for(var k=0;k<W*H;k++){var c=lut[Math.max(0,Math.min(255,(T[k]*255)|0))],i=k*4;p[i]=c[0];p[i+1]=c[1];p[i+2]=c[2];p[i+3]=255;}ctx.putImageData(img,0,0);}
+    var tin=$('#tin');
+    function warmAt(t){return .15+.65*Math.min(1,t/6000);}
+    if(reduce){for(var q=0;q<200;q++)step(.75);draw();tin.textContent='20.0';return;}
+    cv.parentNode.addEventListener('pointermove',function(e){var r=cv.getBoundingClientRect();heat((e.clientX-r.left)/S,(e.clientY-r.top)/S,3,.09);},{passive:true});
+    new IntersectionObserver(function(e){vis=e[0].isIntersecting;if(vis)loop();}).observe(cv);
+    var last=0;
+    function loop(){if(!vis||d.hidden)return;var t=performance.now()-t0,w=warmAt(t);step(w);step(w);draw();if(t-last>120){tin.textContent=(12+8*Math.min(1,t/6000)).toFixed(1);last=t;}
+      if(!fine&&Math.random()<.05)heat(Math.random()*W,Math.random()*H,4,.25);requestAnimationFrame(loop);}
+    d.addEventListener('visibilitychange',function(){if(!d.hidden&&vis)loop();});
+    loop();
+  })();
+
+  /* projet : orientation simple, sans prix */
+  var st={};
+  $$('.ch').forEach(function(g){$$('.c',g).forEach(function(b){b.setAttribute('aria-pressed','false');b.onclick=function(){$$('.c',g).forEach(function(x){x.setAttribute('aria-pressed','false')});b.setAttribute('aria-pressed','true');st[g.getAttribute('data-k')]=b.textContent;up();};});});
+  var sf=$('#sf');sf.oninput=function(){$('#so').textContent=sf.value+' m²';up();};
+  function up(){if(!st.ch||!st.em)return;var h,p;
+    if(st.em==='Convecteurs électriques'){h='Pompe à chaleur air/air';p='Avec des convecteurs, une PAC air/air (type climatisation réversible) est souvent la piste la plus simple. Une PAC air/eau reste possible en ajoutant des radiateurs à eau.';}
+    else{h='Pompe à chaleur air/eau';p='Vos '+(st.em==='Plancher chauffant'?'planchers chauffants':'radiateurs à eau')+' peuvent être reliés à une PAC air/eau, qui remplace votre chaudière '+(st.ch==='Électrique'?'actuelle':st.ch.toLowerCase())+'.';}
+    p+=' Pour '+sf.value+' m², la puissance sera calculée lors de la visite.';
+    $('#oh').textContent=h;$('#op').textContent=p;if(window.gsap&&!reduce)gsap.fromTo('#out',{scale:.98},{scale:1,duration:.5,ease:'back.out(3)'});}
+  $('#call').onclick=function(){$('#thx').classList.add('on')};
+
+  if(reduce||!window.gsap){$$('.st').forEach(function(s){s.classList.add('on')});return;}
+  gsap.registerPlugin(ScrollTrigger);
+  var lenis=new Lenis({lerp:.1});lenis.on('scroll',ScrollTrigger.update);gsap.ticker.add(function(t){lenis.raf(t*1000)});gsap.ticker.lagSmoothing(0);
+  $$('a[href^="#"]').forEach(function(a){a.addEventListener('click',function(e){var h=a.getAttribute('href');if(h.length>1&&$(h)){e.preventDefault();lenis.scrollTo(h,{offset:-70,duration:1.4});}});});
+
+  gsap.from('.hero h1 .l>span',{yPercent:110,duration:1.3,ease:'expo.out',stagger:.12,delay:.2});
+  gsap.from('.hero .row>*,.hero .mono,.hud,.house',{y:20,opacity:0,duration:1.1,ease:'expo.out',stagger:.08,delay:.6});
+  $$('.h2').forEach(function(h){gsap.from(h,{y:50,opacity:0,duration:1.2,ease:'expo.out',scrollTrigger:{trigger:h,start:'top 88%'}});});
+
+  /* schéma : couleurs et température selon l'étape */
+  var S=[{a:'#3a6bff',b:'#3a6bff',t:3,l:'air extérieur',g:0,f2:0},{a:'#3a6bff',b:'#ff5a1f',t:35,l:'après compression',g:.3,f2:0},{a:'#ff5a1f',b:'#ffb547',t:45,l:'vers les radiateurs',g:1,f2:0},{a:'#ff5a1f',b:'#ffb547',t:55,l:'eau chaude du ballon',g:1,f2:1}];
+  var cur=-1,tv={v:3};
+  function go(i){if(i===cur)return;cur=i;var s=S[i];$$('.st').forEach(function(e,k){e.classList.toggle('on',k===i)});$$('#dots i').forEach(function(e,k){e.classList.toggle('on',k<=i)});
+    gsap.to('#s1',{attr:{'stop-color':s.a},duration:.8});gsap.to('#s2',{attr:{'stop-color':s.b},duration:.8});gsap.to('#glow',{opacity:s.g,duration:1});gsap.to('#flow2',{opacity:s.f2,duration:.6});
+    gsap.to(tv,{v:s.t,duration:1,ease:'power2.out',onUpdate:function(){$('#tv').textContent=Math.round(tv.v)+'°'}});$('#tl').textContent=s.l;}
+  var fl=$('#flow'),L=fl.getTotalLength();fl.style.strokeDasharray='14 10';
+  gsap.to(fl,{strokeDashoffset:-240,duration:4,ease:'none',repeat:-1});gsap.to('#flow2',{strokeDashoffset:-120,duration:3,ease:'none',repeat:-1,strokeDasharray:'10 8'});
+  gsap.to('#fan',{rotation:360,duration:2.4,ease:'none',repeat:-1});
+  if(wide){ScrollTrigger.create({trigger:'#pin',start:'top top',end:'+=2400',pin:true,onUpdate:function(s){go(Math.min(3,Math.floor(s.progress*4)))}});}
+  else{go(0);$$('.st').forEach(function(e,i){ScrollTrigger.create({trigger:e,start:'top 60%',onEnter:function(){go(i)},onEnterBack:function(){go(i)}});});$$('.st').forEach(function(s){s.classList.add('on')});}
+
+  /* certification : la frise de validité se remplit, la carte s'incline */
+  gsap.to('#tli',{scaleX:1,duration:1.6,ease:'power2.out',scrollTrigger:{trigger:'#card',start:'top 75%'}});
+  gsap.from('#card',{rotateY:-18,rotateX:8,y:60,opacity:0,transformPerspective:1000,duration:1.4,ease:'expo.out',scrollTrigger:{trigger:'#card',start:'top 85%'}});
+  if(fine){var card=$('#card');card.addEventListener('pointermove',function(e){var r=card.getBoundingClientRect(),x=(e.clientX-r.left)/r.width-.5,y=(e.clientY-r.top)/r.height-.5;gsap.to(card,{rotateY:x*10,rotateX:-y*8,transformPerspective:1000,duration:.6})});card.addEventListener('pointerleave',function(){gsap.to(card,{rotateY:0,rotateX:0,duration:.9,ease:'elastic.out(1,.5)'})});}
+
+  /* ballon : il chauffe au défilement */
+  var tt={v:15};gsap.timeline({scrollTrigger:{trigger:'.ecs',start:'top 70%',end:'bottom 60%',scrub:.6}}).to('#tank',{scaleY:1,ease:'none'},0).to(tt,{v:55,ease:'none',onUpdate:function(){$('#tt').textContent=Math.round(tt.v)+'°'}},0);
+  gsap.from('.ecs li',{x:-20,opacity:0,duration:.9,ease:'expo.out',stagger:.08,scrollTrigger:{trigger:'.ecs ul',start:'top 85%'}});
+
+  if(fine)$$('.btn').forEach(function(b){b.addEventListener('pointermove',function(e){var r=b.getBoundingClientRect();gsap.to(b,{x:(e.clientX-r.left-r.width/2)*.2,y:(e.clientY-r.top-r.height/2)*.3,duration:.4})});b.addEventListener('pointerleave',function(){gsap.to(b,{x:0,y:0,duration:.7,ease:'elastic.out(1,.4)'})});});
+})();
+</script>
+</body>
+</html>
