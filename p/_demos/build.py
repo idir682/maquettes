@@ -42,7 +42,7 @@ def resto(c):
 <main>
 <section class="hero" aria-label="Accueil">
   <div class="stage">
-    <h1 class="word" id="word" aria-label="{e(c['name'])}, restaurant à Mulhouse">{word}</h1>
+    <h1 class="word" id="word" aria-label="{e(c['name'])}, restaurant à {e(c.get('ville','Mulhouse'))}">{word}</h1>
     <div class="oval" aria-hidden="true"><div class="img" id="ovl"><img src="img/plat.webp" alt="" width="1100" height="1400"></div></div>
     <div class="cap" id="cap"><div><p class="k">{e(c['kicker'])}</p></div><p>{e(c['cap'])}</p></div>
   </div>
@@ -85,7 +85,7 @@ def resto(c):
     <p class="bye" id="bye">À très vite.</p>
     <div class="cols">
       <div><h4>Réserver</h4><a href="{t}">{c['tel']}</a><a href="#resa">En ligne</a></div>
-      <div><h4>Venir</h4><p>{e(c['addr'])}</p><p>68100 Mulhouse</p></div>
+      <div><h4>Venir</h4><p>{e(c['addr'])}</p><p>{e(c.get('cp','68100'))} {e(c.get('ville','Mulhouse'))}</p></div>
       <div><h4>Sur Google</h4><p>{e(c['google'])}</p></div>
       <div><h4>Horaires</h4><p>Vos horaires à jour, ici</p></div>
     </div>
@@ -175,7 +175,7 @@ def institut(c):
   <div class="grid">
     <div class="stagec"><div class="card" id="card">
       <div class="f"><div class="t1">{e(c['logo'])}</div><div class="t2"><span>Carte cadeau</span><span class="v">{e(c['gift'])}</span></div></div>
-      <div class="b"><div class="t1">Pour vous</div><div class="t2"><span>{e(c['gift_soin'])}</span><span>Mulhouse</span></div></div>
+      <div class="b"><div class="t1">Pour vous</div><div class="t2"><span>{e(c['gift_soin'])}</span><span>{e(c.get('ville','Mulhouse'))}</span></div></div>
     </div></div>
     <div><p class="k">Offrir</p><h2>Un soin, <em>plutôt qu'un objet.</em></h2><p>Avec votre site, vos clientes pourraient offrir un soin en carte cadeau, achetée en ligne et envoyée par e-mail.</p><a class="btn" href="#rdv" data-hov>Offrir un soin</a></div>
   </div>
@@ -185,7 +185,7 @@ def institut(c):
   <div class="w">
     <p class="big">{c['ft_big']}</p>
     <div class="cols">
-      <div><h4>Venir</h4>{e(c['addr'])}<br>68100 Mulhouse</div>
+      <div><h4>Venir</h4>{e(c['addr'])}<br>{e(c.get('cp','68100'))} {e(c.get('ville','Mulhouse'))}</div>
       <div><h4>Horaires</h4>{c['hours']}</div>
       <div><h4>Contact</h4><a href="{t}">{c['tel']}</a><br>Rendez-vous en ligne</div>
       <div><h4>Avis</h4>{e(c['avis'])}</div>
