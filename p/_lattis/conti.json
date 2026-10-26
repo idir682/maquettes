@@ -1,0 +1,197 @@
+{
+ "id": "457124141244",
+ "slug": "conti-david",
+ "name": "Conti David",
+ "short": "Conti David",
+ "title": "Conti David · Chauffagiste et plombier à Mulhouse",
+ "tel": "03 89 64 44 96",
+ "acc": "#c8742f",
+ "acc_hi": "#dd8a43",
+ "acc_rgb": "200,116,47",
+ "hero_img": "ac2",
+ "logo_svg": "<path d=\"M20 4c7 9 10 14 10 19a10 10 0 0 1-20 0c0-5 3-10 10-19z\" fill=\"none\" stroke=\"ACC\" stroke-width=\"3.5\"/><path d=\"M15 24a5 5 0 0 0 5 5\" fill=\"none\" stroke=\"#eeebe5\" stroke-width=\"3\"/>",
+ "nav": [
+  [
+   "anatomie",
+   "Le chantier"
+  ],
+  [
+   "services",
+   "Prestations"
+  ],
+  [
+   "orage",
+   "Dépannage"
+  ],
+  [
+   "devis",
+   "Devis"
+  ],
+  [
+   "zone",
+   "Secteur"
+  ]
+ ],
+ "cta_head": "Devis gratuit",
+ "kicker": "Chauffage · Sanitaire · Mulhouse",
+ "h1": [
+  "Chauffage.",
+  "Sanitaire.",
+  "<em>Bien fait.</em>"
+ ],
+ "h1_label": "Chauffage. Sanitaire. Bien fait.",
+ "hero_p": "Depuis 14 ans, Conti David installe votre chauffage, refait vos sanitaires et rénove votre logement. Un travail propre, sérieux, de qualité et dans le respect des délais.",
+ "cta1": "Demander un devis",
+ "cta2": "Une fuite ?",
+ "band": [
+  "Chauffage",
+  "Sanitaire",
+  "Plomberie",
+  "Rénovation",
+  "Devis gratuit",
+  "14 ans de métier"
+ ],
+ "anat_k": "Le chantier",
+ "anat_h2": "Un chantier, <em>cinq étapes.</em>",
+ "anat_label": "Coupe d'une salle de bain : murs, arrivées d'eau, évacuation, radiateur et sanitaires",
+ "anat_svg": "<g class=\"ly l1\" stroke=\"#8b939c\" stroke-width=\"8\"><path d=\"M60 360H580M90 360V70M550 360V70M90 70H550\"/></g><g class=\"ly l2\" stroke=\"#5f7fa6\" stroke-width=\"6\"><path d=\"M110 340H300V190H340M110 320H280V210H340\"/></g><g class=\"ly l3\" stroke=\"#c9cfd4\" stroke-width=\"10\"><path d=\"M200 360V320M380 360V300H420\"/></g><g class=\"ly l4\" stroke=\"#b08a5a\" stroke-width=\"60\" stroke-dasharray=\"5 9\"><path d=\"M440 200H530\"/></g><g class=\"ly l5\" stroke=\"ACC\" stroke-width=\"8\"><path d=\"M120 320H280V280H120zM330 230H420L408 262H342zM375 230V196H392\"/></g>",
+ "steps": [
+  [
+   "Visite et devis",
+   "On passe voir votre logement et on vous remet un devis gratuit, écrit et détaillé."
+  ],
+  [
+   "Dépose",
+   "Ancien équipement retiré proprement, pièces protégées."
+  ],
+  [
+   "Plomberie",
+   "Arrivées d'eau et évacuations refaites ou adaptées."
+  ],
+  [
+   "Chauffage",
+   "Installation ou remplacement de votre système de chauffage."
+  ],
+  [
+   "Sanitaires et finitions",
+   "Pose, réglages, nettoyage du chantier. Dans le respect des délais annoncés."
+  ]
+ ],
+ "sv_h2": "Quatre métiers, <em>un artisan.</em>",
+ "sv_p": "Chauffage, sanitaire, plomberie et rénovation : vous gardez le même interlocuteur du devis à la fin du chantier.",
+ "cards": [
+  {
+   "img": "ac3",
+   "alt": "Ballon d'eau chaude et vasque",
+   "t": "Chauffage",
+   "p": "Vente et installation de votre chauffage, choisi selon votre logement.",
+   "li": [
+    "Vente",
+    "Installation",
+    "Remplacement"
+   ]
+  },
+  {
+   "img": "bm1",
+   "alt": "Salle de bain rénovée",
+   "t": "Sanitaires",
+   "p": "Salle de bain, WC, lavabos, robinetterie : une pose soignée.",
+   "li": [
+    "Salle de bain",
+    "WC",
+    "Robinetterie"
+   ]
+  },
+  {
+   "img": "ac1",
+   "alt": "Raccord en cuivre serré dans un étau",
+   "t": "Plomberie",
+   "p": "Alimentation, évacuation, fuites : on remet tout en ordre.",
+   "li": [
+    "Fuites",
+    "Évacuations",
+    "Raccordements"
+   ]
+  },
+  {
+   "img": "bm2",
+   "alt": "Salle de bain moderne",
+   "t": "Rénovation",
+   "p": "Rénovation de votre logement, plomberie et chauffage compris.",
+   "li": [
+    "Rénovation",
+    "Coordination",
+    "Finitions"
+   ]
+  }
+ ],
+ "storm_k": "Dépannage",
+ "storm_h2": "Une fuite <span class=\"fl\">sous l'évier&nbsp;?</span>",
+ "storm_p": "Appelez directement. On vous dit quoi faire tout de suite pour limiter les dégâts, puis on organise l'intervention.",
+ "storm_cta2": "Décrire le problème",
+ "devis_p": "Répondez depuis votre téléphone, on vous rappelle pour fixer une visite. Le devis est gratuit.",
+ "q1": "Votre projet",
+ "t1": "Projet",
+ "opts": [
+  [
+   "Chauffage",
+   "<path d=\"M23 28c-7 0-10-5-8-10 2-4 5-5 5-12 5 3 9 8 9 13 0 5-3 9-6 9z\"/>"
+  ],
+  [
+   "Salle de bain",
+   "<path d=\"M3 14h40v5a8 8 0 0 1-8 8H11a8 8 0 0 1-8-8z\"/><path d=\"M10 14V6a3 3 0 0 1 6 0\"/>"
+  ],
+  [
+   "Plomberie",
+   "<path d=\"M3 9h16v12H3zM19 12h24M19 18h24M31 6v18\"/>"
+  ],
+  [
+   "Rénovation",
+   "<path d=\"M5 27V13L23 3l18 10v14zM18 27v-8h10v8\"/>"
+  ]
+ ],
+ "q3": "Votre situation",
+ "chips": [
+  "Installation neuve",
+  "Remplacement",
+  "Fuite ou panne",
+  "Rénovation complète"
+ ],
+ "towns": [
+  "Mulhouse",
+  "Riedisheim",
+  "Rixheim",
+  "Illzach",
+  "Kingersheim",
+  "Wittenheim",
+  "Pfastatt",
+  "Brunstatt-Didenheim",
+  "Sausheim",
+  "Lutterbach"
+ ],
+ "faq": [
+  [
+   "Le devis est-il gratuit ?",
+   "Oui, le devis est gratuit et sans engagement."
+  ],
+  [
+   "Pouvez-vous tout regrouper dans un seul chantier ?",
+   "Oui : chauffage, sanitaires et plomberie peuvent être faits par la même entreprise."
+  ],
+  [
+   "Depuis quand existe l'entreprise ?",
+   "Conti David exerce depuis 14 ans à Mulhouse."
+  ],
+  [
+   "Comment vous joindre ?",
+   "Par téléphone au 03 89 64 44 96, ou avec le formulaire de devis : on vous rappelle."
+  ]
+ ],
+ "ft_about": "Chauffage, sanitaire, plomberie et rénovation à Mulhouse. « L'énergie est notre avenir, économisons-la ! »",
+ "addr": [
+  "34 avenue de Riedisheim",
+  "68100 Mulhouse"
+ ],
+ "big": "Conti",
+ "css": ""
+}

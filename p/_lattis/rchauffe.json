@@ -1,0 +1,177 @@
+{
+ "id": "455808504027",
+ "slug": "r-chauffe",
+ "name": "R'Chauffe",
+ "short": "R'Chauffe",
+ "title": "R'Chauffe · Pompe à chaleur à Mulhouse, RGE QualiPAC",
+ "tel": "06 89 55 55 02",
+ "acc": "#e8571e",
+ "acc_hi": "#ff6e33",
+ "acc_rgb": "232,87,30",
+ "hero_img": "pac",
+ "logo_svg": "<path d=\"M4 22 20 8l16 14\" fill=\"none\" stroke=\"ACC\" stroke-width=\"3.5\"/><path d=\"M13 30c3-4 6-4 9 0s6 4 9 0\" fill=\"none\" stroke=\"#eeebe5\" stroke-width=\"3\"/>",
+ "nav": [
+  [
+   "anatomie",
+   "La PAC"
+  ],
+  [
+   "services",
+   "Prestations"
+  ],
+  [
+   "orage",
+   "L'hiver"
+  ],
+  [
+   "devis",
+   "Rappel"
+  ],
+  [
+   "zone",
+   "Secteur"
+  ]
+ ],
+ "cta_head": "Être rappelé",
+ "kicker": "Pompes à chaleur · Certifié RGE QualiPAC · Mulhouse",
+ "h1": [
+  "La chaleur",
+  "de l'air,",
+  "<em>chez vous.</em>"
+ ],
+ "h1_label": "La chaleur de l'air, chez vous.",
+ "hero_p": "R'Chauffe installe pompes à chaleur et chauffe-eau thermodynamiques à Mulhouse. Entreprise certifiée RGE QualiPAC, valable jusqu'au 10/04/2027.",
+ "cta1": "Parler de mon projet",
+ "cta2": "Comment ça marche ?",
+ "band": [
+  "RGE QualiPAC",
+  "Pompe à chaleur",
+  "Chauffe-eau thermodynamique",
+  "Mulhouse",
+  "Étude sur place"
+ ],
+ "anat_k": "Comment ça marche",
+ "anat_h2": "L'air dehors, <em>la chaleur dedans.</em>",
+ "anat_label": "Schéma d'une pompe à chaleur : unité extérieure, liaison, module intérieur et radiateurs",
+ "anat_svg": "<g class=\"ly l1\" stroke=\"#8b939c\" stroke-width=\"8\"><path d=\"M30 360H610M240 360V170L420 60 600 170V360\"/></g><g class=\"ly l2\" stroke=\"#c9cfd4\" stroke-width=\"6\"><path d=\"M50 260H190V350H50z\"/><circle cx=\"105\" cy=\"305\" r=\"30\"/></g><g class=\"ly l3\" stroke=\"#5f7fa6\" stroke-width=\"5\"><path d=\"M190 280H280V230M190 300H300V230\"/></g><g class=\"ly l4\" stroke=\"#b08a5a\" stroke-width=\"50\" stroke-dasharray=\"5 9\"><path d=\"M330 320H450M480 200H570\"/></g><g class=\"ly l5\" stroke=\"ACC\" stroke-width=\"6\"><path d=\"M270 190H330V250H270zM330 210H470M330 230H460V300\"/></g>",
+ "steps": [
+  [
+   "Unité extérieure",
+   "Elle capte les calories présentes dans l'air, même quand il fait froid."
+  ],
+  [
+   "Liaison",
+   "Un fluide transporte cette énergie jusqu'à la maison."
+  ],
+  [
+   "Montée en température",
+   "Le compresseur élève la température pour chauffer l'eau du circuit."
+  ],
+  [
+   "Module intérieur",
+   "Il transmet la chaleur au circuit de chauffage et à l'eau chaude."
+  ],
+  [
+   "Radiateurs ou plancher",
+   "La chaleur arrive dans chaque pièce. L'étude sur place vérifie que vos émetteurs conviennent."
+  ]
+ ],
+ "sv_h2": "La pompe à chaleur, <em>notre métier.</em>",
+ "sv_p": "Une installation qui se prépare : on vérifie votre logement avant de vous proposer un matériel.",
+ "cards": [
+  {
+   "img": "pac",
+   "alt": "Unité extérieure de pompe à chaleur",
+   "t": "Pompe à chaleur",
+   "p": "Étude et installation d'une pompe à chaleur pour chauffer votre logement.",
+   "li": [
+    "Étude",
+    "Installation",
+    "Mise en service"
+   ]
+  },
+  {
+   "img": "ac3",
+   "alt": "Ballon d'eau chaude",
+   "t": "Chauffe-eau thermodynamique",
+   "p": "L'eau chaude produite avec l'énergie de l'air.",
+   "li": [
+    "Eau chaude",
+    "RGE QualiPAC"
+   ]
+  },
+  {
+   "img": "ac1",
+   "alt": "Raccord en cuivre",
+   "t": "Étude et conseil",
+   "p": "Isolation, radiateurs, emplacement de l'unité : on vérifie avant de vous engager.",
+   "li": [
+    "Visite",
+    "Conseil"
+   ]
+  }
+ ],
+ "storm_k": "L'hiver alsacien",
+ "storm_h2": "Dehors, il pleut, <span class=\"fl\">il fait froid.</span>",
+ "storm_p": "La pompe à chaleur puise quand même son énergie dans l'air extérieur. Encore faut-il qu'elle soit bien choisie et bien posée.",
+ "storm_cta2": "Parler de mon projet",
+ "devis_p": "Trois réponses depuis votre téléphone, et on vous rappelle pour en parler. Sans engagement.",
+ "q1": "Votre chauffage actuel",
+ "t1": "Chauffage actuel",
+ "opts": [
+  [
+   "Fioul",
+   "<path d=\"M23 3c6 8 9 12 9 17a9 9 0 0 1-18 0c0-5 3-9 9-17z\"/>"
+  ],
+  [
+   "Gaz",
+   "<path d=\"M23 28c-7 0-10-5-8-10 2-4 5-5 5-12 5 3 9 8 9 13 0 5-3 9-6 9z\"/>"
+  ],
+  [
+   "Électrique",
+   "<path d=\"M26 2 12 17h10l-4 11 16-16H24z\"/>"
+  ],
+  [
+   "Bois",
+   "<path d=\"M4 24h38M8 17h30M12 10h22\"/><circle cx=\"23\" cy=\"6\" r=\"3\"/>"
+  ]
+ ],
+ "q3": "Votre projet",
+ "chips": [
+  "Pompe à chaleur",
+  "Chauffe-eau thermodynamique",
+  "Les deux",
+  "Je ne sais pas encore"
+ ],
+ "towns": [
+  "Mulhouse",
+  "Riedisheim",
+  "Illzach",
+  "Kingersheim",
+  "Wittenheim",
+  "Rixheim",
+  "Pfastatt",
+  "Brunstatt-Didenheim"
+ ],
+ "faq": [
+  [
+   "Que veut dire RGE QualiPAC ?",
+   "C'est une qualification pour installer des pompes à chaleur et des chauffe-eau thermodynamiques. Elle est souvent demandée pour bénéficier d'aides à la rénovation."
+  ],
+  [
+   "Ma maison est-elle adaptée ?",
+   "Ça dépend de l'isolation et des radiateurs. On le vérifie lors de la visite."
+  ],
+  [
+   "Installez-vous aussi des chauffe-eau thermodynamiques ?",
+   "Oui, la certification couvre aussi le chauffe-eau thermodynamique."
+  ]
+ ],
+ "ft_about": "Pompes à chaleur et chauffe-eau thermodynamiques à Mulhouse. Certifié RGE QualiPAC.",
+ "addr": [
+  "27 rue Furstenberger",
+  "68200 Mulhouse"
+ ],
+ "big": "R'Chauffe",
+ "css": ".ft .big{font-size:clamp(60px,15vw,260px)}"
+}
