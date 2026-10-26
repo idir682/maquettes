@@ -108,6 +108,10 @@ def resto(c):
 
 def institut(c):
     head, tail = head_tail(PREM + '/atelier-nacre/index.html', c)
+    # 26/10 : choix utilisateur, photo de soin en fond du haut de page (au lieu du fond nacré animé).
+    head = head.replace('</style>', '#gl{display:none!important}.hero .fallback{background:url(img/soin.webp) 50% 20%/cover no-repeat}'
+        '.hero .veil{background:linear-gradient(to top,rgba(243,239,236,.96) 0%,rgba(243,239,236,.88) 38%,rgba(243,239,236,.35) 70%,rgba(243,239,236,.15) 100%)}'
+        '@media (max-width:960px){.hero .in{padding-bottom:110px}.turbo{transform:translateY(calc(100% + 140px))}.turbo.on{transform:none}}</style>')
     t = telh(c['tel'])
     imgs = [('cabine', 900, 1200), ('masque', 800, 1000), ('soin', 800, 1000)]
     steps = ''.join(f'''<article class="step" data-i="{i}" data-l="{e(s[0])}">
