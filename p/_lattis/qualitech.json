@@ -1,0 +1,195 @@
+{
+ "id": "458704536772",
+ "slug": "qualitech",
+ "name": "Qualitech",
+ "short": "Qualitech",
+ "title": "Qualitech · Salle de bain et chauffage à Wittenheim",
+ "tel": "03 89 62 13 61",
+ "acc": "#2f7fc8",
+ "acc_hi": "#4597de",
+ "acc_rgb": "47,127,200",
+ "hero_img": "bm2",
+ "logo_svg": "<path d=\"M8 30V12l12-7 12 7v18\" fill=\"none\" stroke=\"ACC\" stroke-width=\"3.5\"/><path d=\"M14 24h12\" stroke=\"#eeebe5\" stroke-width=\"3\"/>",
+ "nav": [
+  [
+   "anatomie",
+   "Le chantier"
+  ],
+  [
+   "services",
+   "Prestations"
+  ],
+  [
+   "orage",
+   "Dépannage"
+  ],
+  [
+   "devis",
+   "Devis"
+  ],
+  [
+   "zone",
+   "Secteur"
+  ]
+ ],
+ "cta_head": "Devis gratuit",
+ "kicker": "Salle de bain clé en main · Chauffage · Wittenheim",
+ "h1": [
+  "Votre salle",
+  "de bain,",
+  "<em>clé en main.</em>"
+ ],
+ "h1_label": "Votre salle de bain, clé en main.",
+ "hero_p": "Qualitech crée votre salle de bain de A à Z et s'occupe de votre chauffage, de la climatisation et de l'eau chaude. Noté 5 sur 5 par plus de 100 clients sur Google.",
+ "cta1": "Demander un devis",
+ "cta2": "Une fuite ?",
+ "band": [
+  "Salle de bain clé en main",
+  "Douche",
+  "Robinetterie",
+  "Chauffage",
+  "Climatisation",
+  "Ballon thermodynamique",
+  "5/5 sur Google"
+ ],
+ "anat_k": "Le chantier",
+ "anat_h2": "Une salle de bain, <em>cinq étapes.</em>",
+ "anat_label": "Coupe d'une salle de bain : murs, arrivées d'eau, évacuation, douche et vasque",
+ "anat_svg": "<g class=\"ly l1\" stroke=\"#8b939c\" stroke-width=\"8\"><path d=\"M60 360H580M90 360V70M550 360V70M90 70H550\"/></g><g class=\"ly l2\" stroke=\"#5f7fa6\" stroke-width=\"6\"><path d=\"M110 340H300V190H340M110 320H280V210H340\"/></g><g class=\"ly l3\" stroke=\"#c9cfd4\" stroke-width=\"10\"><path d=\"M200 360V320M380 360V300H420\"/></g><g class=\"ly l4\" stroke=\"#b08a5a\" stroke-width=\"60\" stroke-dasharray=\"5 9\"><path d=\"M440 200H530\"/></g><g class=\"ly l5\" stroke=\"ACC\" stroke-width=\"8\"><path d=\"M120 320H280V280H120zM330 230H420L408 262H342zM375 230V196H392\"/></g>",
+ "steps": [
+  [
+   "Visite et devis",
+   "On vient voir la pièce et on vous remet un devis clair, écrit et détaillé."
+  ],
+  [
+   "Dépose",
+   "Ancienne salle de bain retirée proprement, pièces voisines protégées."
+  ],
+  [
+   "Plomberie",
+   "Arrivées d'eau et évacuations refaites ou adaptées."
+  ],
+  [
+   "Douche et robinetterie",
+   "Pose de la douche, des meubles et de la robinetterie choisie."
+  ],
+  [
+   "Finitions",
+   "Réglages, joints, nettoyage du chantier : la pièce est prête à l'emploi."
+  ]
+ ],
+ "sv_h2": "Un seul artisan, <em>du sol au plafond.</em>",
+ "sv_p": "Salle de bain, chauffage, climatisation et eau chaude : vous gardez le même interlocuteur.",
+ "cards": [
+  {
+   "img": "bm1",
+   "alt": "Salle de bain rénovée",
+   "t": "Salle de bain clé en main",
+   "p": "Conception et réalisation complète de votre salle de bain.",
+   "li": [
+    "Conception",
+    "Pose",
+    "Finitions"
+   ]
+  },
+  {
+   "img": "douche",
+   "alt": "Douche à l'italienne",
+   "t": "Douche et robinetterie",
+   "p": "Douches, robinetterie et équipements sanitaires.",
+   "li": [
+    "Douche",
+    "Robinetterie"
+   ]
+  },
+  {
+   "img": "ac3",
+   "alt": "Ballon d'eau chaude",
+   "t": "Chauffage et eau chaude",
+   "p": "Chauffage et ballons thermodynamiques pour l'eau chaude.",
+   "li": [
+    "Chauffage",
+    "Ballon thermodynamique"
+   ]
+  },
+  {
+   "img": "pac",
+   "alt": "Unité extérieure de climatisation",
+   "t": "Climatisation",
+   "p": "Climatisation installée selon votre logement.",
+   "li": [
+    "Étude",
+    "Installation"
+   ]
+  }
+ ],
+ "storm_k": "Dépannage",
+ "storm_h2": "Une fuite <span class=\"fl\">sous la douche&nbsp;?</span>",
+ "storm_p": "Appelez directement. On vous dit quoi faire tout de suite, puis on organise l'intervention.",
+ "storm_cta2": "Décrire le problème",
+ "devis_p": "Répondez depuis votre téléphone, on vous rappelle pour fixer une visite. Le devis est gratuit.",
+ "q1": "Votre projet",
+ "t1": "Projet",
+ "opts": [
+  [
+   "Salle de bain",
+   "<path d=\"M3 14h40v5a8 8 0 0 1-8 8H11a8 8 0 0 1-8-8z\"/><path d=\"M10 14V6a3 3 0 0 1 6 0\"/>"
+  ],
+  [
+   "Chauffage",
+   "<path d=\"M23 28c-7 0-10-5-8-10 2-4 5-5 5-12 5 3 9 8 9 13 0 5-3 9-6 9z\"/>"
+  ],
+  [
+   "Climatisation",
+   "<path d=\"M6 4h34v13H6zM10 11h26M13 21l-2 6M23 21v6M33 21l2 6\"/>"
+  ],
+  [
+   "Eau chaude",
+   "<path d=\"M23 3c6 8 9 12 9 17a9 9 0 0 1-18 0c0-5 3-9 9-17z\"/>"
+  ]
+ ],
+ "q3": "Votre situation",
+ "chips": [
+  "Rénovation complète",
+  "Remplacement",
+  "Fuite ou panne",
+  "Je ne sais pas encore"
+ ],
+ "towns": [
+  "Wittenheim",
+  "Mulhouse",
+  "Kingersheim",
+  "Ruelisheim",
+  "Pulversheim",
+  "Staffelfelden",
+  "Richwiller",
+  "Pfastatt",
+  "Illzach",
+  "Ensisheim"
+ ],
+ "faq": [
+  [
+   "Le devis est-il gratuit ?",
+   "Oui, le devis est gratuit et sans engagement."
+  ],
+  [
+   "Vous occupez-vous de toute la salle de bain ?",
+   "Oui : Qualitech crée des salles de bain clé en main, de la dépose aux finitions."
+  ],
+  [
+   "Installez-vous des ballons thermodynamiques ?",
+   "Oui, ainsi que le chauffage et la climatisation."
+  ],
+  [
+   "Comment vous joindre ?",
+   "Par téléphone au 03 89 62 13 61, ou avec le formulaire de devis : on vous rappelle."
+  ]
+ ],
+ "ft_about": "Créateur de salles de bain clé en main, chauffage et climatisation à Wittenheim.",
+ "addr": [
+  "6 B rue du Périgord",
+  "68270 Wittenheim"
+ ],
+ "big": "Qualitech",
+ "css": ".ft .big{font-size:clamp(56px,14vw,240px)}"
+}

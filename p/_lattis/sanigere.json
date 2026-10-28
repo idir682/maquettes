@@ -1,0 +1,188 @@
+{
+ "id": "458706330826",
+ "slug": "sanigere-alsace",
+ "name": "Sanigere alsace",
+ "short": "Sanigere",
+ "title": "Sanigere alsace · Plombier chauffagiste à Saint-Louis",
+ "tel": "07 82 67 57 91",
+ "acc": "#19a7a3",
+ "acc_hi": "#2cc2bd",
+ "acc_rgb": "25,167,163",
+ "hero_img": "ac2",
+ "base": {
+  "--ardoise:#15181c": "--ardoise:#0f1b22",
+  "--ardoise2:#1d2127": "--ardoise2:#16252e",
+  "21,24,28": "15,27,34"
+ },
+ "logo_svg": "<path d=\"M5 15c5-5 10-5 15 0s10 5 15 0M5 24c5-5 10-5 15 0s10 5 15 0\" fill=\"none\" stroke=\"ACC\" stroke-width=\"3.5\"/><path d=\"M5 33h30\" stroke=\"#eeebe5\" stroke-width=\"3\"/>",
+ "nav": [
+  [
+   "anatomie",
+   "L'installation"
+  ],
+  [
+   "services",
+   "Prestations"
+  ],
+  [
+   "orage",
+   "Dépannage"
+  ],
+  [
+   "devis",
+   "Devis"
+  ],
+  [
+   "zone",
+   "Secteur"
+  ]
+ ],
+ "cta_head": "Devis gratuit",
+ "kicker": "Plomberie · Chauffage · Saint-Louis",
+ "h1": [
+  "Plomberie.",
+  "Chauffage.",
+  "<em>Près de chez vous.</em>"
+ ],
+ "h1_label": "Plomberie. Chauffage. Près de chez vous.",
+ "hero_p": "Sanigere alsace installe votre chauffage, pose vos planchers chauffants et dépanne votre plomberie à Saint-Louis. Noté 4,8 sur 5 par ses clients sur Google.",
+ "cta1": "Demander un devis",
+ "cta2": "Une fuite ?",
+ "band": [
+  "Plomberie",
+  "Chauffage",
+  "Plancher chauffant",
+  "Dépannage",
+  "Saint-Louis",
+  "Devis gratuit"
+ ],
+ "anat_k": "L'installation",
+ "anat_h2": "De la chaudière <em>au plancher.</em>",
+ "anat_label": "Schéma d'une maison : chaudière, circuit de chauffage, plancher chauffant et eau chaude",
+ "anat_svg": "<g class=\"ly l1\" stroke=\"#8b939c\" stroke-width=\"8\"><path d=\"M70 360H570M100 360V170L320 50 540 170V360\"/></g><g class=\"ly l2\" stroke=\"#c9cfd4\" stroke-width=\"6\"><path d=\"M130 340V250H200V340\"/></g><g class=\"ly l3\" stroke=\"#d9643c\" stroke-width=\"5\"><path d=\"M200 270H300V200H460M200 300H320V215H460\"/></g><g class=\"ly l4\" stroke=\"#b08a5a\" stroke-width=\"50\" stroke-dasharray=\"5 9\"><path d=\"M300 320H420M440 180H520\"/></g><g class=\"ly l5\" stroke=\"ACC\" stroke-width=\"6\"><path d=\"M200 320H250V360M470 270H500V300M486 300V318\"/></g>",
+ "steps": [
+  [
+   "Diagnostic",
+   "On regarde votre logement et votre installation avant de proposer quoi que ce soit."
+  ],
+  [
+   "Production de chaleur",
+   "Le système de chauffage choisi selon votre logement."
+  ],
+  [
+   "Circuit",
+   "Les tuyaux qui portent l'eau chaude jusqu'aux pièces."
+  ],
+  [
+   "Plancher chauffant ou radiateurs",
+   "Une chaleur douce, répartie dans chaque pièce."
+  ],
+  [
+   "Eau et sanitaires",
+   "Jusqu'au robinet, avec une plomberie remise en ordre si besoin."
+  ]
+ ],
+ "sv_h2": "Trois métiers, <em>un interlocuteur.</em>",
+ "sv_p": "Interventions rapides, service de proximité, conseils personnalisés et prestations sur mesure.",
+ "cards": [
+  {
+   "img": "ac3",
+   "alt": "Ballon d'eau chaude",
+   "t": "Chauffage",
+   "p": "Installation de systèmes de chauffage performants.",
+   "li": [
+    "Étude",
+    "Installation"
+   ]
+  },
+  {
+   "img": "bm2",
+   "alt": "Sol de salle de bain",
+   "t": "Plancher chauffant",
+   "p": "Pose de plancher chauffant pour une chaleur répartie.",
+   "li": [
+    "Pose",
+    "Mise en service"
+   ]
+  },
+  {
+   "img": "ac1",
+   "alt": "Raccord en cuivre",
+   "t": "Plomberie et dépannage",
+   "p": "Travaux de plomberie et dépannages, avec des interventions rapides.",
+   "li": [
+    "Dépannage",
+    "Travaux"
+   ]
+  }
+ ],
+ "storm_k": "Dépannage",
+ "storm_h2": "Une fuite <span class=\"fl\">sous l'évier&nbsp;?</span>",
+ "storm_p": "Appelez directement. On vous dit quoi faire tout de suite pour limiter les dégâts, puis on organise l'intervention.",
+ "storm_cta2": "Décrire le problème",
+ "devis_p": "Répondez depuis votre téléphone, on vous rappelle pour en parler. Le devis est gratuit.",
+ "q1": "Votre projet",
+ "t1": "Projet",
+ "opts": [
+  [
+   "Chauffage",
+   "<path d=\"M23 28c-7 0-10-5-8-10 2-4 5-5 5-12 5 3 9 8 9 13 0 5-3 9-6 9z\"/>"
+  ],
+  [
+   "Plancher chauffant",
+   "<path d=\"M5 27V13L23 3l18 10v14zM18 27v-8h10v8\"/>"
+  ],
+  [
+   "Plomberie",
+   "<path d=\"M3 9h16v12H3zM19 12h24M19 18h24M31 6v18\"/>"
+  ],
+  [
+   "Dépannage",
+   "<path d=\"M30 4a8 8 0 0 0-8 10L6 26l4 4 12-16a8 8 0 0 0 10-8l-5 3-4-4z\"/>"
+  ]
+ ],
+ "q3": "Votre situation",
+ "chips": [
+  "Projet neuf",
+  "Remplacement",
+  "Fuite ou panne",
+  "Je ne sais pas encore"
+ ],
+ "towns": [
+  "Saint-Louis",
+  "Huningue",
+  "Village-Neuf",
+  "Hésingue",
+  "Hégenheim",
+  "Blotzheim",
+  "Bartenheim",
+  "Kembs",
+  "Sierentz",
+  "Buschwiller"
+ ],
+ "faq": [
+  [
+   "Le devis est-il gratuit ?",
+   "Oui, le devis est gratuit."
+  ],
+  [
+   "Posez-vous des planchers chauffants ?",
+   "Oui, Sanigere alsace pose des planchers chauffants."
+  ],
+  [
+   "Intervenez-vous en dépannage ?",
+   "Oui, pour les dépannages de plomberie, avec des interventions rapides."
+  ],
+  [
+   "Comment vous joindre ?",
+   "Par téléphone au 07 82 67 57 91, ou avec le formulaire de devis : on vous rappelle."
+  ]
+ ],
+ "ft_about": "Plomberie, chauffage et plancher chauffant à Saint-Louis.",
+ "addr": [
+  "30 rue de Huningue",
+  "68300 Saint-Louis"
+ ],
+ "big": "Sanigere",
+ "css": ".ft .big{font-size:clamp(56px,14vw,240px)}"
+}

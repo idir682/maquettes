@@ -1,0 +1,420 @@
+<!doctype html>
+<html lang="fr" data-hubspot-id="458704536772">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Qualitech · Salle de bain et chauffage à Wittenheim</title>
+<meta name="description" content="Maquette proposée par Agence Turbo à Qualitech. Ce n'est pas le site officiel de l'entreprise.">
+<meta name="robots" content="noindex">
+<link rel="preload" href="fonts/bigshoulders-normal-500-900.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="fonts/bigshoulders.css">
+<link rel="stylesheet" href="fonts/manrope.css">
+<style>
+/* Direction artistique : « le chantier vu d'en haut ».
+   Ardoise sombre, zinc, et la terre cuite des tuiles comme seule couleur d'action.
+   Titres condensés très hauts, comme les lettrages peints sur les camions de chantier. */
+:root{
+  --ardoise:#15181c; --ardoise2:#1d2127; --zinc:#8b939c; --zinc-l:#c9cfd4; --craie:#eeebe5;
+  --tuile:#2f7fc8; --tuile-hi:#4597de; --line:rgba(238,235,229,.14); --line-d:rgba(21,24,28,.14);
+  --ease:cubic-bezier(.16,1,.3,1);
+  --d:"Big Shoulders Display",Impact,sans-serif; --t:"Manrope",system-ui,sans-serif;
+  --gut:clamp(18px,4vw,56px);
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{-webkit-text-size-adjust:100%}
+html.lenis,html.lenis body{height:auto}
+.lenis.lenis-smooth{scroll-behavior:auto!important}
+body{background:var(--ardoise);color:var(--craie);font:400 16px/1.6 var(--t);-webkit-font-smoothing:antialiased;overflow-x:hidden}
+img{display:block;max-width:100%}
+a{color:inherit;text-decoration:none}
+button,input{font:inherit;color:inherit}
+::selection{background:var(--tuile);color:#fff}
+.w{width:100%;max-width:1440px;margin-inline:auto;padding-inline:var(--gut)}
+.k{font:700 12px/1 var(--t);letter-spacing:.22em;text-transform:uppercase;color:var(--zinc)}
+.k b{color:var(--tuile);font-weight:700}
+
+/* bandeau démo */
+.demo{background:var(--tuile);color:#fff;font-size:12px;text-align:center;padding:6px 14px;line-height:1.35}
+
+/* en-tête */
+.hd{position:fixed;left:0;right:0;top:0;z-index:50;transition:background .5s}
+.hd.solid{background:rgba(21,24,28,.86);backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px)}
+.hd .w{display:flex;align-items:center;gap:28px;height:78px}
+.logo{display:flex;align-items:center;gap:12px;font:800 30px/1 var(--d);letter-spacing:.04em;text-transform:uppercase}
+.logo svg{width:34px;height:34px}
+.nav{display:flex;gap:30px;margin-left:auto;font-size:14px;font-weight:500}
+.nav a{opacity:.75;transition:opacity .3s;position:relative}
+.nav a:hover{opacity:1}
+.btn{position:relative;display:inline-flex;align-items:center;gap:12px;height:54px;padding:0 26px;border-radius:0;font:700 14px/1 var(--t);letter-spacing:.08em;text-transform:uppercase;border:0;cursor:pointer;overflow:hidden;isolation:isolate;white-space:nowrap}
+.btn span{position:relative;z-index:1}
+.btn::before{content:"";position:absolute;inset:0;background:var(--tuile-hi);transform:translateY(101%);transition:transform .5s var(--ease);z-index:0}
+.btn:hover::before{transform:none}
+.btn.go{background:var(--tuile);color:#fff}
+.btn.ghost{background:transparent;color:var(--craie);box-shadow:inset 0 0 0 1px var(--line)}
+.btn.ghost::before{background:var(--craie)}
+.btn.ghost:hover{color:var(--ardoise)}
+.btn svg{width:18px;height:18px;position:relative;z-index:1}
+.urg{display:inline-flex;align-items:center;gap:10px;font-size:14px;font-weight:600}
+.urg i{width:8px;height:8px;border-radius:50%;background:var(--tuile);box-shadow:0 0 0 0 rgba(47,127,200,.7);animation:pulse 2s infinite}
+@keyframes pulse{70%{box-shadow:0 0 0 12px rgba(47,127,200,0)}100%{box-shadow:0 0 0 0 rgba(47,127,200,0)}}
+
+/* héros : la photo se pose tuile par tuile */
+.hero{position:relative;height:100svh;min-height:640px;overflow:hidden}
+.tiles{position:absolute;inset:0;display:grid;grid-template-columns:repeat(var(--c),1fr);grid-template-rows:repeat(var(--r),1fr);perspective:1400px}
+.tiles i{background-image:url(img/bm2.webp);background-size:calc(var(--c)*100%) calc(var(--r)*100%);transform-origin:50% 0;backface-visibility:hidden}
+.hero::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(21,24,28,.55) 0%,rgba(21,24,28,.1) 35%,rgba(21,24,28,.85) 100%),linear-gradient(90deg,rgba(21,24,28,.75),rgba(21,24,28,0) 60%);pointer-events:none}
+.hero .w{position:relative;z-index:2;height:100%;display:grid;align-content:end;padding-bottom:clamp(40px,7vh,90px);gap:28px}
+.hero h1{font:900 clamp(64px,13.5vw,220px)/.82 var(--d);text-transform:uppercase;letter-spacing:-.005em}
+.hero h1 .ln{display:block;overflow:hidden;padding-bottom:.04em}
+.hero h1 .ln>span{display:inline-block}
+.hero h1 em{font-style:normal;color:var(--tuile)}
+.hero .row{display:flex;flex-wrap:wrap;gap:22px 48px;align-items:end;justify-content:space-between}
+.hero p{max-width:440px;font-size:18px;color:var(--zinc-l)}
+.hero .acts{display:flex;gap:12px;flex-wrap:wrap}
+.scroll{position:absolute;right:var(--gut);top:50%;z-index:2;writing-mode:vertical-rl;font:600 11px/1 var(--t);letter-spacing:.3em;text-transform:uppercase;color:var(--zinc-l);display:flex;align-items:center;gap:14px}
+.scroll::after{content:"";width:1px;height:70px;background:linear-gradient(var(--craie),transparent);animation:drip 2.2s var(--ease) infinite}
+@keyframes drip{0%{transform:scaleY(0);transform-origin:top}50%{transform:scaleY(1);transform-origin:top}51%{transform-origin:bottom}100%{transform:scaleY(0);transform-origin:bottom}}
+
+/* bande de confiance défilante */
+.band{background:var(--craie);color:var(--ardoise);overflow:hidden;border-block:1px solid var(--line-d)}
+.band .tr{display:flex;width:max-content;animation:mq 38s linear infinite}
+.band span{font:800 clamp(28px,4vw,52px)/1 var(--d);text-transform:uppercase;padding:22px 34px;display:flex;align-items:center;gap:68px;white-space:nowrap}
+.band span::after{content:"";width:14px;height:14px;background:var(--tuile);transform:rotate(45deg)}
+@keyframes mq{to{transform:translateX(-50%)}}
+
+/* anatomie d'un toit, épinglée au défilement */
+section{position:relative}
+.anat{background:var(--ardoise2)}
+.anat .w{display:grid;grid-template-columns:1.15fr .85fr;gap:clamp(30px,6vw,110px);align-items:center;min-height:100vh;padding-block:90px}
+.anat h2,.sv h2,.storm h2,.devis h2,.faq h2{font:800 clamp(46px,6.4vw,104px)/.88 var(--d);text-transform:uppercase}
+.anat h2 em,.sv h2 em,.devis h2 em,.faq h2 em{font-style:normal;color:var(--tuile)}
+.cut{width:100%;height:auto;overflow:visible}
+.cut .ly{fill:none;stroke-linecap:round;stroke-linejoin:round}
+.cut text{font:700 12px var(--t);letter-spacing:.14em;text-transform:uppercase;fill:var(--zinc)}
+.steps{position:relative;display:grid;gap:26px}
+.step{display:grid;grid-template-columns:64px 1fr;gap:6px 16px;opacity:.28;transition:opacity .6s var(--ease)}
+.step.on{opacity:1}
+.step b{grid-row:span 2;font:800 54px/1 var(--d);color:var(--tuile)}
+.step h3{font:800 30px/1 var(--d);text-transform:uppercase;letter-spacing:.02em}
+.step p{color:var(--zinc-l);font-size:15.5px;max-width:42ch}
+
+/* services en défilement horizontal */
+.sv{background:var(--craie);color:var(--ardoise);overflow:hidden}
+.sv .head{display:flex;justify-content:space-between;align-items:end;gap:30px;flex-wrap:wrap;padding-top:clamp(80px,10vw,140px)}
+.sv .head p{max-width:420px;color:#4a5058}
+.rail{display:flex;gap:clamp(18px,2.4vw,36px);padding:56px var(--gut) clamp(80px,10vw,140px);width:max-content}
+.card{position:relative;width:min(78vw,520px);flex:none;display:grid;gap:18px}
+.card .ph{position:relative;aspect-ratio:4/5;overflow:hidden;background:#d8d4cc}
+.card .ph img{width:100%;height:100%;object-fit:cover;transform:scale(1.18)}
+.card .n{position:absolute;left:18px;top:14px;z-index:2;font:900 86px/1 var(--d);color:#fff;mix-blend-mode:difference}
+.card h3{font:800 38px/1 var(--d);text-transform:uppercase}
+.card p{color:#4a5058;max-width:40ch}
+.card ul{list-style:none;display:flex;flex-wrap:wrap;gap:8px}
+.card li{font-size:13px;font-weight:600;padding:6px 12px;border:1px solid var(--line-d)}
+
+/* après l'orage */
+.storm{position:relative;overflow:hidden;background:#0d0f12;min-height:92vh;display:grid;align-items:center}
+.storm canvas{position:absolute;inset:0;width:100%;height:100%}
+.storm .w{position:relative;z-index:1;display:grid;gap:30px;padding-block:120px}
+.storm h2{font-size:clamp(56px,10vw,170px);max-width:12ch}
+.storm h2 .fl{color:var(--tuile)}
+.storm p{max-width:520px;font-size:19px;color:var(--zinc-l)}
+.storm .acts{display:flex;gap:12px;flex-wrap:wrap}
+.flash{position:absolute;inset:0;background:#dfe6ef;opacity:0;pointer-events:none;mix-blend-mode:overlay}
+
+/* devis en trois questions */
+.devis{background:var(--ardoise)}
+.devis .w{display:grid;grid-template-columns:.9fr 1.1fr;gap:clamp(30px,6vw,100px);padding-block:clamp(90px,11vw,150px);align-items:start}
+.devis .intro{position:sticky;top:120px;display:grid;gap:22px}
+.devis .intro p{color:var(--zinc-l);max-width:40ch}
+.q{border-top:1px solid var(--line);padding-block:30px;display:grid;gap:18px}
+.q h3{font:800 28px/1 var(--d);text-transform:uppercase;display:flex;gap:14px;align-items:baseline}
+.q h3 small{font:700 12px var(--t);letter-spacing:.2em;color:var(--tuile)}
+.opts{display:grid;grid-template-columns:repeat(4,1fr);gap:10px}
+.opt{position:relative;display:grid;justify-items:start;gap:16px;padding:18px 16px;background:var(--ardoise2);border:1px solid var(--line);cursor:pointer;text-align:left;transition:border-color .3s,transform .5s var(--ease)}
+.opt svg{width:46px;height:30px;stroke:var(--zinc-l);fill:none;stroke-width:1.6;transition:stroke .3s}
+.opt span{font-weight:600;font-size:14.5px}
+.opt[aria-pressed=true]{border-color:var(--tuile)}
+.opt[aria-pressed=true] svg{stroke:var(--tuile)}
+.opt:hover{transform:translateY(-3px)}
+.chips{display:flex;flex-wrap:wrap;gap:10px}
+.chip{padding:12px 18px;border:1px solid var(--line);background:none;cursor:pointer;font-weight:600;font-size:14.5px;transition:all .3s}
+.chip[aria-pressed=true]{background:var(--craie);color:var(--ardoise);border-color:var(--craie)}
+.range{display:grid;gap:10px}
+.range output{font:800 64px/1 var(--d)}
+.range output small{font:600 16px var(--t);color:var(--zinc);margin-left:8px}
+input[type=range]{-webkit-appearance:none;appearance:none;width:100%;height:4px;background:linear-gradient(90deg,var(--tuile) var(--p,40%),var(--line) var(--p,40%));outline:none;cursor:pointer}
+input[type=range]::-webkit-slider-thumb{-webkit-appearance:none;width:26px;height:26px;background:var(--craie);border:6px solid var(--tuile);border-radius:50%}
+input[type=range]::-moz-range-thumb{width:16px;height:16px;background:var(--craie);border:6px solid var(--tuile);border-radius:50%}
+.ticket{margin-top:10px;background:var(--craie);color:var(--ardoise);padding:24px;display:grid;gap:14px;clip-path:polygon(0 0,100% 0,100% calc(100% - 16px),calc(100% - 16px) 100%,0 100%)}
+.ticket .tt{display:flex;justify-content:space-between;align-items:baseline;gap:20px;border-bottom:1px dashed var(--line-d);padding-bottom:12px}
+.ticket .tt b{font:800 26px/1 var(--d);text-transform:uppercase}
+.ticket dl{display:grid;grid-template-columns:auto 1fr;gap:6px 18px;font-size:15px}
+.ticket dt{color:#5d636b}
+.ticket dd{font-weight:700}
+.ticket .btn{width:100%;justify-content:center}
+.ticket .done{font-weight:700;color:var(--tuile)}
+
+/* zone */
+.zone{background:var(--craie);color:var(--ardoise);padding-block:clamp(70px,9vw,120px)}
+.zone .w{display:grid;grid-template-columns:auto 1fr;gap:clamp(30px,6vw,90px);align-items:start}
+.zone .towns{display:flex;flex-wrap:wrap;gap:6px 0}
+.zone .towns span{font:800 clamp(30px,4.2vw,64px)/1.18 var(--d);text-transform:uppercase;padding-right:.5em;color:#b9b4ab;transition:color .4s}
+.zone .towns span.on{color:var(--ardoise)}
+.zone .towns span:hover{color:var(--tuile)}
+
+/* questions */
+.faq{background:var(--craie);color:var(--ardoise);padding-block:0 clamp(80px,10vw,140px)}
+.faq .w{display:grid;grid-template-columns:.8fr 1.2fr;gap:clamp(30px,6vw,100px)}
+details{border-top:1px solid var(--line-d)}
+details:last-child{border-bottom:1px solid var(--line-d)}
+summary{list-style:none;cursor:pointer;padding:24px 50px 24px 0;font:700 19px/1.3 var(--t);position:relative}
+summary::-webkit-details-marker{display:none}
+summary::after{content:"";position:absolute;right:6px;top:50%;width:16px;height:16px;margin-top:-8px;background:linear-gradient(var(--ardoise),var(--ardoise)) center/16px 2px no-repeat,linear-gradient(var(--ardoise),var(--ardoise)) center/2px 16px no-repeat;transition:transform .5s var(--ease)}
+details[open] summary::after{transform:rotate(135deg)}
+details .a{overflow:hidden}
+details .a p{padding-bottom:24px;color:#4a5058;max-width:60ch}
+
+/* pied de page */
+.ft{background:var(--ardoise);padding-top:clamp(70px,9vw,120px);overflow:hidden}
+.ft .cols{display:grid;grid-template-columns:1.4fr 1fr 1fr 1fr;gap:30px;padding-bottom:60px}
+.ft h4{font:700 12px/1 var(--t);letter-spacing:.2em;text-transform:uppercase;color:var(--zinc);margin-bottom:16px}
+.ft a,.ft p{display:block;line-height:2;color:var(--zinc-l)}
+.ft .big{font:900 clamp(90px,24vw,420px)/.78 var(--d);text-transform:uppercase;letter-spacing:-.01em;color:var(--ardoise2);-webkit-text-stroke:1px rgba(238,235,229,.18);white-space:nowrap;display:flex;justify-content:center;user-select:none}
+.ft .big span{display:inline-block}
+.ft .cp{display:flex;justify-content:space-between;flex-wrap:wrap;gap:10px;border-top:1px solid var(--line);padding-block:20px;font-size:12.5px;color:var(--zinc)}
+
+/* barre mobile */
+.dock{display:none}
+.turbo{position:fixed;left:20px;bottom:20px;z-index:55;display:flex;gap:12px;align-items:center;max-width:340px;background:var(--craie);color:var(--ardoise);padding:12px 14px;font-size:13px;line-height:1.4;box-shadow:0 20px 50px -20px rgba(0,0,0,.6);transform:translateY(160%);transition:transform .8s var(--ease)}
+.turbo.on{transform:none}
+.turbo b{display:block}
+.turbo a{text-decoration:underline}
+.turbo button{background:none;border:0;font-size:20px;cursor:pointer;margin-left:auto;align-self:start;line-height:1}
+
+@media (max-width:980px){
+  .nav,.hd .urg{display:none}
+  .hd .btn{height:44px;padding:0 16px;font-size:12px}
+  .anat .w,.devis .w,.zone .w,.faq .w{grid-template-columns:1fr}
+  .anat .w{min-height:0}
+  .devis .intro{position:static}
+  .opts{grid-template-columns:repeat(2,1fr)}
+  .ft .cols{grid-template-columns:1fr 1fr}
+  .scroll{display:none}
+  .dock{display:flex;position:fixed;left:0;right:0;bottom:0;z-index:56;padding:10px 12px calc(10px + env(safe-area-inset-bottom));gap:8px;background:rgba(21,24,28,.92);backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px)}
+  .dock .btn{flex:1;justify-content:center;height:50px}
+  body{padding-bottom:72px}
+  .turbo{bottom:84px;left:12px;right:12px;max-width:none}
+}
+@media (max-width:560px){.hero h1{font-size:clamp(58px,19vw,120px)}.hero p{font-size:16.5px}}
+@media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}}
+.cut .l4{stroke-linecap:butt}.hero{height:auto;min-height:100svh}.hero .w{height:auto;min-height:100svh;padding-top:150px}@media (max-width:980px){.hero .w{padding-top:140px}.ft .cols>div:first-child{grid-column:1/-1}}.ft .big{font-size:clamp(56px,14vw,240px)}</style>
+</head>
+<body>
+<header class="hd" id="hd"><div class="demo">Maquette proposée par Agence Turbo à Qualitech. Ce n'est pas le site officiel de l'entreprise.</div><div class="w">
+  <a class="logo" href="#top" aria-label="Qualitech, accueil"><svg viewBox="0 0 40 40" aria-hidden="true"><path d="M8 30V12l12-7 12 7v18" fill="none" stroke="#2f7fc8" stroke-width="3.5"/><path d="M14 24h12" stroke="#eeebe5" stroke-width="3"/></svg>Qualitech</a>
+  <nav class="nav" aria-label="Navigation"><a href="#anatomie">Le chantier</a><a href="#services">Prestations</a><a href="#orage">Dépannage</a><a href="#devis">Devis</a><a href="#zone">Secteur</a></nav>
+  <a class="urg" href="tel:+33389621361"><i></i>03 89 62 13 61</a>
+  <a class="btn go" href="#devis" data-mag><span>Devis gratuit</span></a>
+</div></header>
+
+<main id="top">
+<section class="hero" aria-label="Accueil">
+  <div class="tiles" id="tiles" aria-hidden="true"></div>
+  <div class="w">
+    <p class="k" data-in><b>●</b>&nbsp; Salle de bain clé en main · Chauffage · Wittenheim</p>
+    <h1 id="h1" aria-label="Votre salle de bain, clé en main."><span class="ln"><span>Votre salle</span></span><span class="ln"><span>de bain,</span></span><span class="ln"><span><em>clé en main.</em></span></span></h1>
+    <div class="row">
+      <p data-in>Qualitech crée votre salle de bain de A à Z et s&#x27;occupe de votre chauffage, de la climatisation et de l&#x27;eau chaude. Noté 5 sur 5 par plus de 100 clients sur Google.</p>
+      <div class="acts" data-in><a class="btn go" href="#devis" data-mag><span>Demander un devis</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a><a class="btn ghost" href="#orage"><span>Une fuite ?</span></a></div>
+    </div>
+  </div>
+  <div class="scroll" aria-hidden="true">Défiler</div>
+</section>
+
+<div class="band" aria-hidden="true"><div class="tr"><span>Salle de bain clé en main</span><span>Douche</span><span>Robinetterie</span><span>Chauffage</span><span>Climatisation</span><span>Ballon thermodynamique</span><span>5/5 sur Google</span><span>Salle de bain clé en main</span><span>Douche</span><span>Robinetterie</span><span>Chauffage</span><span>Climatisation</span><span>Ballon thermodynamique</span><span>5/5 sur Google</span></div></div>
+
+<section class="anat" id="anatomie">
+  <div class="w">
+    <div>
+      <p class="k" style="margin-bottom:22px"><b>01</b>&nbsp; Le chantier</p>
+      <h2 style="margin-bottom:40px">Une salle de bain, <em>cinq étapes.</em></h2>
+      <svg class="cut" id="cut" viewBox="0 0 640 400" role="img" aria-label="Coupe d&#x27;une salle de bain : murs, arrivées d&#x27;eau, évacuation, douche et vasque"><g class="ly l1" stroke="#8b939c" stroke-width="8"><path d="M60 360H580M90 360V70M550 360V70M90 70H550"/></g><g class="ly l2" stroke="#5f7fa6" stroke-width="6"><path d="M110 340H300V190H340M110 320H280V210H340"/></g><g class="ly l3" stroke="#c9cfd4" stroke-width="10"><path d="M200 360V320M380 360V300H420"/></g><g class="ly l4" stroke="#b08a5a" stroke-width="60" stroke-dasharray="5 9"><path d="M440 200H530"/></g><g class="ly l5" stroke="#2f7fc8" stroke-width="8"><path d="M120 320H280V280H120zM330 230H420L408 262H342zM375 230V196H392"/></g></svg>
+    </div>
+    <div class="steps" id="steps"><div class="step on"><b>1</b><h3>Visite et devis</h3><p>On vient voir la pièce et on vous remet un devis clair, écrit et détaillé.</p></div><div class="step"><b>2</b><h3>Dépose</h3><p>Ancienne salle de bain retirée proprement, pièces voisines protégées.</p></div><div class="step"><b>3</b><h3>Plomberie</h3><p>Arrivées d&#x27;eau et évacuations refaites ou adaptées.</p></div><div class="step"><b>4</b><h3>Douche et robinetterie</h3><p>Pose de la douche, des meubles et de la robinetterie choisie.</p></div><div class="step"><b>5</b><h3>Finitions</h3><p>Réglages, joints, nettoyage du chantier : la pièce est prête à l&#x27;emploi.</p></div></div>
+  </div>
+</section>
+
+<section class="sv" id="services">
+  <div class="w head">
+    <div><p class="k" style="margin-bottom:22px"><b>02</b>&nbsp; Prestations</p><h2>Un seul artisan, <em>du sol au plafond.</em></h2></div>
+    <p>Salle de bain, chauffage, climatisation et eau chaude : vous gardez le même interlocuteur.</p>
+  </div>
+  <div class="rail" id="rail"><article class="card"><div class="ph"><span class="n">01</span><img src="img/bm1.webp" alt="Salle de bain rénovée" loading="lazy"></div><h3>Salle de bain clé en main</h3><p>Conception et réalisation complète de votre salle de bain.</p><ul><li>Conception</li><li>Pose</li><li>Finitions</li></ul></article><article class="card"><div class="ph"><span class="n">02</span><img src="img/douche.webp" alt="Douche à l&#x27;italienne" loading="lazy"></div><h3>Douche et robinetterie</h3><p>Douches, robinetterie et équipements sanitaires.</p><ul><li>Douche</li><li>Robinetterie</li></ul></article><article class="card"><div class="ph"><span class="n">03</span><img src="img/ac3.webp" alt="Ballon d&#x27;eau chaude" loading="lazy"></div><h3>Chauffage et eau chaude</h3><p>Chauffage et ballons thermodynamiques pour l&#x27;eau chaude.</p><ul><li>Chauffage</li><li>Ballon thermodynamique</li></ul></article><article class="card"><div class="ph"><span class="n">04</span><img src="img/pac.webp" alt="Unité extérieure de climatisation" loading="lazy"></div><h3>Climatisation</h3><p>Climatisation installée selon votre logement.</p><ul><li>Étude</li><li>Installation</li></ul></article></div>
+</section>
+
+<section class="storm" id="orage">
+  <canvas id="rain" aria-hidden="true"></canvas>
+  <div class="flash" id="flash" aria-hidden="true"></div>
+  <div class="w">
+    <p class="k"><b>03</b>&nbsp; Dépannage</p>
+    <h2 id="stormT">Une fuite <span class="fl">sous la douche&nbsp;?</span></h2>
+    <p>Appelez directement. On vous dit quoi faire tout de suite, puis on organise l&#x27;intervention.</p>
+    <div class="acts"><a class="btn go" href="tel:+33389621361" data-mag><span>Appeler le 03 89 62 13 61</span></a><a class="btn ghost" href="#devis"><span>Décrire le problème</span></a></div>
+  </div>
+</section>
+
+<section class="devis" id="devis">
+  <div class="w">
+    <div class="intro">
+      <p class="k"><b>04</b>&nbsp; Devis</p>
+      <h2>Trois questions, <em>un rappel.</em></h2>
+      <p>Répondez depuis votre téléphone, on vous rappelle pour fixer une visite. Le devis est gratuit.</p>
+    </div>
+    <form id="form" novalidate onsubmit="return false">
+      <div class="q"><h3><small>01</small>Votre projet</h3><div class="opts" data-g="type"><button type="button" class="opt" aria-pressed="true" data-v="Salle de bain"><svg viewBox="0 0 46 30"><path d="M3 14h40v5a8 8 0 0 1-8 8H11a8 8 0 0 1-8-8z"/><path d="M10 14V6a3 3 0 0 1 6 0"/></svg><span>Salle de bain</span></button><button type="button" class="opt" aria-pressed="false" data-v="Chauffage"><svg viewBox="0 0 46 30"><path d="M23 28c-7 0-10-5-8-10 2-4 5-5 5-12 5 3 9 8 9 13 0 5-3 9-6 9z"/></svg><span>Chauffage</span></button><button type="button" class="opt" aria-pressed="false" data-v="Climatisation"><svg viewBox="0 0 46 30"><path d="M6 4h34v13H6zM10 11h26M13 21l-2 6M23 21v6M33 21l2 6"/></svg><span>Climatisation</span></button><button type="button" class="opt" aria-pressed="false" data-v="Eau chaude"><svg viewBox="0 0 46 30"><path d="M23 3c6 8 9 12 9 17a9 9 0 0 1-18 0c0-5 3-9 9-17z"/></svg><span>Eau chaude</span></button></div></div>
+      <div class="q"><h3><small>02</small>Surface du logement</h3>
+        <div class="range"><output id="surfO">120<small>m²</small></output><input id="surf" type="range" min="20" max="400" step="10" value="120" aria-label="Surface du logement en mètres carrés"></div>
+      </div>
+      <div class="q"><h3><small>03</small>Votre situation</h3><div class="chips" data-g="sit"><button type="button" class="chip" aria-pressed="true" data-v="Rénovation complète">Rénovation complète</button><button type="button" class="chip" aria-pressed="false" data-v="Remplacement">Remplacement</button><button type="button" class="chip" aria-pressed="false" data-v="Fuite ou panne">Fuite ou panne</button><button type="button" class="chip" aria-pressed="false" data-v="Je ne sais pas encore">Je ne sais pas encore</button></div></div>
+      <div class="ticket" aria-live="polite">
+        <div class="tt"><b>Votre demande</b><span>Démonstration</span></div>
+        <dl><dt>Projet</dt><dd id="tType">Salle de bain</dd><dt>Surface</dt><dd id="tSurf">120 m²</dd><dt>Besoin</dt><dd id="tSit">Rénovation complète</dd></dl>
+        <button class="btn go" type="button" id="send"><span>Être rappelé</span></button>
+        <p class="done" id="done" hidden>Démonstration : sur le vrai site, la demande arriverait chez Qualitech par e-mail.</p>
+      </div>
+    </form>
+  </div>
+</section>
+
+<section class="zone" id="zone">
+  <div class="w">
+    <p class="k"><b>05</b>&nbsp; Secteur</p>
+    <div class="towns" id="towns"><span>Wittenheim</span><span>Mulhouse</span><span>Kingersheim</span><span>Ruelisheim</span><span>Pulversheim</span><span>Staffelfelden</span><span>Richwiller</span><span>Pfastatt</span><span>Illzach</span><span>Ensisheim</span></div>
+  </div>
+</section>
+
+<section class="faq">
+  <div class="w">
+    <h2>Avant <em>d'appeler.</em></h2>
+    <div><details><summary>Le devis est-il gratuit ?</summary><div class="a"><p>Oui, le devis est gratuit et sans engagement.</p></div></details><details><summary>Vous occupez-vous de toute la salle de bain ?</summary><div class="a"><p>Oui : Qualitech crée des salles de bain clé en main, de la dépose aux finitions.</p></div></details><details><summary>Installez-vous des ballons thermodynamiques ?</summary><div class="a"><p>Oui, ainsi que le chauffage et la climatisation.</p></div></details><details><summary>Comment vous joindre ?</summary><div class="a"><p>Par téléphone au 03 89 62 13 61, ou avec le formulaire de devis : on vous rappelle.</p></div></details></div>
+  </div>
+</section>
+</main>
+
+<footer class="ft">
+  <div class="w">
+    <div class="cols">
+      <div><a class="logo" href="#top"><svg viewBox="0 0 40 40" aria-hidden="true"><path d="M8 30V12l12-7 12 7v18" fill="none" stroke="#2f7fc8" stroke-width="3.5"/><path d="M14 24h12" stroke="#eeebe5" stroke-width="3"/></svg>Qualitech</a><p style="margin-top:14px;max-width:32ch;line-height:1.6">Créateur de salles de bain clé en main, chauffage et climatisation à Wittenheim.</p></div>
+      <div><h4>Contact</h4><a href="tel:+33389621361">03 89 62 13 61</a><a href="#devis">Demande de devis</a></div>
+      <div><h4>Prestations</h4><a href="#services">Salle de bain clé en main</a><a href="#services">Douche et robinetterie</a><a href="#services">Chauffage et eau chaude</a></div>
+      <div><h4>Adresse</h4><p>6 B rue du Périgord</p><p>68270 Wittenheim</p></div>
+    </div>
+  </div>
+  <div class="big" id="big" aria-hidden="true"><span>Q</span><span>u</span><span>a</span><span>l</span><span>i</span><span>t</span><span>e</span><span>c</span><span>h</span></div>
+  <div class="w"><div class="cp"><span>Qualitech · maquette de démonstration non officielle</span><span>Conçu par <a href="https://agenceturbo.fr">Agence Turbo</a></span></div></div>
+</footer>
+
+<div class="dock"><a class="btn ghost" href="tel:+33389621361"><span>Appeler</span></a><a class="btn go" href="#devis"><span>Devis</span></a></div>
+<div class="turbo" id="turbo"><div><b>Ce site peut être le vôtre</b>Maquette Agence Turbo. <a href="mailto:contact@agenceturbo.fr">contact@agenceturbo.fr</a></div><button aria-label="Fermer" onclick="this.parentNode.remove()">×</button></div>
+
+<script src="../../lib/gsap.min.js"></script>
+<script src="../../lib/ScrollTrigger.min.js"></script>
+<script src="../../lib/lenis.min.js"></script>
+<script>
+(function(){
+  var reduce=matchMedia('(prefers-reduced-motion: reduce)').matches;
+  var fine=matchMedia('(pointer: fine)').matches;
+  var d=document,$=function(s,c){return (c||d).querySelector(s)},$$=function(s,c){return [].slice.call((c||d).querySelectorAll(s))};
+
+  /* ---- grille de tuiles du héros ---- */
+  var tiles=$('#tiles'),C=innerWidth<700?5:10,R=innerWidth<700?8:6;
+  tiles.style.setProperty('--c',C);tiles.style.setProperty('--r',R);
+  for(var y=0;y<R;y++)for(var x=0;x<C;x++){var i=d.createElement('i');i.style.backgroundPosition=(x/(C-1)*100)+'% '+(y/(R-1)*100)+'%';i.dataset.x=x;i.dataset.y=y;tiles.appendChild(i);}
+
+  /* ---- interactions du devis (toujours actives) ---- */
+  function group(g,cb){$$('[data-g='+g+'] button').forEach(function(b){b.addEventListener('click',function(){$$('[data-g='+g+'] button').forEach(function(x){x.setAttribute('aria-pressed',x===b)});cb(b.dataset.v);});});}
+  function bump(el){el.textContent=el.textContent;if(!reduce&&window.gsap)gsap.fromTo(el,{y:10,opacity:0},{y:0,opacity:1,duration:.5,ease:'power3.out'});}
+  group('type',function(v){var e=$('#tType');e.textContent=v;bump(e);});
+  group('sit',function(v){var e=$('#tSit');e.textContent=v;bump(e);});
+  var surf=$('#surf');function sv(){var p=(surf.value-surf.min)/(surf.max-surf.min)*100;surf.style.setProperty('--p',p+'%');$('#surfO').innerHTML=surf.value+'<small>m²</small>';$('#tSurf').textContent=surf.value+' m²';}
+  surf.addEventListener('input',sv);sv();
+  $('#send').addEventListener('click',function(){$('#done').hidden=false;bump($('#done'));});
+  $$('details').forEach(function(dt){dt.addEventListener('toggle',function(){if(dt.open&&!reduce&&window.gsap)gsap.from($('.a',dt),{height:0,duration:.6,ease:'power3.out'});});});
+
+  /* ---- en-tête et encart Agence Turbo ---- */
+  var hd=$('#hd'),tb=$('#turbo');
+  function onS(){hd.classList.toggle('solid',scrollY>60);if(scrollY>innerHeight*2&&tb&&!tb._s){tb._s=1;tb.classList.add('on');if(innerWidth<981)setTimeout(function(){tb.classList.remove('on')},6000);}}
+  addEventListener('scroll',onS,{passive:true});onS();
+
+  if(reduce||!window.gsap){$$('.step').forEach(function(s){s.classList.add('on')});$$('#towns span').forEach(function(s){s.classList.add('on')});staticRain();return;}
+
+  gsap.registerPlugin(ScrollTrigger);
+
+  /* défilement doux */
+  var lenis=new Lenis({lerp:.1,smoothWheel:true});
+  lenis.on('scroll',ScrollTrigger.update);
+  gsap.ticker.add(function(t){lenis.raf(t*1000)});gsap.ticker.lagSmoothing(0);
+  $$('a[href^="#"]').forEach(function(a){a.addEventListener('click',function(e){var t=a.getAttribute('href');if(t.length>1&&$(t)){e.preventDefault();lenis.scrollTo(t,{offset:-70,duration:1.4});}});});
+
+  /* entrée : les tuiles se posent du faîtage vers le bas, puis le titre monte ligne à ligne */
+  var tl=gsap.timeline({defaults:{ease:'expo.out'}});
+  tl.from('#tiles i',{rotateX:-92,opacity:0,duration:1.1,stagger:{grid:[R,C],from:'start',axis:'y',amount:.9}})
+    .from('#h1 .ln>span',{yPercent:110,duration:1.2,stagger:.09},'-=.55')
+    .from('[data-in]',{y:24,opacity:0,duration:1,stagger:.08},'-=.8')
+    .from('#hd .w',{y:-30,opacity:0,duration:1},'-=1');
+  /* parallaxe du héros à la sortie */
+  gsap.to('#tiles',{yPercent:18,scale:1.06,ease:'none',scrollTrigger:{trigger:'.hero',start:'top top',end:'bottom top',scrub:true}});
+  gsap.to('#h1',{yPercent:-30,opacity:.2,ease:'none',scrollTrigger:{trigger:'.hero',start:'top top',end:'bottom top',scrub:true}});
+
+  /* anatomie : chaque couche se dessine au défilement */
+  var layers=$$('#cut .ly'),steps=$$('.step');
+  layers.forEach(function(g){$$('path',g).forEach(function(p){var L=p.getTotalLength()||1;if(!p.getAttribute('stroke-dasharray')){p.style.strokeDasharray=L;p.style.strokeDashoffset=L;}else{p.style.opacity=0;}});});
+  function draw(i,on){var g=layers[i];$$('path',g).forEach(function(p){if(p.getAttribute('stroke-dasharray'))gsap.to(p,{opacity:on?1:0,duration:.6});else gsap.to(p,{strokeDashoffset:on?0:p.getTotalLength(),duration:1.1,ease:'power2.inOut'});});steps[i].classList.toggle('on',on||i===0);}
+  var mm=gsap.matchMedia();
+  mm.add('(min-width: 981px)',function(){
+    var st=ScrollTrigger.create({trigger:'.anat',start:'top top',end:'+=220%',pin:true,scrub:true,onUpdate:function(s){var n=Math.min(4,Math.floor(s.progress*5.2));layers.forEach(function(_,i){var on=i<=n;if(layers[i]._on!==on){layers[i]._on=on;draw(i,on);}});}});
+    /* services : rail horizontal épinglé */
+    var rail=$('#rail');
+    var tw=gsap.to(rail,{x:function(){return -(rail.scrollWidth-innerWidth)},ease:'none',scrollTrigger:{trigger:'.sv',start:'top top',end:function(){return '+='+(rail.scrollWidth-innerWidth)},pin:true,scrub:1,invalidateOnRefresh:true}});
+    $$('.card').forEach(function(c){gsap.to($('img',c),{scale:1,ease:'none',scrollTrigger:{trigger:c,containerAnimation:tw,start:'left right',end:'right left',scrub:true}});});
+    return function(){st.kill();};
+  });
+  mm.add('(max-width: 980px)',function(){
+    steps.forEach(function(s,i){ScrollTrigger.create({trigger:s,start:'top 75%',onEnter:function(){layers.slice(0,i+1).forEach(function(_,k){if(!layers[k]._on){layers[k]._on=true;draw(k,true);}});}});});
+    $('#rail').style.cssText='flex-direction:column;width:auto;padding-inline:var(--gut)';
+    $$('.card').forEach(function(c){c.style.width='100%';gsap.fromTo($('img',c),{scale:1.25},{scale:1,ease:'none',scrollTrigger:{trigger:c,start:'top bottom',end:'bottom top',scrub:true}});});
+  });
+
+  /* titres de section : montée mot à mot */
+  $$('.anat h2,.sv h2,.devis h2,.faq h2').forEach(function(h){
+    var html=h.innerHTML.replace(/(<em>)?([^<\s]+)(<\/em>)?/g,function(m,a,w,b){return '<span style="display:inline-block;overflow:hidden;vertical-align:top"><span style="display:inline-block">'+(a||'')+w+(b||'')+'</span></span>';});
+    h.innerHTML=html;
+    gsap.from($$(':scope>span>span',h),{yPercent:105,duration:1.1,ease:'expo.out',stagger:.06,scrollTrigger:{trigger:h,start:'top 85%'}});
+  });
+  gsap.from('.q,.ticket',{y:40,opacity:0,duration:1,ease:'expo.out',stagger:.1,scrollTrigger:{trigger:'#form',start:'top 80%'}});
+
+  /* orage : éclair à l'entrée de la section */
+  ScrollTrigger.create({trigger:'.storm',start:'top 60%',onEnter:function(){gsap.timeline().to('#flash',{opacity:.9,duration:.06}).to('#flash',{opacity:0,duration:.12}).to('#flash',{opacity:.6,duration:.05,delay:.08}).to('#flash',{opacity:0,duration:.6});}});
+  gsap.from('#stormT',{y:60,opacity:0,duration:1.2,ease:'expo.out',scrollTrigger:{trigger:'.storm',start:'top 70%'}});
+
+  /* communes allumées une à une */
+  gsap.to({},{scrollTrigger:{trigger:'.zone',start:'top 70%',end:'bottom 60%',scrub:true,onUpdate:function(s){var t=$$('#towns span'),n=Math.round(s.progress*t.length);t.forEach(function(e,i){e.classList.toggle('on',i<n)});}}});
+
+  /* signature géante du pied de page */
+  gsap.from('#big span',{yPercent:100,duration:1.2,ease:'expo.out',stagger:.06,scrollTrigger:{trigger:'#big',start:'top 95%'}});
+
+  /* boutons aimantés */
+  if(fine)$$('[data-mag]').forEach(function(b){b.addEventListener('mousemove',function(e){var r=b.getBoundingClientRect();gsap.to(b,{x:(e.clientX-r.left-r.width/2)*.25,y:(e.clientY-r.top-r.height/2)*.35,duration:.4,ease:'power3.out'});});b.addEventListener('mouseleave',function(){gsap.to(b,{x:0,y:0,duration:.8,ease:'elastic.out(1,.4)'});});});
+
+  /* pluie en canvas, seulement quand la section est visible */
+  var cv=$('#rain'),cx=cv.getContext('2d'),drops=[],run=false,W,H;
+  function size(){W=cv.width=cv.offsetWidth*devicePixelRatio;H=cv.height=cv.offsetHeight*devicePixelRatio;drops=[];var n=Math.round(W*H/9000);for(var k=0;k<n;k++)drops.push({x:Math.random()*W,y:Math.random()*H,l:10+Math.random()*26,v:9+Math.random()*12,o:.08+Math.random()*.3});}
+  function frame(){if(!run)return;cx.clearRect(0,0,W,H);cx.lineWidth=devicePixelRatio;for(var k=0;k<drops.length;k++){var p=drops[k];cx.strokeStyle='rgba(201,207,212,'+p.o+')';cx.beginPath();cx.moveTo(p.x,p.y);cx.lineTo(p.x-p.l*.18,p.y+p.l);cx.stroke();p.y+=p.v*devicePixelRatio;p.x-=p.v*.18;if(p.y>H){p.y=-p.l;p.x=Math.random()*W*1.1;}}requestAnimationFrame(frame);}
+  size();addEventListener('resize',size);
+  ScrollTrigger.create({trigger:'.storm',start:'top bottom',end:'bottom top',onToggle:function(s){run=s.isActive;if(run)frame();}});
+  function staticRain(){}
+})();
+</script>
+</body>
+</html>
