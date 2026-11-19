@@ -1,0 +1,197 @@
+{
+ "id": "471017194709",
+ "slug": "hirtzlin",
+ "name": "Patrick HIRTZLIN, Couverture Zinguerie Bardage",
+ "short": "Hirtzlin",
+ "title": "Patrick Hirtzlin · Couvreur zingueur à Spechbach depuis 1985",
+ "tel": "03 89 06 13 22",
+ "acc": "#a8642c",
+ "acc_hi": "#c27a3c",
+ "acc_rgb": "168,100,44",
+ "hero_img": "toit",
+ "logo_svg": "<path d=\"M4 30 20 8l16 22\" fill=\"none\" stroke=\"ACC\" stroke-width=\"3.5\"/><path d=\"M12 30h16\" stroke=\"#eeebe5\" stroke-width=\"3\"/>",
+ "nav": [
+  [
+   "anatomie",
+   "Le toit"
+  ],
+  [
+   "services",
+   "Prestations"
+  ],
+  [
+   "orage",
+   "Urgence"
+  ],
+  [
+   "devis",
+   "Devis"
+  ],
+  [
+   "zone",
+   "Secteur"
+  ]
+ ],
+ "cta_head": "Demander un devis",
+ "kicker": "Couverture · Zinguerie · Bardage · Depuis 1985",
+ "h1": [
+  "Couvreur",
+  "zingueur",
+  "<em>depuis 1985.</em>"
+ ],
+ "h1_label": "Couvreur zingueur depuis 1985.",
+ "hero_p": "Patrick Hirtzlin et ses compagnons couvreurs-zingueurs rénovent votre toiture dans le Haut-Rhin, depuis Spechbach. Noté 4,9 sur 5 par 84 clients sur Google.",
+ "cta1": "Demander un devis",
+ "cta2": "Une fuite ?",
+ "band": [
+  "Couverture",
+  "Zinguerie cuivre",
+  "Isolation sur-toiture",
+  "Bardage",
+  "Fenêtres de toit",
+  "Depuis 1985",
+  "4,9/5 sur Google"
+ ],
+ "anat_k": "Le toit",
+ "anat_h2": "Un toit, <em>cinq couches.</em>",
+ "anat_label": "Coupe d'une toiture : charpente, isolant, écran, liteaux et tuiles",
+ "anat_svg": "<g class=\"ly l1\" stroke=\"#8b939c\" stroke-width=\"10\"><path d=\"M40 360 320 90 600 360\"/><path d=\"M110 360V294M530 360V294M190 360V218M450 360V218\"/><path d=\"M30 360h580\"/></g><g class=\"ly l2\" stroke=\"#d9c58f\" stroke-width=\"16\" opacity=\".9\"><path d=\"M66 340 320 96 574 340\"/></g><g class=\"ly l3\" stroke=\"#5f7fa6\" stroke-width=\"4\"><path d=\"M56 330 320 78 584 330\"/></g><g class=\"ly l4\" stroke=\"#b08a5a\" stroke-width=\"7\"><path d=\"M60 318 320 66 580 318\" stroke-dasharray=\"2 26\"/></g><g class=\"ly l5\" stroke=\"ACC\" stroke-width=\"14\"><path d=\"M44 322 320 54 596 322\"/></g>",
+ "steps": [
+  [
+   "Charpente",
+   "On vérifie chevrons et pannes avant tout. Une pièce abîmée se remplace, elle ne se cache pas sous des tuiles neuves."
+  ],
+  [
+   "Isolant",
+   "Le moment idéal pour isoler par le toit, quand la couverture est déjà déposée."
+  ],
+  [
+   "Écran sous-toiture",
+   "Il protège des infiltrations, tout en laissant respirer la charpente."
+  ],
+  [
+   "Liteaux",
+   "Leur écartement suit le modèle de tuile. C'est lui qui fait un toit droit et étanche."
+  ],
+  [
+   "Tuiles et faîtage",
+   "Tuile mécanique, plate ou ardoise, posée et fixée selon l'exposition du bâtiment."
+  ]
+ ],
+ "sv_h2": "Du faîtage <em>à la façade.</em>",
+ "sv_p": "Rénovation complète ou partielle de la couverture : un seul artisan pour tout le toit, même à faible pente.",
+ "cards": [
+  {
+   "img": "toit",
+   "alt": "Toiture en tuiles terre cuite",
+   "t": "Couverture",
+   "p": "Tuile en terre cuite de fabrication française, posée selon les normes du DTU.",
+   "li": [
+    "Rénovation complète",
+    "Rénovation partielle",
+    "Faible pente"
+   ]
+  },
+  {
+   "img": "gouttiere",
+   "alt": "Gouttière",
+   "t": "Zinguerie",
+   "p": "Gouttières et habillage de cheminée en cuivre, réalisés sur mesure dans nos ateliers.",
+   "li": [
+    "Gouttières",
+    "Cheminée",
+    "Cuivre"
+   ]
+  },
+  {
+   "img": "liteaux",
+   "alt": "Liteaux et tuiles",
+   "t": "Isolation",
+   "p": "Isolation par sur-toiture (Efisarking) et tous types d'isolants selon les normes énergétiques.",
+   "li": [
+    "Sur-toiture",
+    "Combles"
+   ]
+  },
+  {
+   "img": "palette",
+   "alt": "Matériaux sur un chantier de toiture",
+   "t": "Bardage et fenêtres de toit",
+   "p": "Bardage de façade, lambris métalliques pour façades et corniches, pose de fenêtres de toit Velux ou Roto.",
+   "li": [
+    "Bardage",
+    "Corniches",
+    "Velux, Roto"
+   ]
+  }
+ ],
+ "storm_k": "Urgence",
+ "storm_h2": "Une fuite <span class=\"fl\">après l'orage&nbsp;?</span>",
+ "storm_p": "Appelez directement. On vous dit quoi faire tout de suite, puis on organise l'intervention.",
+ "storm_cta2": "Décrire le problème",
+ "devis_p": "Répondez depuis votre téléphone, on vous rappelle pour fixer un rendez-vous.",
+ "q1": "Votre toit",
+ "t1": "Toit",
+ "opts": [
+  [
+   "Tuile mécanique",
+   "<path d=\"M2 26c5-10 9-10 14 0 5-10 9-10 14 0 5-10 9-10 14 0M2 14c5-10 9-10 14 0 5-10 9-10 14 0 5-10 9-10 14 0\"/>"
+  ],
+  [
+   "Tuile plate",
+   "<path d=\"M3 6h12v10H3zM17 6h12v10H17zM31 6h12v10H31zM10 16h12v10H10zM24 16h12v10H24z\"/>"
+  ],
+  [
+   "Zinc, bac acier",
+   "<path d=\"M2 26V6M11 26V6M20 26V6M29 26V6M38 26V6M2 26h42\"/>"
+  ],
+  [
+   "Je ne sais pas",
+   "<path d=\"M5 27V13L23 3l18 10v14zM18 27v-8h10v8\"/>"
+  ]
+ ],
+ "q3": "Votre projet",
+ "chips": [
+  "Fuite, tuiles cassées",
+  "Réfection complète",
+  "Zinguerie, gouttières",
+  "Isolation, bardage"
+ ],
+ "towns": [
+  "Spechbach",
+  "Altkirch",
+  "Illfurth",
+  "Burnhaupt",
+  "Bernwiller",
+  "Dannemarie",
+  "Zillisheim",
+  "Brunstatt-Didenheim",
+  "Mulhouse",
+  "Waldighoffen"
+ ],
+ "faq": [
+  [
+   "Refaites-vous toute la toiture ?",
+   "Oui, la rénovation complète comme partielle de la couverture, y compris les toits à faible pente."
+  ],
+  [
+   "Faites-vous la zinguerie ?",
+   "Oui : gouttières et habillage de cheminée en cuivre, réalisés sur mesure dans nos ateliers."
+  ],
+  [
+   "Posez-vous des fenêtres de toit ?",
+   "Oui, des fenêtres de toit Velux ou Roto."
+  ],
+  [
+   "Comment vous joindre ?",
+   "Par téléphone au 03 89 06 13 22, du lundi au vendredi de 9 h à 18 h sur rendez-vous, ou avec le formulaire : on vous rappelle."
+  ]
+ ],
+ "ft_about": "Couverture, zinguerie, isolation et bardage dans le Haut-Rhin, depuis 1985.",
+ "addr": [
+  "29 rue d'Illfurth, ZA",
+  "68720 Spechbach"
+ ],
+ "big": "Hirtzlin",
+ "css": ".ft .big{font-size:clamp(56px,14vw,240px)}"
+}
